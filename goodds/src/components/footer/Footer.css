@@ -1,0 +1,161 @@
+:root {
+    --first-color: #298c7d;
+    --first-color-lighten: #edf7f5;
+    --text-color: #656e81;
+    --body-color: #fbfcff;
+}
+a {
+    text-decoration: none;
+}
+
+.containerFooter {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.containerSolutionsFooter {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    width: 100%;
+	padding-bottom: 0.8em;
+	padding-top: 1.5em;
+	font-size: 15px;
+    box-shadow: 0px -10px 20px -20px rgba(0,0,0,0.45);
+}
+
+.footerContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.footerLogo img {
+	max-width: 110px;
+}
+
+.footerMenuLinksRow,
+.footerUnidadesRow,
+.footerMenuLinks,
+.footerUnidades {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	text-align: center;
+}
+
+.footerMenuLinksRow a {
+    color: var(--text-color)!important;
+}
+
+.footerMenuLinksRow a:hover {
+    color: var(--first-color)!important;
+}
+
+.footerMenuLinks {
+	margin-top: 2em;
+}
+
+.footerUnidades {
+	padding-block: 30px;
+}
+
+.footerUnidadesRow,
+.footerUnidades {
+	gap: 25px;
+}
+
+.footerUnidadesRow h5 {
+    font-size: 17px;
+}
+
+.separatorFooter {
+	color: #c9c9c9;
+	padding-left: 12px;
+}
+
+.menuMiddleSeparator {
+	border: 1px solid #c9c9c9;
+	height: 75px;
+}
+
+.footerPartners {
+	display: flex;
+	flex-wrap: nowrap!important;
+	align-items: center;
+	gap: 10px;
+}
+
+.footerPartners img {
+	max-width: 70px;
+}
+
+.footerCopyright p {
+	text-transform: uppercase;
+	font-size: 13px;
+	text-align: center;
+	padding-inline: 10px;
+}
+
+@media (min-width: 1100px) {
+	.footerMenuLinksRow {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 12px;
+	}
+	.footerUnidades {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.menuMiddleSeparator {
+		display: none;
+	}
+}
+
+@media (max-width: 1100px) {
+	.separatorFooter {
+		display: none;
+	}
+}
+
+@media (min-width: 576px) {
+	.footerMenuLinks {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row!important;
+		gap: 12px;
+	}
+	.footerPartners {
+		gap: 40px!important;
+	}
+}
+
+@media (max-width: 576px) {
+	.menuMiddleSeparator {
+		display: none!important;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 1100px) {
+	.footerMenuLinks {
+		gap: 70px;
+	}
+}
+
+@media (min-width: 662px) {
+	.footerUnidadesRow {
+		display: flex;
+		flex-direction: row!important;
+		flex-wrap: nowrap;
+		gap: 50px;
+	}
+	.footerUnidades {
+		gap: 50px;
+	}
+}

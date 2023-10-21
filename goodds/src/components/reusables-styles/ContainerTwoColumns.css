@@ -1,0 +1,23 @@
+* {
+    -webkit-tap-highlight-color: transparent!important;
+}
+.containerTwoColumns {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.containerChild {
+    width: 100%;
+    padding: 20px;
+    justify-self: center;
+}
+
+@media (max-width: 992px) {
+    .containerTwoColumns {
+        grid-template-columns: 1fr;
+    }
+}
