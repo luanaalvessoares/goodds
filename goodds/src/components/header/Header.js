@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css'
 import logo from '../../assets/images/logo.webp';
 import navicon1 from '../../assets/images/navicon-1.webp';
@@ -8,26 +8,32 @@ import navicon3 from '../../assets/images/navicon-3.webp';
 import navicon4 from '../../assets/images/navicon-4.webp';
 
 function Header() {
-    const [openMenuItem, setOpenMenuItem] = useState(null);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openMenuItem, setOpenMenuItem] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
-    const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleItem = (item) => {
+    if (item === openMenuItem) {
+      setOpenMenuItem(null);
+    } else {
+      setOpenMenuItem(item);
+    }
+  };
+
+  useEffect(() => {
+    const unlisten = navigateEvent => {
+      setIsMenuOpen(false);
+      setOpenMenuItem(null);
     };
 
-    const toggleItem = (item) => {
-      if (item === openMenuItem) {
-        setOpenMenuItem(null);
-      } else {
-        setOpenMenuItem(item);
-      }
+    return () => {
+      unlisten();
     };
-
-    useEffect(() => {
-      if (!isMenuOpen) {
-        setOpenMenuItem(null);
-      }
-    }, [isMenuOpen]);
+  }, [navigate]);
 
   return (
       <header className="header">
