@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css'
 import logo from '../../assets/images/logo.webp';
 import navicon1 from '../../assets/images/navicon-1.webp';
@@ -32,9 +33,9 @@ function Header() {
       <header className="header">
         <nav className="nav navContainer">
           <div className="navData">
-            <a href="#!" className="navLogo">
+            <Link to="/" className="navLogo">
               <img src={logo} alt="logo"/>
-            </a>
+            </Link>
 
               <div className="navToggle" id="navToggle" onClick={toggleMenu}>
               {isMenuOpen ?
@@ -65,19 +66,19 @@ function Header() {
 
                           <ul className="dropdownList">
                               <li>
-                                  <a href="#!" className="dropdownLink">Loja Virtual Tradicional</a>
+                                  <Link to="/loja-virtual" className="dropdownLink">Loja Virtual Tradicional</Link>
                               </li>
                               <li>
-                                  <a href="#!" className="dropdownLink">Loja Dropshipping Nacional</a>
+                                  <Link to="/dropshipping" className="dropdownLink">Loja Dropshipping Nacional</Link>
                               </li>
                               <li>
-                                  <a href="#!" className="dropdownLink">Loja Dropshipping Global</a>
+                                  <Link to="/dropshipping-global" className="dropdownLink">Loja Dropshipping Global</Link>
                               </li>
                               <li>
-                                  <a href="#!" className="dropdownLink">Loja Dropshipping Latam</a>
+                                  <Link to="/dropshipping-latam" className="dropdownLink">Loja Dropshipping Latam</Link>
                               </li>
                               <li>
-                                  <a href="#!" className="dropdownLink">Loja Dropshipping Print on Demand</a>
+                                  <Link to="/dropshipping-print-on-demand" className="dropdownLink">Loja Dropshipping Print on Demand</Link>
                               </li>
                           </ul>
                       </div>
@@ -90,13 +91,13 @@ function Header() {
       
                           <ul className="dropdownList">
                               <li>
-                                  <a href="#!" className="dropdownLink">Website Institucional</a>
+                                  <Link to="/website-institucional" className="dropdownLink">Website Institucional</Link>
                               </li>
                               <li>
-                                  <a href="#!" className="dropdownLink">Landing Page</a>
+                                  <Link to="/landing-page" className="dropdownLink">Landing Page</Link>
                               </li>
                               <li>
-                                  <a href="#!" className="dropdownLink">Blog</a>
+                                  <Link to="/blog" className="dropdownLink">Blog</Link>
                               </li>
                           </ul>
                       </div>
@@ -109,10 +110,10 @@ function Header() {
       
                           <ul className="dropdownList">
                               <li>
-                                  <a href="#!" className="dropdownLink">Marketing Loja Virtual</a>
+                                  <Link to="/marketing-loja-virtual" className="dropdownLink">Marketing Loja Virtual</Link>
                               </li>
                               <li>
-                                  <a href="#!" className="dropdownLink">Marketing Loja Dropshipping</a>
+                                  <Link to="/marketing-loja-dropshipping" className="dropdownLink">Marketing Loja Dropshipping</Link>
                               </li>
                           </ul>
                       </div>
@@ -124,30 +125,30 @@ function Header() {
                           </div>
       
                           <ul className="dropdownList">
-                              <li>
-                                  <a href="#!" className="dropdownLink">Pacote Lançamento de Loja</a>
-                              </li>
-                              <li>
-                                  <a href="#!" className="dropdownLink">Mineração de Produtos Dropshipping</a>
-                              </li>
-                              <li>
-                                  <a href="#!" className="dropdownLink">Consultorias</a>
-                              </li>
-                              <li>
-                                  <a href="#!" className="dropdownLink">Post Instagram</a>
-                              </li>
-                              <li>
-                                  <a href="#!" className="dropdownLink">Criação de Logo</a>
-                              </li>
-                              <li>
-                                  <a href="#!" className="dropdownLink">Banners para Loja</a>
-                              </li>
-                              <li>
-                                  <a href="#!" className="dropdownLink">Artes para Anúncio</a>
-                              </li>
-                              <li>
-                                  <a href="#!" className="dropdownLink">Vídeos Curtos e Reels</a>
-                              </li>
+                            <li>
+                                <Link to="/pacote-lancamento-loja" className="dropdownLink">Pacote Lançamento de Loja</Link>
+                            </li>
+                            <li>
+                                <Link to="/mineracao-produtos-dropshipping" className="dropdownLink">Mineração de Produtos Dropshipping</Link>
+                            </li>
+                            <li>
+                                <Link to="/consultorias" className="dropdownLink">Consultorias</Link>
+                            </li>
+                            <li>
+                                <Link to="/posts-instagram" className="dropdownLink">Posts Instagram</Link>
+                            </li>
+                            <li>
+                                <Link to="/criacao-logo" className="dropdownLink">Criação de Logo</Link>
+                            </li>
+                            <li>
+                                <Link to="/banners-loja" className="dropdownLink">Banners para Loja</Link>
+                            </li>
+                            <li>
+                                <Link to="/artes-anuncios" className="dropdownLink">Artes para Anúncio</Link>
+                            </li>
+                            <li>
+                                <Link to="/videos-curtos-reels" className="dropdownLink">Vídeos Curtos e Reels</Link>
+                            </li>
                           </ul>
                       </div>
 
@@ -172,26 +173,19 @@ function Header() {
 
                       <ul className="dropdownList">
                           <li>
-                              <a href="#!" className="dropdownLink dropdownLinkDecoration">Loja Virtual</a>
+                              <Link to="/loja-virtual" className="dropdownLink dropdownLinkDecoration">Loja Virtual</Link>
                           </li>
-                          <li className="liSubNav">
-                              <span className="dropdownLink dropdownLinkDecoration">Loja Dropshipping</span>
-                              <div className="listSub">
-                                  <ul>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Nacional</a>
-                                      </li>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Global</a>
-                                      </li>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Latam</a>
-                                      </li>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Print on Demand</a>
-                                      </li>
-                                  </ul>
-                              </div>
+                          <li>
+                              <Link to="/dropshipping" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Nacional</Link>
+                          </li>
+                          <li>
+                              <Link to="/dropshipping-global" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Global</Link>
+                          </li>
+                          <li>
+                              <Link to="/dropshipping-latam" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Latam</Link>
+                          </li>
+                          <li>
+                              <Link to="/dropshipping-print-on-demand" className="dropdownLink dropdownLinkDecoration">Loja Dropshipping Print on Demand</Link>
                           </li>
                       </ul>
                     </div>
@@ -216,13 +210,13 @@ function Header() {
 
                       <ul className="dropdownList">
                         <li>
-                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Website Institucional</a>
+                          <Link to="/website-institucional" className="dropdownLink dropdownLinkDecoration">Website Institucional</Link>
                         </li>
                         <li>
-                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Landing Page</a>
+                          <Link to="/landing-page" className="dropdownLink dropdownLinkDecoration">Landing Page</Link>
                         </li>
                         <li>
-                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Blog</a>
+                          <Link to="/blog" className="dropdownLink dropdownLinkDecoration">Blog</Link>
                         </li>
                       </ul>
                     </div>
@@ -247,10 +241,10 @@ function Header() {
 
                       <ul className="dropdownList">
                         <li>
-                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Marketing Loja Virtual</a>
+                          <Link to="/marketing-loja-virtual" className="dropdownLink dropdownLinkDecoration">Marketing Loja Virtual</Link>
                         </li>
                         <li>
-                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Marketing Loja Dropshipping</a>
+                          <Link to="/marketing-loja-dropshipping" className="dropdownLink dropdownLinkDecoration">Marketing Loja Dropshipping</Link>
                         </li>
                       </ul>
                     </div>
@@ -274,40 +268,30 @@ function Header() {
                     <div className="dropdownGroup">
 
                       <ul className="dropdownList">
-                          <li>
-                              <a href="#!" className="dropdownLink dropdownLinkDecoration">Pacote Lançamento de Loja</a>
-                          </li>
-                          <li>
-                              <a href="#!" className="dropdownLink dropdownLinkDecoration">Mineração de Produtos Dropshipping</a>
-                          </li>
-                          <li>
-                              <a href="#!" className="dropdownLink dropdownLinkDecoration">Consultorias</a>
-                          </li>
-                          <li>
-                              <a href="#!" className="dropdownLink dropdownLinkDecoration">Pacote Post Instagram</a>
-                          </li>
-                          <li className="liSubNav">
-                              <span className="dropdownLink dropdownLinkDecoration">Criação de Artes</span>
-                              <div className="listSub">
-                                  <ul>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Logo</a>
-                                      </li>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Banners</a>
-                                      </li>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Post Instagram</a>
-                                      </li>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Artes para Anúncio</a>
-                                      </li>
-                                      <li>
-                                          <a href="#!" className="dropdownLink dropdownLinkDecoration">Vídeos Curtos e Reels</a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </li>
+                        <li>
+                            <Link to="/pacote-lancamento-loja" className="dropdownLink dropdownLinkDecoration">Pacote Lançamento de Loja</Link>
+                        </li>
+                        <li>
+                            <Link to="/mineracao-produtos-dropshipping" className="dropdownLink dropdownLinkDecoration">Mineração de Produtos Dropshipping</Link>
+                        </li>
+                        <li>
+                            <Link to="/consultorias" className="dropdownLink dropdownLinkDecoration">Consultorias</Link>
+                        </li>
+                        <li>
+                            <Link to="/posts-instagram" className="dropdownLink dropdownLinkDecoration">Posts Instagram</Link>
+                        </li>
+                        <li>
+                            <Link to="/criacao-logo" className="dropdownLink dropdownLinkDecoration">Criação de Logo</Link>
+                        </li>
+                        <li>
+                            <Link to="/banners-loja" className="dropdownLink dropdownLinkDecoration">Banners para Loja</Link>
+                        </li>
+                        <li>
+                            <Link to="/artes-anuncios" className="dropdownLink dropdownLinkDecoration">Artes para Anúncio</Link>
+                        </li>
+                        <li>
+                            <Link to="/videos-curtos-reels" className="dropdownLink dropdownLinkDecoration">Vídeos Curtos e Reels</Link>
+                        </li>
                       </ul>
                     </div>
                   </div>

@@ -1,0 +1,17 @@
+.btnContent,
+.btnIcon {
+    vertical-align: middle;
+}
+
+.btnIcon {
+    padding-inline: 1em;
+}
+
+.arrowContainer .btnIcon {
+    transition: margin-left 0.3s ease; /* Adiciona uma transição suave para a animação */
+}
+  
+.arrowContainer:hover .btnIcon {
+    margin-left: 8px;
+}
+  

@@ -1,10 +1,9 @@
 import React from 'react';
 import '../reusables-styles/ContainerTwoColumns.css'
-import '../elements/ArrowTransition'
 import './BaseSupport.css'
 import baseicon from '../../assets/images/baseicon.webp';
 import supporticon from '../../assets/images/supporticon.webp';
-import ArrowTransition from '../elements/ArrowTransition';
+import ArrowTransition from '../elements/arrow-transition/ArrowTransition';
 
 function BaseSupport() {
     return (
