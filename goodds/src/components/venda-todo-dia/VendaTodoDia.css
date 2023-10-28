@@ -1,0 +1,141 @@
+* {
+    -webkit-tap-highlight-color: transparent!important;
+}
+
+.imageVenda {
+    width: 100%;
+}
+
+.containerVenda {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-sizing: border-box;
+}
+
+.containerChildVenda {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.containerChildVenda:first-child {
+    padding-inline: 1em;
+}
+
+.beneficiosTitle,
+.beneficiosSub {
+    text-wrap: nowrap!important;
+}
+
+@media (max-width: 1100px) {
+    .containerVenda {
+        grid-template-columns: 1fr;
+    }
+
+    .containerChildVenda:last-child {
+        padding-top: 0!important;
+    }
+}
+
+.imageVenda {
+    max-width: 100%;
+    padding: 1em;
+}
+
+.gridBeneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.itemTitle {
+    font-size: 1.2em
+}
+
+.itemDescription {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #6C6C6C;
+}
+
+.itemBeneficio {
+    padding: 10px;
+    border-left: 8px solid;
+    border-image: linear-gradient(to bottom, rgb(101, 199, 184), rgb(41, 140, 125)) 1;
+    margin-top: 1em;
+}
+
+.beneficiosTitle {
+    text-transform: uppercase;
+    font-size: 3.2em;
+}
+
+.beneficiosSub {
+    font-size: 3.2em;
+    font-weight: bold;
+    margin-block: 0.1em 0.6em;
+    width: max-content;
+    color: #FFF;
+}
+
+.beneficiosSub {
+    text-wrap: nowrap;
+    background: linear-gradient(to right, rgb(101, 199, 184), rgb(41, 140, 125));
+    padding-inline: 15px;
+}
+
+@media (max-width: 576px) {
+    .gridBeneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficiosTitle,
+    .beneficiosSub {
+        text-align: center;
+        font-size: 7.5vw;
+        width: 100%;
+        text-wrap: nowrap;
+    }
+
+    .beneficiosSub {
+        padding-block: 0.25em;
+    }
+
+    .imageVenda,
+    .containerChildVenda:first-child {
+        padding: 0!important;
+    }
+
+    .imageVenda {
+        width: 80%;
+    }
+}
+
+@media (max-width: 660px) {
+    .beneficiosTitle,
+    .beneficiosSub {
+        font-size: 6.9vw!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .beneficiosTitle {
+        text-align: center;
+    }
+
+    .beneficiosSub {
+        margin: 0.1em auto 0.6em;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1100px) {
+    .imageVenda {
+        width: 60%;
+    }
+}

@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Heebo';
-  src: url('./assets/fonts/Heebo/Heebo-Regular.ttf');
+  font-family: 'LatoRegular';
+  src: url('./assets/fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url('./assets/fonts/Lato/Lato-Bold.ttf');
 }
 * {
   box-sizing: border-box!important;
@@ -12,7 +16,7 @@
   -webkit-tap-highlight-color: transparent!important;
 }
 body {
-  font-family: 'Heebo', sans-serif!important;
+  font-family: 'LatoRegular', sans-serif!important;
 }
 
 ul {
@@ -22,4 +26,8 @@ ul {
 
 a {
   text-decoration: none!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LatoBold', sans-serif!important;
 }

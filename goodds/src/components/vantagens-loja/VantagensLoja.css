@@ -1,0 +1,43 @@
+.vantagensLojaContainer {
+    background-image: url('../../assets/images/backgroundleft-circle-green.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-block: 3em;
+}
+
+.vantagensLojaImage {
+    border-radius: 50px;
+}
+
+.vantagensTitle {
+    margin-block: 1em;
+    color: #333333;
+}
+
+.vantagensDescription div {
+    margin-block: 1.6em;
+}
+
+.vantagensDescription h3 {
+    margin-block: 0.3em;
+    color: #464646;
+}
+
+.vantagensDescription p {
+    margin-block: 0.3em;
+    color: #707070;
+}
+
+@media (min-width: 768px) {
+    .vantagensLojaContainer {
+        margin-block: 5em;
+    }
+
+    .vantagensTitle {
+        font-size: 2.5em;
+    }
+    .vantagensDescription h3 {
+        font-size: 1.4em;
+    }
+}

@@ -1,20 +1,24 @@
 import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import { BrowserRouter as Router } from 'react-router-dom';
 import RoutesGoodds from './RoutesGoodds';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import 'normalize.css';
-import './App.css'
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Router>
-        <Header />
-          <RoutesGoodds />
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <TransitionGroup>
+        <CSSTransition
+          key={window.location.key}
+          classNames="fade"
+          timeout={300}>
+            <Header />
+            <RoutesGoodds />
+          </CSSTransition>
+        </TransitionGroup>
+    </Router>
   );
 }
 

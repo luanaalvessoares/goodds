@@ -1,4 +1,3 @@
-.app {
-    position: relative;
-    height: 100em;
+#robbu-whatsapp-button {
+    transform: scale(0.8);
 }

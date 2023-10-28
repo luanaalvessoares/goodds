@@ -348,7 +348,7 @@ a {
   .dropdownItem:hover .dropdownArrow {
     transform: rotate(180deg);
   }
-  .dropdownItem:hover > .dropdownContainer {
+  .dropdownItem.dropdownDesktop .dropdownContainer {
     top: 4.5rem;
     opacity: 1;
     pointer-events: initial;
@@ -363,6 +363,6 @@ a {
 }
 @media screen and (min-width: 1300px) {
     .dropdownContent {
-        column-gap: 10rem!important;
+        column-gap: 7rem!important;
     }
 }

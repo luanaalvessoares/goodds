@@ -2,15 +2,15 @@ import React from 'react';
 import './Footer.css';
 import BaseSupport from '../base-support/BaseSupport';
 import logo from '../../assets/images/logo.webp';
-import footericon1 from '../../assets/images/footericon-1.webp';
-import footericon2 from '../../assets/images/footericon-2.webp';
-import footericon3 from '../../assets/images/footericon-3.webp';
+import footericon1 from '../../assets/images/footericon-5.webp';
+import footericon2 from '../../assets/images/footericon-1.webp';
+import footericon3 from '../../assets/images/footericon-2.webp';
 import footericon4 from '../../assets/images/footericon-4.webp';
 
 function Footer() {
     return (
         <div className="containerFooter">
-            <BaseSupport></BaseSupport>
+            <BaseSupport />
             <div className="containerSolutionsFooter">
                 <div className="footerContent">
                     <div className="footerLogo">
@@ -48,6 +48,9 @@ function Footer() {
                             </div>
                         </div>
                     </div>
+
+                    <span className="footerSectionSeparator"></span>
+                    
                     <div className="footerUnidades">
                         <div className="footerUnidadesRow">
                             <div>

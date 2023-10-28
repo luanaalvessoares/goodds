@@ -1,0 +1,6 @@
+#table1 .tableRow#item-0,
+#table1 .tableRow#item-16,
+#table1 .tableRow#item-18,
+#table4 .tableRow#item-3 {
+    display: none!important;
+}

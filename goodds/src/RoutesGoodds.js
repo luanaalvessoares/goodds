@@ -1,5 +1,7 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 import Home from './pages/home/Home'
 import LojaVirtual from './pages/criacao-loja-virtual/loja-virtual/LojaVirtual'
 import DropshippingTradicional from './pages/criacao-loja-virtual/dropshipping-tradicional/DropshippingTradicional'
@@ -20,28 +22,40 @@ import BannersLoja from './pages/servicos-extras/banners-loja/BannersLoja'
 import ArtesAnuncios from './pages/servicos-extras/artes-anuncios/ArtesAnuncios'
 import VideosCurtosReels from './pages/servicos-extras/videos-curtos-reels/VideosCurtosReels'
 
-const RoutesGoodds = () => (
-    <Routes>
-        <Route exact path="/" element={<Home />}></Route>
-        <Route path="/loja-virtual" element={<LojaVirtual />}></Route>
-        <Route path="/dropshipping" element={<DropshippingTradicional />}></Route>
-        <Route path="/dropshipping-global" element={<DropshippingGlobal />}></Route>
-        <Route path="/dropshipping-latam" element={<DropshippingLatam />}></Route>
-        <Route path="/dropshipping-print-on-demand" element={<DropshippingPrintOnDemand />}></Route>
-        <Route path="/website-institucional" element={<WebsiteInstitucional />}></Route>
-        <Route path="/landing-page" element={<LandingPage />}></Route>
-        <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/marketing-loja-virtual" element={<MarketingLojaVirtual />}></Route>
-        <Route path="/marketing-loja-dropshipping" element={<MarketingLojaDropshipping />}></Route>
-        <Route path="/pacote-lancamento-loja" element={<PacoteLancamentoLoja />}></Route>
-        <Route path="/mineracao-produtos-dropshipping" element={<MineracaoProdutosDropshipping />}></Route>
-        <Route path="/consultorias" element={<Consultorias />}></Route>
-        <Route path="/posts-instagram" element={<PostsInstagram />}></Route>
-        <Route path="/criacao-logo" element={<CriacaoLogo />}></Route>
-        <Route path="/banners-loja" element={<BannersLoja />}></Route>
-        <Route path="/artes-anuncios" element={<ArtesAnuncios />}></Route>
-        <Route path="/videos-curtos-reels" element={<VideosCurtosReels />}></Route>
-    </Routes>
-)
+const RoutesGoodds = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+    
+    return (
+        <AnimatePresence mode="out-in">
+            <Routes location={location} key={location.pathname}>
+                <Route exact path="/" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}><Home /></motion.div>}></Route>
+                <Route path="/loja-virtual" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><LojaVirtual /></motion.div>}></Route>
+                <Route path="/dropshipping" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingTradicional /></motion.div>}></Route>
+                <Route path="/dropshipping-global" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingGlobal /></motion.div>}></Route>
+                <Route path="/dropshipping-latam" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingLatam /></motion.div>}></Route>
+                <Route path="/dropshipping-print-on-demand" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingPrintOnDemand /></motion.div>}></Route>
+                <Route path="/website-institucional" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><WebsiteInstitucional /></motion.div>}></Route>
+                <Route path="/landing-page" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><LandingPage /></motion.div>}></Route>
+                <Route path="/blog" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><Blog /></motion.div>}></Route>
+                <Route path="/marketing-loja-virtual" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><MarketingLojaVirtual /></motion.div>}></Route>
+                <Route path="/marketing-loja-dropshipping" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><MarketingLojaDropshipping /></motion.div>}></Route>
+                <Route path="/pacote-lancamento-loja" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><PacoteLancamentoLoja /></motion.div>}></Route>
+                <Route path="/mineracao-produtos-dropshipping" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><MineracaoProdutosDropshipping /></motion.div>}></Route>
+                <Route path="/consultorias" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><Consultorias /></motion.div>}></Route>
+                <Route path="/posts-instagram" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><PostsInstagram /></motion.div>}></Route>
+                <Route path="/criacao-logo" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><CriacaoLogo /></motion.div>}></Route>
+                <Route path="/banners-loja" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><BannersLoja /></motion.div>}></Route>
+                <Route path="/artes-anuncios" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><ArtesAnuncios /></motion.div>}></Route>
+                <Route path="/videos-curtos-reels" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><VideosCurtosReels /></motion.div>}></Route>
+            </Routes>
+        </AnimatePresence>
+
+    )
+
+}
 
 export default RoutesGoodds;

@@ -9,8 +9,6 @@ a {
 }
 
 .containerFooter {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 }
 
@@ -100,6 +98,14 @@ a {
 	padding-inline: 10px;
 }
 
+.footerSectionSeparator {
+	display: none;
+	height: 1.5px;
+	width: 60%;
+	background-color: #c9c9c9;
+	margin-block: 1.2em 0;
+}
+
 @media (min-width: 1100px) {
 	.footerMenuLinksRow {
 		display: flex;
@@ -139,6 +145,14 @@ a {
 @media (max-width: 576px) {
 	.menuMiddleSeparator {
 		display: none!important;
+	}
+
+	.footerMenuLinks .footerMenuLinksRow:last-child {
+		margin-top: -12px
+	}
+
+	.footerSectionSeparator {
+		display: block!important;
 	}
 }
 
