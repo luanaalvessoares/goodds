@@ -1,0 +1,22 @@
+.titleDescriptionContainer {
+    margin: 6em 1em 3em;
+    text-align: center;
+}
+
+.titleDescriptionContent p {
+    font-size: 22px;
+}
+
+@media (min-width: 768px) {
+    .titleDescriptionContent {
+        margin-bottom: 4em;
+    }
+    .titleDescriptionContent h1 {
+        font-size: 5em;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    .titleDescriptionContent p {
+        font-size: 20px;
+    }
+}

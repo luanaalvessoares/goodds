@@ -1,0 +1,110 @@
+.sectionTopWebsitesContainer {
+    margin-block: 3em 0em;
+}
+
+.sectionTopWebsitesContainer p {
+    color: #727272;
+}
+
+.sectionTopWebsitesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.sectionTopWebsitesGridItem {
+    padding: 5px;
+}
+
+.sectionTopWebsitesContent h2 {
+    font-size: 4em;
+}
+
+.sectionTopWebsitesContent p {
+    font-size: 20px;
+    margin-block: 0.4em 2em;
+
+}
+
+.sectionTopWebsitesContainer .containerChildTwoColumnsDefault:last-child {
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+    .sectionTopWebsitesContainer .containerChildTwoColumnsDefault:first-child {
+        padding: 0 2em;
+    }
+    .sectionTopWebsitesContainer .containerChildTwoColumnsDefault:first-child img {
+        border-radius: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .sectionTopWebsitesContainer .containerChildTwoColumnsDefault:first-child {
+        margin-right: 1em;
+    }
+    .sectionTopWebsitesContainer {
+        margin-block: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionTopWebsitesContainer .containerChildTwoColumnsDefault:first-child img {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionTopWebsitesContent p,
+    .sectionTopWebsitesContent h2 {
+        text-align: center;
+    }
+    .sectionTopWebsitesContent h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .sectionTopWebsitesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionTopWebsitesContainer .containerChildTwoColumnsDefault:last-child {
+        padding: 0 1em!important;
+    }
+}
+
+.sectionTopWebsitesContainer .containerTwoColumnsDefault {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    box-sizing: border-box;
+}
+
+.sectionTopWebsitesContainer .containerChildTwoColumnsDefault {
+    justify-self: center;
+    align-self: center;
+}
+
+@media (max-width: 1100px) {
+    .sectionTopWebsitesContainer .containerTwoColumnsDefault {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionTopWebsitesContainer .containerChildTwoColumnsDefault:last-child {
+        padding: 0 2em;
+    }
+}
+
+.sectionTopWebsitesContainer .imageTwoColumnsDefault {
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1100px) {
+    .sectionTopWebsitesContainer .containerChildTwoColumnsDefault:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

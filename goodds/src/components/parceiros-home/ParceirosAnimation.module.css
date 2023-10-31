@@ -1,0 +1,17 @@
+.parceirosHomeContainer {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.typeItContainer {
+    font-size: 22px;
+    color: #525252;
+}
+
+.typeItContainer span {
+    color: #009d7d;
+}

@@ -1,0 +1,100 @@
+.compareTableSection {
+    padding-inline: 1.2em;
+}
+
+.compareTitle {
+    text-align: center;
+    margin-block: 1.2em;
+    cursor: pointer;
+}
+
+.dropdownArrow {
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #000;
+}
+
+.dropdownArrow.open {
+    transform: rotate(180deg);
+}
+.compareContainer {
+    margin-top: 1em;
+}
+
+.tableRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-self: center;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0.5em 0;
+    border-bottom: 0.5px solid #cdcdcd;
+}
+
+.rowContent {
+    padding: 10px;
+    align-self: center;
+}
+
+.rowContent.itemContains {
+    justify-self: center;
+    text-align: center;
+}
+
+.tableTitle .rowContent.itemDescriptionCompare {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    > img {
+        max-width: 50px;
+        margin-right: 10px;
+    }
+}
+
+.tableTitle .rowContent.itemDescriptionCompare p,
+.tableTitle .rowContent.itemContains {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.tableRow:not(.tableTitle) .rowContent.itemDescriptionCompare p:first-child {
+    font-weight: bold;
+    color: #393939;
+    margin-block: 8px;
+}
+
+.tableRow:not(.tableTitle) .rowContent.itemDescriptionCompare p:last-child {
+    font-size: 13.5px;
+    color:#5c5c5c;
+}
+
+.tableRow:not(.tableTitle) .rowContent.itemContains svg {
+    color: #3acbae;
+}
+
+@media (max-width: 576px) {
+    .tableRow {
+        grid-template-columns: 56% 22% 22% ;
+    }
+
+    .tableTitle .rowContent.itemDescriptionCompare img {
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .tableRow:not(.tableTitle) .rowContent.itemDescriptionCompare p:first-child {
+        font-size: 15px;
+    }
+
+    .tableTitle .rowContent.itemDescriptionCompare p {
+        font-size: 18px;
+    }
+
+    .tableTitle .rowContent.itemContains {
+        font-size: 20px;
+    }
+
+    .tableRow:not(.tableTitle) .rowContent.itemContains {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,13 @@
+.dropHomeContainer {
+    max-width: 1000px;
+    margin: 2em auto
+}
+
+.dropHomeContainerImage {
+    width: 100%;
+    padding-inline: 1em;
+}
+
+.dropHomeContainerImage img {
+    width: 100%
+}

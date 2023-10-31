@@ -6,6 +6,14 @@
   font-family: 'LatoBold';
   src: url('./assets/fonts/Lato/Lato-Bold.ttf');
 }
+:root {
+  iframe#webpack-dev-server-client-overlay {
+       display: none!important
+  }
+}
+.hide-resize-observer {
+  display: none !important;
+}
 * {
   box-sizing: border-box!important;
   padding: 0;
@@ -17,6 +25,8 @@
 }
 body {
   font-family: 'LatoRegular', sans-serif!important;
+  overflow-x: hidden!important;
+  box-sizing: border-box!important;
 }
 
 ul {
@@ -30,4 +40,12 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'LatoBold', sans-serif!important;
+}
+
+.Carousel__CarouselInner-sc-f2ox7y-2 {
+  pointer-events: none!important;
+}
+
+.HeaderTotalReviews__Container-sc-13r1h6v-0 {
+  display: none!important;
 }

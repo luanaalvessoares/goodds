@@ -1,5 +1,5 @@
 import React from 'react';
-import './PackagesIncluded.css';
+import styles from './PackagesIncluded.module.css';
 import PackagesData from './PackagesData';
 import RiCheckboxCircleLine from 'remixicon-react/CheckboxCircleLineIcon'
 
@@ -9,11 +9,11 @@ function PackagesIncluded(props) {
     const list3 = PackagesData[2];
 
     return (
-        <section className="listPackageContainer">
+        <section className={styles.listPackageContainer}>
             <h2>Incluso em todos os projetos de {props.titleIncludedPackage} da Goodds:</h2>
-            <div className="listPackage">
-                <div className="listChild">
-                    <div className="listPackageContent">
+            <div className={styles.listPackage}>
+                <div className={styles.listChild}>
+                    <div className={styles.listPackageContent}>
                         <ul>
                         {list1.map((item, index) => (
                             <li key={index}>
@@ -26,8 +26,8 @@ function PackagesIncluded(props) {
                 </div>
 
 
-                <div className="listChild">
-                    <div className="listPackageContent">
+                <div className={styles.listChild}>
+                    <div className={styles.listPackageContent}>
                         <ul>
                         {list2.map((item, index) => (
                             <li key={index}>
@@ -40,8 +40,8 @@ function PackagesIncluded(props) {
                 </div>
 
                 
-                <div className="listChild">
-                    <div className="listPackageContent">
+                <div className={styles.listChild}>
+                    <div className={styles.listPackageContent}>
                         <ul>
                         {list3.map((item, index) => (
                             <li key={index}>

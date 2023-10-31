@@ -6,14 +6,14 @@ import ImageBg from '../../../assets/images/dropshipping-print-on-demand-bg.webp
 import ImageVenda from '../../../assets/images/image-venda2.webp'
 import VendaTodoDia from "../../../components/venda-todo-dia/VendaTodoDia";
 import PackagesSection from "../../../components/packages-section/PackagesSection";
-import DropdownTable from "../../../components/dropdown-table/DropdownTable";
+import DropdownTableLoja from "../../../components/dropdown-table/DropdownTableLoja";
 import GoogleReviews from "../../../components/google-reviews/GoogleReviews";
 import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
 import ImageVantagens from '../../../assets/images/section-vantagesdrop.webp';
-import FooterCta from "../../../components/footer-cta/FooterCta";
 import Whatsapp from "../../../components/whatsapp/Whatsapp";
 
 function DropshippingPrintOnDemand() {
+    const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20loja%20Print-On-Demand";
     const packageData1 = {
         packageTitle1: "Start",
         packageDescription1: "Desenvolvimento de Loja Virtual profissional com ferramentas que potencializam suas vendas, com cadastro de 30 produtos e integrada com fornecedores.",
@@ -44,13 +44,12 @@ function DropshippingPrintOnDemand() {
         <div>
             <ImageBackground isVideo={false} title="Loja Print-On-Demand" description="Criamos seu e-commerce completo e personalizado, entregamos pronto para você vender!" image={ImageBg}/>
             <VendaTodoDia image={ImageVenda}/>
-            <PackagesSection packageData1={packageData1}  packageData2={packageData2} />
-            <DropdownTable titleIncluded="Dropshipping" />
+            <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
+            <DropdownTableLoja titleIncluded="Dropshipping" />
             <GoogleReviews />
             <VantagensLoja image={ImageVantagens} vantagemData="" />
-            <FooterCta backgroundGradient="linear-gradient(46.87deg, rgb(177, 245, 250) 0%, rgb(77, 255, 158) 96.94%)" />
-            <Footer />
-            <Whatsapp whatsappMessage="https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20loja%20Print-On-Demand"/>
+            <Footer linkCtaWhatsapp={whatsapp} />
+            <Whatsapp whatsappMessage={whatsapp} />
         </div>
     )
 }

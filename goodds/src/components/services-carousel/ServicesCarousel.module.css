@@ -1,0 +1,81 @@
+.serviceCarouselContainer {
+  padding-block: 3em 2em;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2em;
+  position: relative;
+  margin: 0 auto;
+}
+
+.serviceContent {
+  margin: 0 auto;
+  max-width: 90%;
+  height: 500px;
+  border-radius: 20px;
+  border: 2px solid #73ecd4;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceContent .serviceImage img {
+  width: 100%!important;
+  height: 250px!important;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.serviceContent .serviceDescription {
+  padding: 1em;
+}
+
+.serviceContent .serviceDescription h2 {
+  color: #3f3f3f;
+  margin-bottom: 0.8em;
+}
+
+.serviceContent .serviceDescription p {
+  color: #6d6d6d;
+}
+
+.serviceButtonContainer {
+  margin-top: auto;
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+.serviceButton {
+  padding-block: 1em;
+}
+
+.serviceButtonContainer .arrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-transform: uppercase
+}
+
+.spacingNavigation {
+  height: 3em;
+}
+
+.btnContent,
+.btnIcon {
+    vertical-align: middle;
+}
+
+.btnIcon {
+    padding-inline: 1em;
+}
+
+.arrowContainer .btnIcon {
+    transition: margin-left 0.3s ease;
+}
+  
+.arrowContainer:hover .btnIcon {
+    margin-left: 8px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../reusables-styles/ContainerTwoColumns.css';
-import './VantagensLoja.css'
+import stylesSec from '../reusables-styles/ContainerTwoColumns.module.css';
+import styles from './VantagensLoja.module.css'
 
 const VantagensLoja = (props) => {
     const {
@@ -16,16 +16,16 @@ const VantagensLoja = (props) => {
     } = props.vantagemData;
 
     return (
-        <section className="vantagensLojaContainer">
-            <div className="containerTwoColumnsDefault">
-                <div className="containerChildTwoColumnsDefault">
-                    <img src={props.image} className="imageTwoColumnsDefault vantagensLojaImage" alt=""/>
+        <section className={styles.vantagensLojaContainer}>
+            <div className={stylesSec.containerTwoColumnsDefault}>
+                <div className={stylesSec.containerChildTwoColumnsDefault}>
+                    <img src={props.image} className={`${stylesSec.imageTwoColumnsDefault} ${styles.vantagensLojaImage}`} alt=""/>
                 </div>
 
-                <div className="containerChildTwoColumnsDefault">
-                    <div className="vantagensContent">
-                        <h2 className="vantagensTitle">{vantagemTitle ? vantagemTitle : 'Vantagens do nosso Dropshipping'}</h2>
-                        <div className="vantagensDescription">
+                <div className={stylesSec.containerChildTwoColumnsDefault}>
+                    <div className={styles.vantagensContent}>
+                        <h2 className={styles.vantagensTitle}>{vantagemTitle ? vantagemTitle : 'Vantagens do nosso Dropshipping'}</h2>
+                        <div className={styles.vantagensDescription}>
                             <div>
                                 <h3>{vantagemTitle1 ? vantagemTitle1 : 'Loja de alta conversão'}</h3>
                                 <p>{vantagemSubtitle1 ? vantagemSubtitle1 : 'Criamos o layout, os banners e o logo. Integramos a loja com os meios de pagamentos, redes sociais e fornecedores.'}</p>

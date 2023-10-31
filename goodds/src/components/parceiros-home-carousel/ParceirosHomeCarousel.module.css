@@ -1,0 +1,11 @@
+.parceirosHomeCarousel {
+    padding-block: 3em 2em;
+    max-width: 1200px;
+    padding-inline: 2em;
+    position: relative;
+    margin: 0 auto;
+}
+
+.swiperContent img {
+    max-width: 150px;
+}

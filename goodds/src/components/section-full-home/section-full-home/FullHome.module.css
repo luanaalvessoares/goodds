@@ -1,0 +1,89 @@
+.fullHomeContainer {
+    background-image: url('../../../assets/images/backgroundleft-circle-green.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-block: 1em 5em;
+}
+
+.fullHomeGrid {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    color: #717171;
+    gap: 15px;
+}
+
+.fullHomeGrid img {
+    width: 90%;
+    align-self: center;
+}
+.fullHomeGrid .fullHomeGridInfo {
+    align-self: center;
+}
+
+.fullHomeGrid .fullHomeGridInfo h3 {
+    color: #3d3d3d;
+}
+
+.fullHomeTitle {
+    margin-block: 1em;
+    font-size: 3em;
+}
+
+@media (max-width: 576px) {
+    .fullHomeContainerChildTwoColumns:last-child {
+        padding: 0 1em!important;
+    }
+}
+
+.fullHomeContainerTwoColumns {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    box-sizing: border-box;
+}
+
+.fullHomeContainerChildTwoColumns {
+    justify-self: center;
+    align-self: center;
+    padding-inline: 1em
+}
+
+@media (max-width: 1100px) {
+    .fullHomeContainerTwoColumns {
+        grid-template-columns: 1fr;
+    }
+
+    .fullHomeContainerChildTwoColumns:last-child {
+        padding: 0 2em;
+    }
+
+    .fullHomeTitle {
+        text-align: center;
+    }
+
+    .fullHomeTitle {
+        font-size: 2em;
+    }
+}
+
+.fullHomeContainerChildTwoColumns:first-child {
+    max-width: 100%;
+    padding: 1em;
+}
+
+.fullHomeImageTwoColumns {
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1100px) {
+    .fullHomeContainerChildTwoColumns:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fullHomeImageTwoColumns {
+        width: 60%;
+    }
+}

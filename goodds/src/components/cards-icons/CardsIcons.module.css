@@ -1,0 +1,41 @@
+.cardsIconsContainer {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardsIconsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4em;
+}
+
+.cardsIconsGridItem img {
+    max-width: 80px;
+}
+
+.cardsIconsGridItem h3 {
+   margin-bottom: 0.5em;
+}
+
+.cardsIconsContainer h2 {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    .cardsIconsContainer {
+        padding: 1em;
+        margin-bottom: 4em;
+    }
+    .cardsIconsGrid  {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .cardsIconsGridItem p {
+        font-size: 15px;
+    }
+    .cardsIconsContainer h2 {
+        margin-bottom: 1em;
+    }
+}

@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from './components/header/Header';
 import RoutesGoodds from './RoutesGoodds';
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import 'normalize.css';
 import './App.css';
+import { useBeforeRender } from './useBeforeRender';
 
 function App() {
+  useBeforeRender(() => {
+    window.addEventListener("error", (e) => {
+      if (e) {
+        const resizeObserverErrDiv = document.getElementById(
+          "webpack-dev-server-client-overlay-div",
+        );
+        const resizeObserverErr = document.getElementById(
+          "webpack-dev-server-client-overlay",
+        );
+        if (resizeObserverErr)
+          resizeObserverErr.className = "hide-resize-observer";
+        if (resizeObserverErrDiv)
+          resizeObserverErrDiv.className = "hide-resize-observer";
+      }
+    });
+  }, []);
+
   return (
     <Router>
-      <TransitionGroup>
-        <CSSTransition
-          key={window.location.key}
-          classNames="fade"
-          timeout={300}>
-            <Header />
-            <RoutesGoodds />
-          </CSSTransition>
-        </TransitionGroup>
+      <Header />
+      <RoutesGoodds />
     </Router>
   );
 }

@@ -1,0 +1,48 @@
+.clientReviewContainer {
+    margin: 4em auto;
+    max-width: 1200px;
+    padding-inline: 2em;
+}
+
+.clientReviewContent {
+    width: 100%;
+}
+
+.clientReviewContent h2 {
+    margin-bottom: 1em;
+}
+
+.imageClient {
+    max-width: 100px;
+    margin-bottom: 0.5em;
+}
+
+.clientReviewContent p {
+    font-size: 18px;
+    color: #727272;
+    margin-bottom: 1em;
+}
+
+.clientReviewContent h4 {
+    font-size: 17px;
+    margin-bottom: 1em;
+}
+
+.deskImageClient {
+    width: 100%
+}
+
+
+@media (max-width: 768px) {
+    .clientReviewContainer {
+        margin: 4em auto;
+        padding-inline: 1.5em;
+    }
+    .imageClient {
+        max-width: 80px;
+    }
+    .clientReviewContent p,
+    .clientReviewContent h4 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,84 @@
+.simpleContainer {
+    color: #3e3e3e;
+    margin-bottom: 2em;
+}
+
+.simpleContainer p {
+    color: #727272;
+}
+
+.simpleContent > h2 {
+    font-size: 4em;
+}
+
+.simpleContent > p {
+    font-size: 18px;
+    margin-block: 0.6em 2em;
+
+}
+
+@media (min-width: 992px) {
+    .simpleContainer {
+        margin: 6em 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .simpleContent > p,
+    .simpleContent > h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .simpleContainer .containerChildTwoColumnsDefault:first-child {
+        padding: 0 1em!important;
+    }
+    .simpleContent > h2 {
+        font-size: 1.8em;
+    }
+}
+
+.simpleContainer .containerTwoColumnsDefault {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    box-sizing: border-box;
+}
+
+.simpleContainer .containerChildTwoColumnsDefault {
+    justify-self: center;
+    align-self: center;
+    padding-inline: 1em
+}
+
+@media (max-width: 1100px) {
+    .simpleContainer .containerTwoColumnsDefault {
+        grid-template-columns: 1fr;
+    }
+
+    .simpleContainer .containerChildTwoColumnsDefault:first-child {
+        padding: 0 2em;
+    }
+}
+
+.simpleContainer .containerChildTwoColumnsDefault:last-child {
+    max-width: 100%;
+    padding: 1em;
+}
+
+.simpleContainer .imageTwoColumnsDefault {
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1100px) {
+    .simpleContainer .containerChildTwoColumnsDefault:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .simpleContainer .imageTwoColumnsDefault {
+        width: 60%;
+    }
+}

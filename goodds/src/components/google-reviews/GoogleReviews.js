@@ -1,10 +1,10 @@
 import React from 'react';
-import './GoogleReviews.css'
+import styles from './GoogleReviews.module.css'
 import { Helmet } from 'react-helmet';
 
 function GoogleReviews() {
     return (
-        <section className="reviewScript">
+        <section className={styles.reviewScript}>
             <h1 className="text-center">Clientes Nacionais e Internacionais</h1>
             <Helmet>
                 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>

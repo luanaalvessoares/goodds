@@ -6,14 +6,14 @@ import ImageBg from '../../../assets/images/dropshipping-latam-bg.webp'
 import ImageVenda from '../../../assets/images/image-venda3.webp'
 import VendaTodoDia from "../../../components/venda-todo-dia/VendaTodoDia";
 import PackagesSection from "../../../components/packages-section/PackagesSection";
-import DropdownTable from "../../../components/dropdown-table/DropdownTable";
+import DropdownTableLoja from "../../../components/dropdown-table/DropdownTableLoja";
 import GoogleReviews from "../../../components/google-reviews/GoogleReviews";
 import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
 import ImageVantagens from '../../../assets/images/section-vantagesdrop.webp';
-import FooterCta from "../../../components/footer-cta/FooterCta";
 import Whatsapp from "../../../components/whatsapp/Whatsapp";
 
 function DropshippingLatam() {
+    const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20Dropshipping%20Latam";
     const packageData1 = {
         packageTitle1: "Start",
         packageDescription1: "Desenvolvimento de Loja Virtual profissional com ferramentas que potencializam suas vendas, com cadastro de 30 produtos e integrada com fornecedores.",
@@ -45,12 +45,11 @@ function DropshippingLatam() {
             <ImageBackground isVideo={false} title="Loja de Dropshipping Latam" description="Tenha uma Loja na América Latina e receba em Dólar." image={ImageBg}/>
             <VendaTodoDia image={ImageVenda}/>
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} />
-            <DropdownTable titleIncluded="Dropshipping" />
+            <DropdownTableLoja titleIncluded="Dropshipping" />
             <GoogleReviews />
-            <VantagensLoja image={ImageVantagens} vantagemData="" />
-            <FooterCta backgroundGradient="linear-gradient(46.87deg, rgb(177, 245, 250) 0%, rgb(77, 255, 158) 96.94%)" />
-            <Footer />
-            <Whatsapp whatsappMessage="https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20Dropshipping%20Latam"/>
+            <VantagensLoja image={ImageVantagens} vantagemData="" sectionPackageTitle="Tenha uma Loja Completa" />
+            <Footer linkCtaWhatsapp={whatsapp} />
+            <Whatsapp whatsappMessage={whatsapp} />
         </div>
     )
 }

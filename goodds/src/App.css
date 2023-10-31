@@ -1,3 +1,14 @@
 #robbu-whatsapp-button {
     transform: scale(0.8);
+    z-index: 1000;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    iframe#webpack-dev-server-client-overlay {
+         display: none !important
+    }
 }
