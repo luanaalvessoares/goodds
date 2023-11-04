@@ -30,6 +30,12 @@
     font-size: 3em;
 }
 
+@media (max-width: 768px) {
+    .fullHomeGrid {
+        margin-block: 1.5em;
+    }
+}
+
 @media (max-width: 576px) {
     .fullHomeContainerChildTwoColumns:last-child {
         padding: 0 1em!important;

@@ -6,7 +6,6 @@ import navicon1 from '../../assets/images/navicon-1.webp';
 import navicon2 from '../../assets/images/navicon-2.webp';
 import navicon3 from '../../assets/images/navicon-3.webp';
 import navicon4 from '../../assets/images/navicon-4.webp';
-import ContactModal from '../contact-modal/ContactModal';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,8 +38,6 @@ function Header() {
       setOpenMenuItem(null);
       setIsHovered(false);
   }, [location]);
-
-  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
       <header className={styles.header}>
@@ -219,6 +216,11 @@ function Header() {
                           </ul>
                       </div>
 
+                  </div>
+
+                  <div className={styles.ctaHeaderDesktop}>
+                    <h4>Venda todos os dias</h4>
+                    <a href="#!" target="_blank"><span>Falar com um especialista</span></a>
                   </div>
                 </div>
               </li>
@@ -434,18 +436,22 @@ function Header() {
                 </div>
               </li>
 
+
+
             </ul>
+
+              <div className={styles.ctaHeaderMobile}>
+                <h4>Comece a vender com a Goodds</h4>
+                <a href="#!" target="_blank"><span>Falar com um especialista</span></a>
+              </div>
+
           </div>
 
           <div className={styles.navCallToAction}>
-            <a className={styles.btnCallToAction} href="#!" onClick={() => setModalIsOpen(true)}>
+            <a className={styles.btnCallToAction} href="#!">
               Equipe de Vendas
             </a>
           </div>
-          <ContactModal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setModalIsOpen(false)}
-          />
 
         </nav>
       </header>

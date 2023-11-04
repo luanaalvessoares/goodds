@@ -98,3 +98,8 @@
         font-size: 14px;
     }
 }
+
+.tableRow:first-child p,
+.itemDescriptionCompare p:first-child {
+    font-weight: bold!important;
+}

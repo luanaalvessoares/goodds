@@ -42,11 +42,9 @@ function Home() {
 
     return (
         <div id="home">
-            <ImageBackground isVideo="true" title="Criamos seu E-commerce" description="Somos a Primeira Agência Especializada em Dropshipping do Brasil"/>
+            <ImageBackground isVideo="true" title="Tenha um e-commerce profissional" title2=" e venda todos os dias" description="Somos a Primeira Agência Especializada em Dropshipping do Brasil."/>
             <ServicesCarousel />
             <GoogleReviews />
-            <ParceirosAnimation />
-            <ParceirosHomeCarousel />
             <FullHome title="Full Commerce" subtitle="Desenvolvimento + Gestão + Design + Marketing" description="Com mais de 10 anos de experiência, já desenvolvemos mais de 6.600 projetos personalizados de e-commerce. Nossa equipe é formada por mais de 100 colaboradores e especialistas em diversas áreas: Design, Programação, Marketing, Copyright, Gestão de Projetos, Estrategistas, Suporte ao Cliente e outros." />
             <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
             <DropHome title="Dropshipping" subtitle="1ª Agência do Brasil" description="Somos a Primeira Agência especializada em serviços e soluções voltados para Dropshipping. Desenvolvimento de E-commerce, Marketing, Mineração de Produtos e Consultoria especializada em Dropshipping." />
@@ -54,6 +52,8 @@ function Home() {
             <div className="topTitleSectionHome">
                 <TopTitleImageSection title="Venda todos os dias." subtitle="" backgroundUrl={BackgroundTop} imageChildren1={BackgroundTopChildren1} />
             </div>
+            <ParceirosAnimation />
+            <ParceirosHomeCarousel />
             <MotivosCarousel />
             <Footer linkCtaWhatsapp={whatsapp} />
             <Whatsapp whatsappMessage={whatsapp} />

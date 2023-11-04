@@ -50,7 +50,7 @@
 .bestSellerTag {
     position: absolute;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bold!important;
     padding: 10px 20px;
     border-radius: 20px;
     top: -20px;
@@ -78,7 +78,9 @@
 .packagePrice span:last-child {
     font-size: 2.2em;
     color: #373737;
-    text-decoration: line-through 4px #da4343;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #da4343;
+    text-decoration-color: #da4343;
 }
 
 .packagePrice span:first-child {
@@ -114,6 +116,7 @@
 .packageNews {
     text-align: center;
     font-weight: bold;
+    text-wrap: nowrap;
 }
 
 .packageNews span:first-child,
@@ -127,7 +130,7 @@
 }
 
 .newPricePackage {
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 .includedTitle {
@@ -188,4 +191,10 @@
         grid-template-columns: 1fr;
     }
 }
-  
+
+.typeCoin,
+.newPricePackage,
+.includedTitle,
+.packageBuy span {
+    font-weight: bold!important;
+}

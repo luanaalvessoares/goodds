@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'LatoRegular';
-  src: url('./assets/fonts/Lato/Lato-Regular.ttf');
+  src: url('./assets/fonts/Lato/Lato-Light.ttf');
 }
 @font-face {
   font-family: 'LatoBold';
@@ -42,10 +42,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'LatoBold', sans-serif!important;
 }
 
+p, span {
+  font-weight: 300!important;
+}
+
 .Carousel__CarouselInner-sc-f2ox7y-2 {
   pointer-events: none!important;
 }
 
-.HeaderTotalReviews__Container-sc-13r1h6v-0 {
+.ReviewInfo__InfoContainer-sc-q3e1v-6 {
   display: none!important;
 }

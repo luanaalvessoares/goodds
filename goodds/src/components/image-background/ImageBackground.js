@@ -2,8 +2,11 @@ import React, { useRef, useEffect, useState } from 'react';
 import styles from './ImageBackground.module.css'
 import SuportAvatar from '../../assets/images/support-avatar-bg.webp'
 import VideoHomeBg from '../../assets/images/video-home-bg.mp4'
+import { useLocation } from 'react-router-dom';
 
-function ImageBackground({isVideo, image, title, description}) {
+function ImageBackground({isVideo, image, title, description, title2}) {
+    const location = useLocation();
+
     return (
         <div id={styles.headerBgSection}>
             <section className={styles.bgHeader}>
@@ -15,8 +18,8 @@ function ImageBackground({isVideo, image, title, description}) {
 
                 <div className={styles.headerOverlay}>
                     <div className={styles.contentHeader}>
-                        <div className={styles.titleHeader}>
-                            <h2>{title}</h2>
+                        <div className={`${styles.titleHeader} ${location.pathname === '/' ? `${styles.home}` : ''}`}>
+                            <h2><span>{title}</span> <span>{title2}</span></h2>
                             <p>{description}</p>
                         </div>
                         <div className={styles.headerContact}>

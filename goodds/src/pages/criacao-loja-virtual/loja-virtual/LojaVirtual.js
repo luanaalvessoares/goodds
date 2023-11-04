@@ -10,6 +10,8 @@ import PackagesSection from "../../../components/packages-section/PackagesSectio
 import DropdownTableLoja from "../../../components/dropdown-table/DropdownTableLoja";
 import GoogleReviews from "../../../components/google-reviews/GoogleReviews";
 import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
+import SimpleTwoColumns from "../../../components/section-simple-twocolumns/SimpleTwoColumns";
+import ImageHomeMarketplaces from '../../../assets/images/homemarketplaces.webp';
 import Whatsapp from "../../../components/whatsapp/Whatsapp";
 
 function LojaVirtual() {
@@ -58,6 +60,7 @@ function LojaVirtual() {
             <DropdownTableLoja titleIncluded="Loja Virtual" />
             <GoogleReviews />
             <VantagensLoja image={ImageVantagens} vantagemData={vantagemData} />
+            <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
             <Footer linkCtaWhatsapp={whatsapp} />
             <Whatsapp whatsappMessage={whatsapp} />
         </div>

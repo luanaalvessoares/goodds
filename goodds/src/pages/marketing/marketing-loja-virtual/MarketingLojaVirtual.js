@@ -12,7 +12,8 @@ import PackagesSection from '../../../components/packages-section/PackagesSectio
 import DropdownTableMkt from "../../../components/dropdown-table/DropdownTableMkt";
 import SectionVendasMkt from "../../../components/section-vendas-mkt/SectionVendasMkt";
 import CardsInfoTitle from "../../../components/cards-infos-titulo/CardsInfoTitle";
-import SectionCrescimentoMkt from "../../../components/section-crescimento-mkt/SectionCrescimentoMkt";
+import CrescimentoImage from '../../../assets/images/crescimentomkt.webp'
+import SimpleTwoColumns from "../../../components/section-simple-twocolumns/SimpleTwoColumns";
 import SectionAnuncioMkt from "../../../components/section-anuncio-mkt/SectionAnuncioMkt";
 
 
@@ -49,7 +50,7 @@ function MarketingLojaVirtual() {
             <DropdownTableMkt />
             <GoogleReviews />
             <SectionVendasMkt />
-            <SectionCrescimentoMkt />
+            <SimpleTwoColumns title="Faça suas vendas crescerem com Google Adwords" description="Exiba seus anúncios para os clientes quando eles procurarem empresas como a sua na Pesquisa Google e no Maps. Converta resultados como cliques para acessar seu site ou chamadas feitas para sua empresa." image={CrescimentoImage} />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             <SectionAnuncioMkt />
             <Footer linkCtaWhatsapp={whatsapp} />

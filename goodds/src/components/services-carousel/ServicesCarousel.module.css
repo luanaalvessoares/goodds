@@ -10,14 +10,22 @@
   margin: 0 auto;
 }
 
+.serviceCarouselSection {
+  background-image: url('../../assets/images/backgroundleft-circle-green.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
 .serviceContent {
   margin: 0 auto;
   max-width: 90%;
-  height: 500px;
+  height: 470px;
   border-radius: 20px;
   border: 2px solid #73ecd4;
   display: flex;
   flex-direction: column;
+  background-color: #FFF;
 }
 
 .serviceContent .serviceImage img {
@@ -35,6 +43,7 @@
 .serviceContent .serviceDescription h2 {
   color: #3f3f3f;
   margin-bottom: 0.8em;
+  font-size: 1.1em;
 }
 
 .serviceContent .serviceDescription p {
@@ -78,4 +87,17 @@
   
 .arrowContainer:hover .btnIcon {
     margin-left: 8px;
+}
+
+.serviceCarouselSection > h2 {
+  font-size: 3em;
+  padding-block: 1em 0;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .serviceCarouselSection > h2 {
+    font-size: 2.6em;
+  }  
 }

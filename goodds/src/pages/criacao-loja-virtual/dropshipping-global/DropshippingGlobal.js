@@ -10,6 +10,8 @@ import DropdownTableLoja from "../../../components/dropdown-table/DropdownTableL
 import GoogleReviews from "../../../components/google-reviews/GoogleReviews";
 import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
 import ImageVantagens from '../../../assets/images/section-vantagesdrop.webp';
+import SimpleTwoColumns from "../../../components/section-simple-twocolumns/SimpleTwoColumns";
+import ImageHomeMarketplaces from '../../../assets/images/homemarketplaces.webp';
 import Whatsapp from "../../../components/whatsapp/Whatsapp";
 
 function DropshippingGlobal() {
@@ -43,12 +45,13 @@ function DropshippingGlobal() {
 
     return (
         <div>
-            <ImageBackground isVideo={false} title="Loja de Dropshipping Global" description="Tenha uma Loja fora do Brasil e receba em Dólar." image={ImageBg}/>
+            <ImageBackground isVideo={false} title="Loja de Dropshipping Global" description="Somos a Primeira Agência de Dropshipping Nacional e Internacional" image={ImageBg}/>
             <VendaTodoDia image={ImageVenda}/>
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
             <DropdownTableLoja titleIncluded="Dropshipping" />
             <GoogleReviews />
             <VantagensLoja image={ImageVantagens} vantagemData="" />
+            <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
             <Footer linkCtaWhatsapp={whatsapp} />
             <Whatsapp whatsappMessage={whatsapp} />
         </div>
