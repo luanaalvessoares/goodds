@@ -21,6 +21,7 @@ import CriacaoLogo from './pages/servicos-extras/criacao-logo/CriacaoLogo'
 import BannersLoja from './pages/servicos-extras/banners-loja/BannersLoja'
 import ArtesAnuncios from './pages/servicos-extras/artes-anuncios/ArtesAnuncios'
 import VideosCurtosReels from './pages/servicos-extras/videos-curtos-reels/VideosCurtosReels'
+import VendaTodosOsDias from './pages/venda-todos-os-dias/VendaTodosOsDias'
 
 const RoutesGoodds = () => {
     const location = useLocation();
@@ -51,6 +52,7 @@ const RoutesGoodds = () => {
                 <Route path="/banners-loja" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><BannersLoja /></motion.div>}></Route>
                 <Route path="/artes-anuncios" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><ArtesAnuncios /></motion.div>}></Route>
                 <Route path="/videos-curtos-reels" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><VideosCurtosReels /></motion.div>}></Route>
+                <Route path="/venda-todos-os-dias" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><VendaTodosOsDias /></motion.div>}></Route>
             </Routes>
         </AnimatePresence>
 

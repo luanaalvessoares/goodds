@@ -6,6 +6,7 @@ import navicon1 from '../../assets/images/navicon-1.webp';
 import navicon2 from '../../assets/images/navicon-2.webp';
 import navicon3 from '../../assets/images/navicon-3.webp';
 import navicon4 from '../../assets/images/navicon-4.webp';
+import ContactModal from '../contact-modal/ContactModal';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,6 +39,19 @@ function Header() {
       setOpenMenuItem(null);
       setIsHovered(false);
   }, [location]);
+
+  // Open Modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Função para abrir o modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Função para fechar o modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
       <header className={styles.header}>
@@ -223,6 +237,24 @@ function Header() {
                     <a href="#!" target="_blank"><span>Falar com um especialista</span></a>
                   </div>
                 </div>
+              </li>
+
+              {/* DROPDOWN DESKTOP 2 */}
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
+                <Link to="/venda-todos-os-dias" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                  <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                    Promo de Black
+                  </div>
+                </Link>
+              </li>
+
+              {/* DROPDOWN DESKTOP 2 */}
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
+                <Link to="#!" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                  <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                    O que há de novo
+                  </div>
+                </Link>
               </li>
               
 
@@ -448,9 +480,10 @@ function Header() {
           </div>
 
           <div className={styles.navCallToAction}>
-            <a className={styles.btnCallToAction} href="#!">
+            <a className={styles.btnCallToAction} onClick={openModal}>
               Equipe de Vendas
             </a>
+            <ContactModal isOpen={isModalOpen} onRequestClose={closeModal} />
           </div>
 
         </nav>

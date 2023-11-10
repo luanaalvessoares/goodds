@@ -1,0 +1,35 @@
+.reviewScript {
+    margin-block: 4em;
+    z-index: -1!important;
+}
+
+.containerReviewsGoogle,
+.Main__Content-sc-1w4nyzp-1.eOTuFu.es-main-content,
+.Carousel__CarouselContainer-sc-tyvl4o-0.hDDUYK.es-carousel-layout-container,
+.Carousel__CarouselContainer-sc-f2ox7y-0.cWBoky.es-carousel-layout,
+.Carousel__CarouselOuter-sc-f2ox7y-1.fvIQjw,
+.Carousel__CarouselInner-sc-f2ox7y-2.bOAeit,
+.Carousel__CarouselSwiperWrapper-sc-f2ox7y-10.eDfoHK,
+.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-autoheight.swiper-watch-progress.swiper-backface-hidden,
+.swiper-wrapper {
+    z-index: -1!important;
+}
+
+.reviewScript h1 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.fBHjnG {
+    flex: inherit;
+}
+.WidgetTitle__Header-sc-ruy1gu-2.iFEZzR {
+    display: none;
+}
+.HeaderWriteReviewButton__Component-sc-aghmpr-0.hYjZwu.Header__StyledHeaderWriteReviewButton-sc-gozq6j-4.jeuPze {
+    display: none;
+}
+.gGgqlY {
+    border-radius: 8px;
+    justify-content: center;
+}

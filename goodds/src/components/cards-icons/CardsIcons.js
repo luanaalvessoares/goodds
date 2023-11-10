@@ -6,29 +6,29 @@ import { useInView, InView } from "react-intersection-observer";
 function CardsIcons(props) {
     const { ref: ref, inView: inView } = useInView({
         triggerOnce: true,
-      });
+    });
     
-      const animations = {
+    const animations = {
         hidden: {
-          opacity: 0
+            opacity: 0
         },
         view: {
-          opacity: 1,
+            opacity: 1,
         }
-      };
-    
-      const slideFromLeft = {
+    };
+
+    const slideFromLeft = {
         hidden: {
-          x: -200,
+            x: -200,
         },
         view: {
-          x: 0,
-          transition: {
+            x: 0,
+            transition: {
             type: "spring",
             stiffness: 50
-          }
+            }
         }
-      };
+    };
 
     const {
         title,

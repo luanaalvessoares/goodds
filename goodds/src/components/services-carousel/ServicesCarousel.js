@@ -10,6 +10,14 @@ import 'swiper/css/pagination';
 
 import { Autoplay, Pagination } from 'swiper/modules';
 
+// Images
+import ImageConsultorias from '../../assets/images/consultoria drop.png';
+import ImageLojaVirtual from '../../assets/images/loja virtual.png';
+import ImageDrop from '../../assets/images/loja drop.png';
+import ImageDropGlobal from '../../assets/images/loja drop global.png';
+import ImageDropLatam from '../../assets/images/loja drop latam.png';
+import ImageDropPrint from '../../assets/images/loja print on demand.png';
+
 
 function ServicesCarousel() {
   return (
@@ -207,7 +215,7 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/7/300/300" alt="" />
+                  <img src={ImageConsultorias} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
@@ -233,7 +241,7 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/8/300/300" alt="" />
+                  <img src={ImageLojaVirtual} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
@@ -259,7 +267,7 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/9/300/300" alt="" />
+                  <img src={ImageDrop} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
@@ -285,7 +293,7 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/10/300/300" alt="" />
+                  <img src={ImageDropGlobal} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
@@ -311,7 +319,7 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/11/300/300" alt="" />
+                  <img src={ImageDropLatam} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
@@ -334,10 +342,10 @@ function ServicesCarousel() {
 
             
             
-            <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
+          <SwiperSlide className={styles.swiperContent}>
+            <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/12/300/300" alt="" />
+                  <img src={ImageDropPrint} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>

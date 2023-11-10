@@ -12,6 +12,7 @@ import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
 import ImageVantagens from '../../../assets/images/section-vantagesdrop.webp';
 import SimpleTwoColumns from "../../../components/section-simple-twocolumns/SimpleTwoColumns";
 import ImageHomeMarketplaces from '../../../assets/images/homemarketplaces.webp';
+import TwoSectionsScrollAnimate from "../../../components/two-sections-scroll-animate/TwoSectionsScrollAnimate";
 import Whatsapp from "../../../components/whatsapp/Whatsapp";
 
 function DropshippingLatam() {
@@ -44,13 +45,14 @@ function DropshippingLatam() {
 
     return (
         <div>
-            <ImageBackground isVideo={false} title="Loja de Dropshipping Latam" description="Somos a Primeira Agência de Dropshipping Nacional e Internacional" image={ImageBg}/>
+            <ImageBackground isVideo={false} title="Loja de Dropshipping Latam" description="Somos a Primeira Agência de Dropshipping Nacional e Internacional do Brasil" image={ImageBg}/>
             <VendaTodoDia image={ImageVenda}/>
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} />
             <DropdownTableLoja titleIncluded="Dropshipping" />
             <GoogleReviews />
             <VantagensLoja image={ImageVantagens} vantagemData="" sectionPackageTitle="Tenha uma Loja Completa" />
             <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
+            <TwoSectionsScrollAnimate />
             <Footer linkCtaWhatsapp={whatsapp} />
             <Whatsapp whatsappMessage={whatsapp} />
         </div>

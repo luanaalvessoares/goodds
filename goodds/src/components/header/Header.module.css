@@ -222,6 +222,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: auto;
+  cursor: pointer;
 }
 .btnCallToAction {
   background-color: #298c7d;
@@ -294,6 +295,7 @@ a {
   }
   .nav li:not(.liSubNav) {
     display: flex;
+    align-items: center;
   }
   .navLink {
     padding: 0;
@@ -432,4 +434,8 @@ a {
 .ctaHeaderMobile a:hover {
   box-shadow: 10px 10px 28px -9px rgba(0,0,0,0.75);
   background-color: #303030;
+}
+
+.dropdownItemDesktop > .dropdownLink {
+  color: var(--title-color);
 }
