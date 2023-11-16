@@ -37,27 +37,39 @@ function TopTitleImageSection(props) {
 
                 <motion.div 
                     className={`${styles.imageChildren1} ${styles.topImageChildren}`}
-                    initial={{ x: '100vw' }}
-                    animate={inView ? { x: 0 } : { x: '100vw' }}
-                    transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}
                 >
                     <img src={props.imageChildren1} alt="" />
                 </motion.div>
 
                 <motion.div 
                     className={`${styles.imageChildren2} ${styles.topImageChildren}`}
-                    initial={{ x: '-100vw' }}
-                    animate={inView ? { x: 0 } : { x: '-100vw' }}
-                    transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}
                 >
                     <img src={props.imageChildren2} alt="" />
                 </motion.div>
 
                 <motion.div 
                     className={`${styles.imageChildren3} ${styles.topImageChildren}`}
-                    initial={{ x: '100vw' }}
-                    animate={inView ? { x: 0 } : { x: '100vw' }}
-                    transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}
                 >
                     <img src={props.imageChildren3} alt="" />
                 </motion.div>

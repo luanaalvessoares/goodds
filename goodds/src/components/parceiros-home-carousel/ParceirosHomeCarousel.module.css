@@ -10,3 +10,9 @@
 .swiperContent img {
     max-width: 150px;
 }
+
+.parceirosCarousel div:first-child h2 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 1em;
+}

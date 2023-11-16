@@ -49,7 +49,7 @@ function DropshippingLatam() {
             <VendaTodoDia image={ImageVenda}/>
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} />
             <DropdownTableLoja titleIncluded="Dropshipping" />
-            <GoogleReviews />
+            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
             <VantagensLoja image={ImageVantagens} vantagemData="" sectionPackageTitle="Tenha uma Loja Completa" />
             <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
             <TwoSectionsScrollAnimate />

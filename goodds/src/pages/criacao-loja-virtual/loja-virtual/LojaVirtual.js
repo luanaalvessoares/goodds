@@ -58,7 +58,7 @@ function LojaVirtual() {
             <VendaTodoDia image={ImageVenda} itemDescription2="Marketplaces | Pagamentos | Entrega | Redes Sociais" itemDescription4="Loja + Logo + Marketing + Consultoria"/>
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
             <DropdownTableLoja titleIncluded="Loja Virtual" />
-            <GoogleReviews />
+            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
             <VantagensLoja image={ImageVantagens} vantagemData={vantagemData} />
             <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
             <Footer linkCtaWhatsapp={whatsapp} />

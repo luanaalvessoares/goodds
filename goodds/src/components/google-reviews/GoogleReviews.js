@@ -2,10 +2,10 @@ import React from 'react';
 import './GoogleReviews.css'
 import { Helmet } from 'react-helmet';
 
-function GoogleReviews() {
+function GoogleReviews({title}) {
     return (
         <section className="reviewScript">
-            <h1 className="textCenter">Clientes Nacionais e Internacionais</h1>
+            <h1 className="textCenter">{title}</h1>
             <Helmet>
                 <script className="containerReviewsGoogle" src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             </Helmet>

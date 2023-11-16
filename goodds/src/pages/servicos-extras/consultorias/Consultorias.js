@@ -44,7 +44,7 @@ function Consultorias() {
             <TitleDescription title="Consultoria estratégica para sua Loja Virtual" description="Independente do momento do seu negócio, nós te mostramos o caminho." />
             <SectionTopConsultorias title="Uma mentoria feita por especialistas que amam Dropshipping." subtitle="Apresentamos técnicas, ferramentas e processos que facilitam a jornada da sua loja, rumo ao sucesso. Otimizamos a operação do seu negócio de forma simplificada." image={ImageTop} />
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
-            <GoogleReviews />
+            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             <SectionClientReview title="Planejamos seu caminho para o crescimento" image={ImageClient} comment="Experiência Excelente, equipe SUPER competente, criativos e atenciosos. Me ajudaram com a idéia do nome da minha loja e o logo ficou demais. Atedimento nota mil. Só tenho que agradecer pelo comprometimento e suporte que superou as minhas expectativas." clientName="Rosana Januário — Loja TendTudo" deskImageClient={DeskImageClient} />
             <Footer linkCtaWhatsapp={whatsapp} />

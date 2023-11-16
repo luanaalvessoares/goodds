@@ -439,3 +439,12 @@ a {
 .dropdownItemDesktop > .dropdownLink {
   color: var(--title-color);
 }
+
+.newsLinks {
+  text-decoration: none;
+  color: inherit;
+  vertical-align: middle;
+  > img {
+    vertical-align: middle;
+  }
+}

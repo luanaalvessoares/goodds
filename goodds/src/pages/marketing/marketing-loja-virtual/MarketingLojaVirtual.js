@@ -48,7 +48,7 @@ function MarketingLojaVirtual() {
             <TopTitleImageSection title="Venda todos os dias." subtitle="Alcance novos clientes diariamente. Planejamos estratégias e executamos campanhas de marketing para sua loja virtual." backgroundUrl={BackgroundTop} imageChildren1={BackgroundTopChildren1} imageChildren2={BackgroundTopChildren2} imageChildren3={BackgroundTopChildren3} />
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Pacotes e Preços" />
             <DropdownTableMkt />
-            <GoogleReviews />
+            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
             <SectionVendasMkt />
             <SimpleTwoColumns title="Faça suas vendas crescerem com Google Adwords" description="Exiba seus anúncios para os clientes quando eles procurarem empresas como a sua na Pesquisa Google e no Maps. Converta resultados como cliques para acessar seu site ou chamadas feitas para sua empresa." image={CrescimentoImage} />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />

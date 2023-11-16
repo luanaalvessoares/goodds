@@ -68,7 +68,7 @@ function CriacaoLogo() {
         <div>
             <TopTitleImageSection title="Venda todos os dias." subtitle="Alcance novos clientes diariamente. Planejamos estratégias e executamos campanhas de marketing para sua loja virtual." backgroundUrl={BackgroundTop} imageChildren1={BackgroundTopChildren1} imageChildren2={BackgroundTopChildren2} imageChildren3={BackgroundTopChildren3} />
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
-            <GoogleReviews />
+            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
             <SimpleTwoColumns title="Produtos que vendem!" description="Temos uma equipe especializada em conversão, a mineração e o cadastramento dos produtos devem ser levados a sério, por isso oferecemos um serviço completo. Se tratando de dropshipping a seleção e o cadastramento do produto é o que define o sucesso da loja, atuamos com uma execução perfeita desde a escolha do item até a implementação no site. Deixe com a nossa equipe." image={ImageDescription} />
             <CardsIcons cardsIconsData={cardsIconsData} />
             <VantagensLoja image={ImageVantagens} vantagemData="" />

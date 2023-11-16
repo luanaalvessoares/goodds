@@ -23,21 +23,14 @@ function FullHome(props) {
                             <img src={IconFull1} alt="" />
                             <div className={styles.fullHomeGridInfo}>
                                 <h3>Desenvolvimento de loja virtual</h3>
-                                <p>Desenvolvemos seu e-commerce, fazemos todas as integrações e configurações para você apenas vender.</p>
-                            </div>
-                        </div>
-                        <div className={styles.fullHomeGrid}>
-                            <img src={IconFull2} alt="" />
-                            <div className={styles.fullHomeGridInfo}>
-                                <h3>Espeialistas em marketplace</h3>
-                                <p>Através da integração com os melhores ERPs, sua loja fica conectada com os maiores marketplaces do Brasil.</p>
+                                <p>Criamos seu e-commerce, fazemos todas as integrações e configurações para você apenas vender.</p>
                             </div>
                         </div>
                         <div className={styles.fullHomeGrid}>
                             <img src={IconFull3} alt="" />
                             <div className={styles.fullHomeGridInfo}>
-                                <h3>Suporte humanizado</h3>
-                                <p>Nossa equipe especializada te auxilia em todas as etapas do seu projeto via WhatsApp.</p>
+                                <h3>Serviços extras para loja</h3>
+                                <p>Executamos todos os serviços que uma marca precisa para vender na internet.</p>
                             </div>
                         </div>
                         <div className={styles.fullHomeGrid}>
@@ -45,6 +38,13 @@ function FullHome(props) {
                             <div className={styles.fullHomeGridInfo}>
                                 <h3>Marketing para e-commerce</h3>
                                 <p>Criamos campanhas patrocinadas para vender o máximo, com o mínimo de investimento possível.</p>
+                            </div>
+                        </div>
+                        <div className={styles.fullHomeGrid}>
+                            <img src={IconFull2} alt="" />
+                            <div className={styles.fullHomeGridInfo}>
+                                <h3>Espeialistas em marketplace</h3>
+                                <p>Através da integração com os melhores ERPs, sua loja fica conectada com os maiores marketplaces do Brasil.</p>
                             </div>
                         </div>
                     </div>

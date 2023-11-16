@@ -7,9 +7,29 @@
   src: url('./assets/fonts/Lato/Lato-Bold.ttf');
 }
 :root {
-  iframe#webpack-dev-server-client-overlay {
-       display: none!important
-  }
+    --title-color: #383838;
+    --content-color: #5a5a5a;
+    --destaque-color: #38d6be;
+}
+
+.destaqueText {
+  color: var(--destaque-color);
+}
+
+.strongText {
+  font-weight: bold!important;
+}
+
+.titleColor {
+  color: var(--title-color);
+}
+
+.descriptionColor {
+  color: var(--content-color);
+}
+
+iframe#webpack-dev-server-client-overlay {
+  display: none!important
 }
 .hide-resize-observer {
   display: none !important;

@@ -4,6 +4,7 @@ import SuportAvatar from '../../assets/images/support-avatar-bg.webp'
 import VideoHomeBg from '../../assets/images/video-home-bg.mp4'
 import { useLocation } from 'react-router-dom';
 import ContactModal from '../contact-modal/ContactModal';
+import RiArrowRightSLine from 'remixicon-react/ArrowRightSLineIcon';
 
 function ImageBackground({isVideo, image, title, description, title2}) {
     const location = useLocation();
@@ -43,7 +44,10 @@ function ImageBackground({isVideo, image, title, description, title2}) {
                                 </div>
                                 <div>
                                     <p>Precisa de ajuda?</p>
-                                    <p>Fale com um especialista</p>
+                                    <p>
+                                        Fale com um especialista
+                                        <span className={styles.bgArrow}><RiArrowRightSLine /></span>
+                                    </p>
                                 </div>
                             </span>
                             <ContactModal isOpen={isModalOpen} onRequestClose={closeModal} />
@@ -54,7 +58,10 @@ function ImageBackground({isVideo, image, title, description, title2}) {
                                 </div>
                                 <div>
                                     <p>Precisa de ajuda?</p>
-                                    <p>Fale com um especialista</p>
+                                    <p>
+                                        Fale com um especialista
+                                        <span className={styles.bgArrow}><RiArrowRightSLine /></span>
+                                    </p>
                                 </div>
                             </a>
                         </div>

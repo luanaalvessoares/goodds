@@ -81,7 +81,10 @@
 
 .btnHeaderContact p:last-child {
     color: #39d6be;
-    text-decoration: underline;
+}
+
+.bgArrow {
+    vertical-align: middle;
 }
 
 .btnHeaderContact p {

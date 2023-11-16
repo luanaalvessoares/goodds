@@ -6,6 +6,9 @@ import navicon1 from '../../assets/images/navicon-1.webp';
 import navicon2 from '../../assets/images/navicon-2.webp';
 import navicon3 from '../../assets/images/navicon-3.webp';
 import navicon4 from '../../assets/images/navicon-4.webp';
+import navicon5 from '../../assets/images/navicon-5.webp';
+import navicon6 from '../../assets/images/navicon-6.webp';
+import navicon7 from '../../assets/images/navicon-7.webp';
 import ContactModal from '../contact-modal/ContactModal';
 
 function Header() {
@@ -234,23 +237,32 @@ function Header() {
 
                   <div className={styles.ctaHeaderDesktop}>
                     <h4>Venda todos os dias</h4>
-                    <a href="#!" target="_blank"><span>Falar com um especialista</span></a>
+                    <a onClick={openModal}><span>Falar com um especialista</span></a>
                   </div>
                 </div>
               </li>
 
               {/* DROPDOWN DESKTOP 2 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
-                <Link to="/venda-todos-os-dias" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                <Link to="/plataformas" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                   <div className={`${styles.navLink} ${styles.dropdownButton}`}>
-                    Promo de Black
+                    Plataformas
                   </div>
                 </Link>
               </li>
 
-              {/* DROPDOWN DESKTOP 2 */}
+              {/* DROPDOWN DESKTOP 3 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
-                <Link to="#!" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                <Link to="/venda-todos-os-dias" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                  <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                    Drop 2 em 1
+                  </div>
+                </Link>
+              </li>
+
+              {/* DROPDOWN DESKTOP 4 */}
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
+                <Link to="https://goodds.com.br/blog/" target="_blank" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                   <div className={`${styles.navLink} ${styles.dropdownButton}`}>
                     O que há de novo
                   </div>
@@ -468,13 +480,50 @@ function Header() {
                 </div>
               </li>
 
+              {/* DROPDOWN MOBILE 5 */}
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile}`}>
+                <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                  <span>
+                    <Link className={styles.newsLinks} to="/plataformas">
+                        <img src={navicon7} alt="" width="35"/>
+                        Plataformas 
+                    </Link>
+                  </span>
+                </div>
+              </li>
+
+
+              {/* DROPDOWN MOBILE 6 */}
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile}`}>
+                <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                  <span>
+                    <Link className={styles.newsLinks} to="/venda-todos-os-dias">
+                        <img src={navicon5} alt="" width="35"/>
+                        Drop 2 em 1
+                    </Link>
+                  </span>
+                </div>
+              </li>
+
+
+              {/* DROPDOWN MOBILE 7 */}
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile}`}>
+                <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                  <span>
+                    <Link className={styles.newsLinks} to="https://goodds.com.br/blog/">
+                        <img src={navicon6} alt="" width="35"/>
+                        O que há de novo
+                    </Link>
+                  </span>
+                </div>
+              </li>
 
 
             </ul>
 
               <div className={styles.ctaHeaderMobile}>
                 <h4>Comece a vender com a Goodds</h4>
-                <a href="#!" target="_blank"><span>Falar com um especialista</span></a>
+                <a href="https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20E-commerce"><span>Falar com um especialista</span></a>
               </div>
 
           </div>

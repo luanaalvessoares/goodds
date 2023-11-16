@@ -1,0 +1,168 @@
+.plataformaSection {
+    padding-block: 2em;
+}
+
+
+.gridPlataformas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gridPlataformasChild img {
+    width: 100%;
+}
+
+.gridPlataformasChild {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+
+
+.plataformaShopify,
+.plataformaYampi,
+.plataformaLojaIntegrada {
+    background-image: url('../../assets/images/backgroundleft-circle-green.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+}
+
+.plataformaWoocommerce,
+.plataformaCartPanda,
+.plataformaNuvemShop {
+    background-image: url('../../assets/images/backgroundright-circle-green.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+}
+
+.gridPlataformasChild h2 {
+    font-size: 3em;
+}
+
+.plataformaContent > p {
+    padding-block: 1.2em;
+    font-size: 18px;
+}
+
+.checkVantagens {
+    margin-top: 1em;
+}
+
+.checkVantagens p {
+    vertical-align: middle;
+    margin-bottom: 1.5em;
+    font-weight: bold!important;
+}
+
+.iconStyle svg {
+    vertical-align: middle;
+}
+
+.iconStyle {
+    vertical-align: middle;
+    padding: 5px 5px 8px 8px;
+    border-radius: 5px;
+    color: #38d6be;
+    background-color: #c2fff3;
+    margin: 0 10px 10px 0;
+}
+
+.included {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.vantagensGrid {
+    display: grid;
+    gap: 2em;
+    max-width: max-content;
+    margin: auto;
+}
+
+.cellPlataformas {
+    margin-top: 2em;
+}
+
+.AppCell h3 {
+    font-size: 2em;
+}
+
+.flexOsIcons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .gridPlataformas {
+        padding: 2em;
+    }
+
+    .vantagensGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .gridPlataformas {
+        grid-template-columns: 1fr;
+    }
+
+    .plataformaWoocommerce .gridPlataformas .gridPlataformasChild:first-child,
+    .plataformaCartPanda .gridPlataformas .gridPlataformasChild:first-child,
+    .plataformaNuvemShop .gridPlataformas .gridPlataformasChild:first-child {
+        order: 1!important;
+    }
+}
+
+@media (max-width: 768px) {   
+    .plataformaContent {
+        padding-inline: 2em;
+    }
+
+    .plataformaContent .title {
+        padding-inline: 0!important;
+    }
+
+    .gridPlataformasChild .title {
+        text-align: center;
+    }
+
+    .plataformaContent > p {
+        text-align: center;
+    }
+
+    .flexOsIcons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .plataformaContent {
+        padding-inline: 2em;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+    .vantagensGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .vantagensGrid {
+        grid-template-columns: 1fr;
+    }   
+}
+
+@media (max-width: 393px) {
+    .gridPlataformasChild h2 {
+        font-size: 2em;
+    }
+}

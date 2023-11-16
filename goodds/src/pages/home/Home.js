@@ -27,32 +27,31 @@ function Home() {
     const cardsIconsData = {
         title: "",
         icon1: `${IconCards1}`,
-        cardTitle1: "A velocidade da tecnologia a seu favor",
-        cardDescription1: "Todos os websites da GOODDS são otimizados para o Google Core Web Vitals.",
+        cardTitle1: "Desenvolvemos o layout do seu jeito",
+        cardDescription1: "Personalizado e exclusivo para o seu nicho.",
         icon2: `${IconCards2}`,
-        cardTitle2: "Acelere o crescimento do seu projeto de Drop",
-        cardDescription2: "Com os nossos projetos, sua empresa ganha poder e força para escalar sua audiênca.",
+        cardTitle2: "Todas as plataformas",
+        cardDescription2: "Somos parceiros de TODAS as plataformas de lojas virtuais do Brasil.",
         icon3: `${IconCards3}`,
-        cardTitle3: "Sua operação de venda segura",
-        cardDescription3: "Nossos sites são hospedados na Hostinger Cloud Server, uma solução confiável e protegida.",
+        cardTitle3: "Suporte Humanizado",
+        cardDescription3: "Cada cliente possui uma equipe de especialistas dedicada de atendimento.",
         icon4: `${IconCards4}`,
-        cardTitle4: "Design com a cara da sua marca",
-        cardDescription4: "Os recursos de design que oferecemos são capazes de imprimir sua identidade em um clique.",
+        cardTitle4: "Estrutura Global",
+        cardDescription4: "Possuímos 04 escritórios físicos no Brasil e 01 nos EUA. Tome um café com a gente :)",
     };
 
     return (
         <div id="home">
-            <ImageBackground isVideo="true" title="Tenha um e-commerce profissional" title2=" e venda todos os dias" description="Mais de 7.000 clientes em 9 países"/>
+            <ImageBackground isVideo="true" title="Tenha um e-commerce profissional" title2=" e venda todos os dias" description="Mais de 9.000 clientes em 12 países"/>
             <ServicesCarousel />
-            <GoogleReviews />
+            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
             <FullHome title="Full Commerce" subtitle="Somos uma agência de e-commerce completa" description="Com mais de 10 anos de experiência, já desenvolvemos mais de 6.600 projetos personalizados de e-commerce. Nossa equipe é formada por mais de 100 colaboradores e especialistas em diversas áreas: Design, Programação, Marketing, Copyright, Gestão de Projetos, Estrategistas, Suporte ao Cliente e outros." />
-            <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
-            <DropHome title="Dropshipping" subtitle="1ª Agência do Brasil" description="Somos a Primeira Agência especializada em serviços e soluções voltados para Dropshipping. Desenvolvimento de E-commerce, Marketing, Mineração de Produtos e Consultoria especializada em Dropshipping." />
+            <SimpleTwoColumns title="Especilistas em Dropshipping" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
+            <DropHome title="Dropshipping" subtitle="1ª Agência do Brasil" description="Somos a primeira agencia do Brasil especializada em Dropshipping. Fazemos o desenvolvimento da loja PERSONALIZADA e prestamos todos os serviços exclusivos para que você tenha uma operação profissional e venda todos os dias." />
             <CardsIcons cardsIconsData={cardsIconsData} />
             <div className="topTitleSectionHome">
                 <TopTitleImageSection title="Venda todos os dias." subtitle="" backgroundUrl={BackgroundTop} imageChildren1={BackgroundTopChildren1} />
             </div>
-            <ParceirosAnimation />
             <ParceirosHomeCarousel />
             <MotivosCarousel />
             <Footer linkCtaWhatsapp={whatsapp} />

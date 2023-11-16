@@ -12,62 +12,68 @@ import Partner6 from '../../assets/images/partner6.webp';
 
 function ParceirosHomeCarousel() {
     return (
-        <div className={styles.parceirosHomeCarousel}>
-            <Swiper
-                spaceBetween={15}
-                loop={true}
-                autoplay={{ delay: 3000 }}
-                grabCursor={true}
-                modules={[Autoplay]}
-                breakpoints={{
-                0: {
-                    slidesPerView: 2,
-                },
-                400:{
-                    slidesPerView: 2,
-                },
-                639: {
-                    slidesPerView: 3,
-                },
-                865:{
-                    slidesPerView: 4,
-                },
-                1000:{
-                    slidesPerView: 4,
-                },
-                1500:{
-                    slidesPerView: 4,
-                },
-                }}
-                className={styles.swiperParceiros}
-            >
+        <section className={styles.parceirosCarousel}>
+            <div>
+                <h2>Parceiros</h2>
+            </div>
+            <div className={styles.parceirosHomeCarousel}>
+                <Swiper
+                    spaceBetween={15}
+                    loop={true}
+                    autoplay={{ delay: 3000 }}
+                    grabCursor={true}
+                    modules={[Autoplay]}
+                    breakpoints={{
+                    0: {
+                        slidesPerView: 2,
+                    },
+                    400:{
+                        slidesPerView: 2,
+                    },
+                    639: {
+                        slidesPerView: 3,
+                    },
+                    865:{
+                        slidesPerView: 4,
+                    },
+                    1000:{
+                        slidesPerView: 4,
+                    },
+                    1500:{
+                        slidesPerView: 4,
+                    },
+                    }}
+                    className={styles.swiperParceiros}
+                >
 
-                <SwiperSlide className={styles.swiperContent}>
-                    <img src={Partner1} alt="" />
-                </SwiperSlide>
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={Partner1} alt="" />
+                    </SwiperSlide>
 
-                <SwiperSlide className={styles.swiperContent}>
-                    <img src={Partner2} alt="" />
-                </SwiperSlide>
-                
-                <SwiperSlide className={styles.swiperContent}>
-                    <img src={Partner3} alt="" />
-                </SwiperSlide>
-                
-                <SwiperSlide className={styles.swiperContent}>
-                    <img src={Partner4} alt="" />
-                </SwiperSlide>
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={Partner2} alt="" />
+                    </SwiperSlide>
+                    
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={Partner3} alt="" />
+                    </SwiperSlide>
+                    
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={Partner4} alt="" />
+                    </SwiperSlide>
 
-                <SwiperSlide className={styles.swiperContent}>
-                    <img src={Partner5} alt="" />
-                </SwiperSlide>
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={Partner5} alt="" />
+                    </SwiperSlide>
 
-                <SwiperSlide className={styles.swiperContent}>
-                    <img src={Partner6} alt="" />
-                </SwiperSlide>
-            </Swiper>
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={Partner6} alt="" />
+                    </SwiperSlide>
+                </Swiper>
 
-        </div> 
+            </div> 
+        </section>
+
     )
 }
 
