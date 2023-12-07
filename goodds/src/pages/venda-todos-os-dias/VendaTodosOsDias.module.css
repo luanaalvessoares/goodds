@@ -1,8 +1,340 @@
 :root {
     --title-color: #383838;
     --content-color: #5a5a5a;
-    --destaque-color: #38d6be;
+    --destaque-color1: #38d6be;
+    --destaque-color2: #000000;
 }
+
+.containerMainCta {
+    margin: 0 auto!important;
+    background: linear-gradient(46.87deg, rgb(208, 253, 239) 0%, rgb(225, 250, 252) 96.94%);
+}
+
+.containerMainCta h1, .containerMainCta h2 {
+    font-size: 2.2em;
+    color: var(--title-color);
+}
+
+.containerMainCta h3, .containerMainCta h4, .containerMainCta h5, .containerMainCta h6 {
+    font-size: 1.5em;
+    color: var(--title-color);
+}
+
+.containerMainCta a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.containerMainCta p {
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--content-color);
+}
+
+.containerMainCta span svg {
+    vertical-align: middle;
+}
+
+.containerMainCta img:not(.sectionSeparatorGreen > img) {
+    width: 100%!important;
+}
+
+.mainCtaDestaque {
+    color: #000!important;
+    width: max-content;
+    padding: 4px 6px;
+    display: block;
+}
+
+.mainCtaDestaque2 {
+    display: inline!important;
+    margin-left: 8px;
+}
+
+/* .mainCtaDestaque.mainCtaDestaque2 {
+    color: var(--title-color)!important;
+} */
+
+.mainCtaDestaque.mainCtaDestaque3 {
+    color: #15907D!important;
+    display: inline!important;
+    font-weight: 900!important;
+} 
+
+.child1 .gridTwoColumnInfoTitle {
+    color: #000000;
+}
+
+.child1 .iconFireHeader {
+    margin-bottom: 6px;
+}
+
+.priceBold {
+    font-weight: 900!important;
+    color: #191919;
+}
+
+.gridTwoColumnInfoTitle {
+    line-height: 1.1;
+}
+
+.lojaUSAeBR {
+    margin-block: 1em;
+}
+
+.lojaUSAeBR span img {
+    max-width: 50px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.lojaUSAeBR h5 {
+    font-size: 22px;
+    vertical-align: middle;
+    margin-block: 0.7em;
+}
+
+.underlineText {
+    text-decoration: underline;
+}
+
+p span.destaqueText {
+    font-size: 21px;
+}
+
+.sectionSeparatorGreen {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sectionSeparatorGreen img {
+    position: absolute;
+    top: 32px;
+    width: 80px!important;
+}
+
+
+.containerChild {
+    padding: 1em 1.5em;
+    width: 100%;
+}
+
+.containerChild:not(.faqSection) {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 25px 20px -20px;
+}
+
+.containerChild > div {
+    max-width: 1250px;
+}
+
+.containerChild:not(:first-child) > div {
+    padding-top: 3em;
+}
+
+.child {
+    margin: auto;
+}
+
+.gridTwoColumns {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1em;
+}
+
+@media (max-width: 992px) {
+    .gridTwoColumns {
+        grid-template-columns: 1fr;
+    }
+    .mainCtaDestaque {
+        margin: auto;
+    }
+}
+.gridTwoColumnsChild {
+    box-sizing: border-box;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* Section 1 */
+.child1 div:first-child .logo img {
+    max-width: 150px;
+}
+
+.child1 .gridTwoColumnInfoCta {
+    margin-block: 1em 2em;
+    font-weight: bold!important;
+    color: #15907D;
+    text-align: center;
+    margin: auto;
+}
+
+.child1 .gridTwoColumnInfoCta img {
+    max-width: 40px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.child1 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.child1 .lojaUSAeBRBenefits p {
+    text-align: start;
+}
+
+.child1 .lojaUSAeBRBenefits p span {
+    color: #15907D;
+}
+
+.child1 .logo .especialistasBtn a {
+    background-color: #15907d;
+    color: #FFF;
+    font-weight: bold!important;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.child1 .gridTwoColumnInfoBtn {
+    margin: auto;
+}
+
+.child1 .lojaUSAeBR h5 {
+    text-align: start;
+}
+
+.ctaBtn {
+    width: max-content;
+    margin-top: 2em;
+    padding-top: 1em;
+    color: #FFF;
+}
+
+.child1 .ctaBtn a {
+    background: linear-gradient(46.87deg, rgb(177, 245, 250) 0%, rgb(77, 255, 158) 96.94%)!important;
+    padding: 20px 40px;
+    font-size: 22px;
+}
+
+.child1 .gridTwoColumnsChild:last-child video {
+    width: 100%;
+}
+
+.ctaBtn a span h3 {
+    display: inline;
+    color: white;
+}
+.ctaBtn a span:first-child {
+    font-size: 10px;
+}
+
+.ctaBtn a span:last-child {
+    font-size: 15px;
+}
+
+.ctaBtn p {
+    text-align: center;
+    margin-block: 1.5em 1em;
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .containerMainCta h1, .containerMainCta h2 {
+        max-width: 700px;
+    }
+    .containerMainCta h3, .containerMainCta h4, .containerMainCta h5, .containerMainCta h6 {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .child1 div:first-child .logo img {
+        max-width: 80px!important;
+    }
+}
+
+@media (max-width: 992px) {
+    .containerMainCta h1, .containerMainCta h2 {
+        font-size: 1.95em;
+        padding-bottom: 0.6em;
+    }
+    .containerMainCta h3, .containerMainCta h4, .containerMainCta h5, .containerMainCta h6 {
+        font-size: 1.2em;
+    }
+    .containerMainCta p {
+        font-size: 16px!important;
+    }
+
+    .sectionSeparatorGreen img {
+        width: 70px!important;
+    }
+
+    /* Section 1 */
+    .child1 .logo img {
+        width: 100px;
+    }
+
+    .child1 h1 {
+        margin: auto;
+    }
+
+    .child1 .lojaUSAeBRBenefits {
+        max-width: max-content;
+        margin: auto;
+    }
+
+    /* CTA btn */
+    .ctaBtn {
+        width: 100%!important;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .gridTwoColumnInfoTitle {
+        font-size: 4em!important;
+    }
+    .gridTwoColumnInfoTitle span:first-child {
+        text-wrap: nowrap;
+    }
+
+    .child2 .gridTwoColumnInfoSticky h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 576px) {
+    .child1 .logo .especialistasBtn a {
+        background-color: #15907d;
+        color: #FFF;
+        font-weight: bold!important;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    .ctaBtn a {
+        font-size: 18px!important;
+    }
+
+    .child3 .swiperContent .serviceContent .iconPlayYT {
+        width: 50px!important;
+    }
+
+    .child3 .mainVideo img {
+        padding-block: 1em!important;
+    }
+}
+
 
 .container {
     margin: 0 auto!important;
@@ -38,7 +370,8 @@
 }
 
 .destaqueText {
-    color: var(--destaque-color)!important;
+    color: var(--destaque-color1)!important;
+    font-weight: 900!important;
 }
 
 .underlineText {
@@ -68,7 +401,7 @@ p span.destaqueText {
 }
 
 .containerChild:not(.faqSection) {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 20px -20px;
 }
 
 .containerChild > div {
@@ -93,6 +426,11 @@ p span.destaqueText {
     .gridTwoColumns {
         grid-template-columns: 1fr;
     }
+
+    .lojaUSAeBR {
+        margin: 1em auto;
+        max-width: max-content;
+    }
 }
 .gridTwoColumnsChild {
     box-sizing: border-box;
@@ -107,7 +445,7 @@ p span.destaqueText {
 }
 
 .child1 .gridTwoColumnInfoCta {
-    margin-block: 1em 2em;
+    margin-block: 1em;
 }
 
 .child1 .logo {
@@ -144,7 +482,18 @@ p span.destaqueText {
     margin-block: 70px;
 }
 
-.stickyInfoCard span {
+
+.child2 .bandeiraGlobalSticky {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.child2 .bandeiraGlobalSticky img {
+    max-width: 50px;
+}
+
+.stickyInfoCard span:not(.bandeiraGlobalSticky) {
     position: absolute;
     background-color: #38d6be;
     padding: 0.05em 80% 3em 0.2em;
@@ -166,23 +515,19 @@ p span.destaqueText {
 }
 
 .child3 .mainVideo {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.child3 .mainVideo iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70%;
-    height: 70%;
-    transform: translate(-50%, -50%);
+.child3 .mainVideo img {
+    padding-block: 5em;
+    max-width: 1000px;
 }
 
 .carouselVideos {
     padding-bottom: 2em;
+    pointer-events: none;
 }
 
 .swiperContent {
@@ -195,6 +540,15 @@ p span.destaqueText {
     align-items: center;
     border: none;
     outline: none;
+}
+
+.child3 .swiperContent .serviceContent {
+    position: relative;
+}
+
+.child3 .swiperContent .serviceContent .iconPlayYT {
+    position: absolute;
+    width: 80px;
 }
 
 .child3 .ctaBtn {
@@ -212,12 +566,24 @@ p span.destaqueText {
     font-size: 19px;
 }
 
+@media (min-width: 992px) {
+    .child4 .gridTwoColumns {
+        gap: 3em;
+    }
+}
+
 .child4 .gridTwoColumnInfo > p {
     margin-block: 1em;
 }
 
 .child4 .gridTwoColumnInfo .gridTwoColumnInfoBtn {
     margin-top: 3em;
+}
+
+.child4 .destaqueText h6 {
+    display: inline;
+    font-size: 18px;
+    color: #38d6be;
 }
 
 /* Section 5 */
@@ -257,6 +623,12 @@ p span.destaqueText {
     margin: auto;
     font-size: 18px;
     margin-block: 2em;
+}
+
+.child5 h6 {
+    display: inline;
+    font-size: 20px;
+    color: #38d6be;
 }
 
 .child5 .gridTwoColumnInfoBtn {
@@ -304,6 +676,12 @@ p span.destaqueText {
     padding-top: 4em;
 }
 
+.child6 h6 {
+    font-size: 22px;
+    color: #38d6be;
+    margin-bottom: 0.3em;
+}
+
 /* Section 7 */
 .child7 .titleSub {
     text-align: center;
@@ -315,8 +693,12 @@ p span.destaqueText {
     margin: auto;
 }
 
+.child7 h3 {
+    margin-bottom: 0.3em;
+}
+
 .child7 .gridCardInfoChild {
-    background-color: #38d6be;
+    background: linear-gradient(46.87deg, rgb(208, 253, 239) 0%, rgb(225, 250, 252) 96.94%);
     border-radius: 10px;
 	box-shadow: 0 0 5px 3px #c2fff3;
     display: flex;
@@ -327,17 +709,35 @@ p span.destaqueText {
     padding: 20px;
 }
 
-.child7 .gridCardInfoChild img {
-    max-width: 150px;
+.child7 .gridCardsInfos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.child7 div:nth-child(3) {
+.child7 .titleSub h2 {
+    max-width: 800px!important;
+}
+
+.child7 .titleSub p {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.child7 .gridCardInfoChild img {
+    max-width: 120px;
+    margin-bottom: 1em;
+}
+
+.child7 .child7Info3 {
     text-align: center;
     max-width: 750px;
     margin: 3em auto;
 }
 
-.child7 div:nth-child(3) p {
+.child7 .child7Info3 p {
     margin-block: 1.5em;
 }
 
@@ -347,12 +747,16 @@ p span.destaqueText {
 
 /* Section 8 */
 .sectionBg {
-    background-color: #38d6be;
+    background: linear-gradient(46.87deg, rgb(208, 253, 239) 0%, rgb(225, 250, 252) 96.94%);
 }
 
-.child8 div:first-child h2 {
+.child8 .child8Title h2 {
     margin: auto;
     text-align: center;
+}
+
+.child8 .gridCardInfoChild h2 {
+    text-align: start;
 }
 
 .child8 .gridCardsInfos {
@@ -454,10 +858,10 @@ p span.destaqueText {
 
 .child9 .gridTwoColumns.lastChild {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
     gap: 2em;
     margin: 3em auto;
-    max-width: 1200px;
+    max-width: 1000px;
     box-shadow: 0 0 5px 3px #c2fff3;
     overflow: hidden;
     padding: 1em;
@@ -526,7 +930,6 @@ p span.destaqueText {
 .child9 .gridTwoColumns.lastChild .gridTwoColumnsChild:last-child .paymentIcons img {
     max-width: 200px;
     padding-block: 0.5em;
-    filter: grayscale(100%);
 }
 
 /* Section 10 */
@@ -540,13 +943,13 @@ p span.destaqueText {
 }
 
 .child10 .gridTwoColumnsChild:first-child img {
-    max-width: 150px;
+    max-width: 300px;
 }
 
 .child10 .gridTwoColumnsChild:first-child {
     text-align: center;
     height: 100%;
-    background-color: #38d6be;
+    background: linear-gradient(46.87deg, rgb(208, 253, 239) 0%, rgb(225, 250, 252) 96.94%);;
 }
 
 .child10 .gridTwoColumnsChild h3 {
@@ -609,6 +1012,7 @@ p span.destaqueText {
     text-align: center;
     max-width: 600px;
     padding-block: 1em;
+    font-weight: 700!important;
 }
 
 .child12 a {
@@ -629,14 +1033,17 @@ p span.destaqueText {
     padding-top: 1em;
 }
 
+
 .ctaBtn a {
     background: linear-gradient(46.87deg, rgb(177, 245, 250) 0%, rgb(77, 255, 158) 96.94%);
     padding: 20px 60px;
-    font-size: 22px;
+    font-size: 20px;
+    color: #000;
 }
 
 .ctaBtn a span h3 {
     display: inline;
+    color: #000;
 }
 .ctaBtn a span:first-child {
     font-size: 10px;
@@ -680,7 +1087,7 @@ p span.destaqueText {
 
 @media (max-width: 992px) {
     .container h1, .container h2 {
-        font-size: 1.6em;
+        font-size: 2.2em;
     }
     .container h3, .container h4, .container h5, .container h6 {
         font-size: 1.2em;
@@ -712,11 +1119,11 @@ p span.destaqueText {
         box-sizing: border-box;
         box-shadow: 0 0 5px 3px #c2fff3;
         width: 100%!important;
-        padding: 2em 2em 2em 3em;
+        padding: 3em;
         margin-block: 40px!important;
     }
 
-    .stickyInfoCard span {
+    .stickyInfoCard span:not(.bandeiraGlobalSticky) {
         font-size: 2.2em;
     }
 
@@ -780,8 +1187,14 @@ p span.destaqueText {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .child1 .gridTwoColumnInfoTitle {
+        font-size: 4.5em!important;
+    }
+}
+
 @media screen and (min-width: 630px) and (max-width: 768px) {
-    .stickyInfoCard span {
+    .stickyInfoCard span:not(.bandeiraGlobalSticky) {
         position: absolute;
         background-color: #38d6be;
         padding: 0.05em 80% 2.4em 0.2em;
@@ -789,5 +1202,11 @@ p span.destaqueText {
         left: 0;
         top: 0px;
         z-index: -1;
+    }
+}
+
+@media (max-width: 375px) {
+    .ctaBtn a {
+        padding: 20px 40px;
     }
 }

@@ -6,7 +6,7 @@ import DropImage from '../../assets/images/home-primeira-agencia.webp';
 function DropHome(props) {
     return (
         <section className={styles.dropHomeContainer}>
-            <TitleFirst title={props.title} subtitle={props.subtitle} description={props.description} />
+            <TitleFirst title={props.title} subtitle={props.subtitle} descriptionDestaque={props.descriptionDestaque} />
 
             <div className={styles.dropHomeContainerImage}>
                 <img src={DropImage} alt="" />

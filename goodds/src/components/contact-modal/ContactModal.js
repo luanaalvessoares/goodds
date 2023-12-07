@@ -125,7 +125,7 @@ function ContactModal({ isOpen, onRequestClose }) {
         <form className={styles.contactModalForm}>
           <div className={styles.contactModalInfo}>
             <input
-              className={styles.contactModalInput}
+              className={`${styles.contactModalInput} titleColor`}
               placeholder="Nome completo ou empresa"
               type="text"
               value={nome}
@@ -135,7 +135,7 @@ function ContactModal({ isOpen, onRequestClose }) {
           </div>
           <div className={styles.contactModalInfo}>
             <input
-              className={styles.contactModalInput}
+              className={`${styles.contactModalInput} titleColor`}
               placeholder="Seu melhor email"
               type="text"
               value={email}
@@ -145,7 +145,7 @@ function ContactModal({ isOpen, onRequestClose }) {
           </div>
           <div className={styles.contactModalInfo}>
             <input
-              className={styles.contactModalInput}
+              className={`${styles.contactModalInput} titleColor`}
               placeholder="WhatsApp ou seu número com código de área ou DDD"
               type="number"
               value={whatsapp}
@@ -155,7 +155,7 @@ function ContactModal({ isOpen, onRequestClose }) {
           </div>
           <div className={styles.contactModalInfo}>
             <textarea
-              className={styles.contactModalTextarea}
+              className={`${styles.contactModalTextarea} titleColor`}
               placeholder="Escreva sua mensagem"
               value={mensagem}
               rows={6}

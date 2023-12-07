@@ -66,8 +66,8 @@ function CardsIcons(props) {
                 >
                 <div className={styles.cardsIconsGridItem}>
                     <img src={icon1} alt="" />
-                    <h3>{cardTitle1}</h3>
-                    <p>{cardDescription1}</p>
+                    <h3 className="titleColor">{cardTitle1}</h3>
+                    <p className="descriptionColor">{cardDescription1}</p>
                 </div>
                 </motion.div>
             </motion.div>
@@ -87,8 +87,8 @@ function CardsIcons(props) {
                 >
                 <div className={styles.cardsIconsGridItem}>
                     <img src={icon2} alt="" />
-                    <h3>{cardTitle2}</h3>
-                    <p>{cardDescription2}</p>
+                    <h3 className="titleColor">{cardTitle2}</h3>
+                    <p className="descriptionColor">{cardDescription2}</p>
                 </div>
                 </motion.div>
             </motion.div>
@@ -108,8 +108,8 @@ function CardsIcons(props) {
                 >
                 <div className={styles.cardsIconsGridItem}>
                     <img src={icon3} alt="" />
-                    <h3>{cardTitle3}</h3>
-                    <p>{cardDescription3}</p>
+                    <h3 className="titleColor">{cardTitle3}</h3>
+                    <p className="descriptionColor">{cardDescription3}</p>
                 </div>
                 </motion.div>
             </motion.div>
@@ -130,8 +130,8 @@ function CardsIcons(props) {
                 >
                 <div className={styles.cardsIconsGridItem}>
                     <img src={icon4} alt="" />
-                    <h3>{cardTitle4}</h3>
-                    <p>{cardDescription4}</p>
+                    <h3 className="titleColor">{cardTitle4}</h3>
+                    <p className="descriptionColor">{cardDescription4}</p>
                 </div>
                 </motion.div>
             </motion.div>

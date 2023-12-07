@@ -284,10 +284,10 @@ function DropdownTableLoja(props) {
 
     return (
         <section className={styles.compareTableSection}>
-            <h2 onClick={toggleDropdown} className={styles.compareTitle}>
+            <h2 onClick={toggleDropdown} className={`${styles.compareTitle} titleColor`}>
                 Compare os Pacotes
                 <span>
-                    <RiArrowDownSLine  className={`${styles.dropdownArrow} ${isDropdownOpen ? `${styles.open}` : ''}`}/>
+                    <RiArrowDownSLine  className={`${styles.dropdownArrow} titleColor ${isDropdownOpen ? `${styles.open}` : ''}`}/>
                 </span>
 
             </h2>
@@ -299,17 +299,17 @@ function DropdownTableLoja(props) {
                             <div className={`${styles.tableRow} ${styles.tableTitle}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
                                     <img src={TableIcon1} alt=""/>
-                                    <p>Gestão da Loja</p>
+                                    <p className="titleColor">Gestão da Loja</p>
                                 </div>
-                                <div className={`${styles.rowContent} ${styles.itemContains}`}>Start</div>
-                                <div className={`${styles.rowContent} ${styles.itemContains}`}>Mega</div>
+                                <div className={`${styles.rowContent} ${styles.itemContains} descriptionColor`}>Start</div>
+                                <div className={`${styles.rowContent} ${styles.itemContains} descriptionColor`}>Mega</div>
                             </div>
         
                             {table1.map((item, index) => (
                             <div className={styles.tableRow} key={index} id={`item-${item.id ? item.id : index}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
-                                    <p>{item.servicePackageTitle}</p>
-                                    <p>{item.servicePackageDescription}</p>
+                                    <p className="titleColor">{item.servicePackageTitle}</p>
+                                    <p className="descriptionColor">{item.servicePackageDescription}</p>
                                 </div>
                                 <div className={`${styles.rowContent} ${styles.itemContains}`}>
                                     {item.packageValue1}
@@ -327,15 +327,15 @@ function DropdownTableLoja(props) {
                             <div className={`${styles.tableRow} ${styles.tableTitle}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
                                     <img src={TableIcon2} alt=""/>
-                                    <p>Suporte e Equipe</p>
+                                    <p className="titleColor">Suporte e Equipe</p>
                                 </div>
                             </div>
         
                             {table2.map((item, index) => (
                             <div className={styles.tableRow} key={index} id={`item-${item.id ? item.id : index}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
-                                    <p>{item.servicePackageTitle}</p>
-                                    <p>{item.servicePackageDescription}</p>
+                                    <p className="titleColor">{item.servicePackageTitle}</p>
+                                    <p className="descriptionColor">{item.servicePackageDescription}</p>
                                 </div>
                                 <div className={`${styles.rowContent} ${styles.itemContains}`}>
                                     {item.packageValue1}
@@ -353,15 +353,15 @@ function DropdownTableLoja(props) {
                             <div className={`${styles.tableRow} ${styles.tableTitle}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
                                     <img src={TableIcon3} alt=""/>
-                                    <p>Visual</p>
+                                    <p className="titleColor">Visual</p>
                                 </div>
                             </div>
         
                             {table3.map((item, index) => (
                             <div className={styles.tableRow} key={index} id={`item-${item.id ? item.id : index}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
-                                    <p>{item.servicePackageTitle}</p>
-                                    <p>{item.servicePackageDescription}</p>
+                                    <p className="titleColor">{item.servicePackageTitle}</p>
+                                    <p className="descriptionColor">{item.servicePackageDescription}</p>
                                 </div>
                                 <div className={`${styles.rowContent} ${styles.itemContains}`}>
                                     {item.packageValue1}
@@ -379,15 +379,15 @@ function DropdownTableLoja(props) {
                             <div className={`${styles.tableRow} ${styles.tableTitle}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
                                     <img src={TableIcon4} alt=""/>
-                                    <p>Canais de Venda</p>
+                                    <p className="titleColor">Canais de Venda</p>
                                 </div>
                             </div>
         
                             {table4.map((item, index) => (
                             <div className={styles.tableRow} key={index} id={`item-${item.id ? item.id : index}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
-                                    <p>{item.servicePackageTitle}</p>
-                                    <p>{item.servicePackageDescription}</p>
+                                    <p className="titleColor">{item.servicePackageTitle}</p>
+                                    <p className="descriptionColor">{item.servicePackageDescription}</p>
                                 </div>
                                 <div className={`${styles.rowContent} ${styles.itemContains}`}>
                                     {item.packageValue1}
@@ -405,15 +405,15 @@ function DropdownTableLoja(props) {
                             <div className={`${styles.tableRow} ${styles.tableTitle}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
                                     <img src={TableIcon5} alt=""/>
-                                    <p>Marketing</p>
+                                    <p className="titleColor">Marketing</p>
                                 </div>
                             </div>
         
                             {table5.map((item, index) => (
                             <div className={styles.tableRow} key={index} id={`item-${item.id ? item.id : index}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
-                                    <p>{item.servicePackageTitle}</p>
-                                    <p>{item.servicePackageDescription}</p>
+                                    <p className="titleColor">{item.servicePackageTitle}</p>
+                                    <p className="descriptionColor">{item.servicePackageDescription}</p>
                                 </div>
                                 <div className={`${styles.rowContent} ${styles.itemContains}`}>
                                     {item.packageValue1}
@@ -431,15 +431,15 @@ function DropdownTableLoja(props) {
                             <div className={`${styles.tableRow} ${styles.tableTitle}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
                                     <img src={TableIcon6} alt=""/>
-                                    <p>SEO</p>
+                                    <p className="titleColor">SEO</p>
                                 </div>
                             </div>
         
                             {table6.map((item, index) => (
                             <div className={styles.tableRow} key={index} id={`item-${item.id ? item.id : index}`}>
                                 <div className={`${styles.rowContent} ${styles.itemDescriptionCompare}`}>
-                                    <p>{item.servicePackageTitle}</p>
-                                    <p>{item.servicePackageDescription}</p>
+                                    <p className="titleColor">{item.servicePackageTitle}</p>
+                                    <p className="descriptionColor">{item.servicePackageDescription}</p>
                                 </div>
                                 <div className={`${styles.rowContent} ${styles.itemContains}`}>
                                     {item.packageValue1}

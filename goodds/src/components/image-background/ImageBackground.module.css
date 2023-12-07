@@ -37,6 +37,12 @@
 .titleHeader h2 {
     color: #FFFFFF;
     word-wrap: break-word;
+    font-weight: bold!important;
+}
+
+.titleHeader p span {
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .titleHeader h2 {

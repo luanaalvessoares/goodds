@@ -29,6 +29,7 @@
     "typeit-react": "^2.6.4",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://shopifygoodds.com.br",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

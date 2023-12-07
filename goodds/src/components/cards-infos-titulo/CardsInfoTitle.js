@@ -4,23 +4,23 @@ import styles from './CardsInfoTitle.module.css';
 function CardsInfoTitle(props) {
     return (
         <section className={styles.cardsInfoSectionContainer}>
-            <h1 className={styles.cardsInfoSectionTitle}>{props.title}</h1>
+            <h1 className={`${styles.cardsInfoSectionTitle} titleColor`}>{props.title}</h1>
             <div className={styles.cardsInfoSectionGrid}>
                 <div className={styles.cardsInfoSectionChildren}>
-                    <h3>+R$10M</h3>
-                    <p>em vendas realizadas em 2022</p>
+                    <h3 className="titleColor">+R$10M</h3>
+                    <p className="descriptionColor">em vendas realizadas em 2022</p>
                 </div>
                 <div className={styles.cardsInfoSectionChildren}>
-                    <h3>+6000</h3>
-                    <p>lojas virtuais entregues</p>
+                    <h3 className="titleColor">+6000</h3>
+                    <p className="descriptionColor">lojas virtuais entregues</p>
                 </div>
                 <div className={styles.cardsInfoSectionChildren}>
-                    <h3>+12</h3>
-                    <p>anos de experiência em vendas</p>
+                    <h3 className="titleColor">+12</h3>
+                    <p className="descriptionColor">anos de experiência em vendas</p>
                 </div>
                 <div className={styles.cardsInfoSectionChildren}>
-                    <h3>0%</h3>
-                    <p>de comissão nas suas vendas online</p>
+                    <h3 className="titleColor">0%</h3>
+                    <p className="descriptionColor">de comissão nas suas vendas online</p>
                 </div>
             </div>
         </section>

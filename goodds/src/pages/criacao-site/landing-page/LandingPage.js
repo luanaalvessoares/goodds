@@ -44,7 +44,7 @@ function LandingPage() {
             <SectionTopWebsites title="Criamos seu E-commerce" subtitle="Somos uma Agência Especializada em Loja Virtual, Dropshipping e Marketplace." image={ImageTop} />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
-            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
+            <GoogleReviews />
             <VantagensLoja image={ImageVantagens} vantagemData="" />
             <Footer linkCtaWhatsapp={whatsapp} />
             <Whatsapp whatsappMessage={whatsapp} />

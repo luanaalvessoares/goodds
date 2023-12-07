@@ -23,13 +23,26 @@
 .fBHjnG {
     flex: inherit;
 }
-.WidgetTitle__Header-sc-ruy1gu-2.iFEZzR {
+/* .WidgetTitle__Header-sc-ruy1gu-2.iFEZzR {
     display: none;
 }
 .HeaderWriteReviewButton__Component-sc-aghmpr-0.hYjZwu.Header__StyledHeaderWriteReviewButton-sc-gozq6j-4.jeuPze {
     display: none;
-}
+} */
 .gGgqlY {
     border-radius: 8px;
     justify-content: center;
 }
+
+h1 {
+    color: #3f3f3f;
+}
+
+.destaqueText {
+    color: #38d6be!important;
+    font-weight: 900!important;
+}
+
+/* .Carousel__CarouselInner-sc-f2ox7y-2 a.ReviewLinkContainer__Link-sc-1v4k9l9-0.eGiiJN.es-review-link-container.ReviewSource__SourceBottomContainer-sc-14gktmv-6.hGKziR.es-review-source-source-bottom-container.Classic__StyledSource-sc-fc18im-1.cAfqdd {
+    display: none!important;
+} */

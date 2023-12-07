@@ -3,12 +3,20 @@ import styles from './ParceirosHomeCarousel.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import Partner1 from '../../assets/images/partner1.webp';
-import Partner2 from '../../assets/images/partner2.webp';
-import Partner3 from '../../assets/images/partner3.webp';
-import Partner4 from '../../assets/images/partner4.webp';
-import Partner5 from '../../assets/images/partner5.webp';
-import Partner6 from '../../assets/images/partner6.webp';
+import ParceiroShopify from '../../assets/images/parceiro-shopify.svg';
+import ParceiroNuvemShop from '../../assets/images/parceiro-nuvemshop.svg';
+import ParceiroWooCommerce from '../../assets/images/parceiro-woocommerce.svg';
+import ParceiroPlaceX from '../../assets/images/parceiro-placex.svg';
+import ParceiroPrintful from '../../assets/images/parceiro-printful.svg';
+import ParceiroAppMax from '../../assets/images/parceiro-appmax.svg';
+import ParceiroYampi from '../../assets/images/parceiro-yampi.svg';
+import ParceiroADMiner from '../../assets/images/parceiro-adminer.svg';
+import ParceiroMinea from '../../assets/images/parceiro-minea.svg';
+import ParceiroDSLite from '../../assets/images/parceiro-dslite.svg';
+import ParceiroMercadoLivre from '../../assets/images/parceiro-mercadolivre.svg';
+import ParceiroShein from '../../assets/images/parceiro-shein.svg';
+import ParceiroShopee from '../../assets/images/parceiro-shopee.svg';
+import ParceiroRDStation from '../../assets/images/parceiro-rdstation.svg';
 
 function ParceirosHomeCarousel() {
     return (
@@ -47,27 +55,59 @@ function ParceirosHomeCarousel() {
                 >
 
                     <SwiperSlide className={styles.swiperContent}>
-                        <img src={Partner1} alt="" />
+                        <img src={ParceiroShopify} alt="" />
                     </SwiperSlide>
 
                     <SwiperSlide className={styles.swiperContent}>
-                        <img src={Partner2} alt="" />
+                        <img src={ParceiroNuvemShop} alt="" />
                     </SwiperSlide>
                     
                     <SwiperSlide className={styles.swiperContent}>
-                        <img src={Partner3} alt="" />
+                        <img src={ParceiroWooCommerce} alt="" />
                     </SwiperSlide>
                     
                     <SwiperSlide className={styles.swiperContent}>
-                        <img src={Partner4} alt="" />
+                        <img src={ParceiroPlaceX} alt="" />
                     </SwiperSlide>
 
                     <SwiperSlide className={styles.swiperContent}>
-                        <img src={Partner5} alt="" />
+                        <img src={ParceiroPrintful} alt="" />
                     </SwiperSlide>
 
                     <SwiperSlide className={styles.swiperContent}>
-                        <img src={Partner6} alt="" />
+                        <img src={ParceiroAppMax} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroYampi} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroADMiner} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroMinea} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroDSLite} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroMercadoLivre} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroShein} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroShopee} alt="" />
+                    </SwiperSlide>
+
+                    <SwiperSlide className={styles.swiperContent}>
+                        <img src={ParceiroRDStation} alt="" />
                     </SwiperSlide>
                 </Swiper>
 

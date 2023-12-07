@@ -64,7 +64,7 @@ function MineracaoProdutosDropshipping() {
         <div>
             <TopTitleImageSection title="Encontramos produtos vencedores para sua loja" subtitle="Mineramos e cadastramos no seu site, produtos testados com alto poder de conversão." backgroundUrl={BackgroundTop} imageChildren2={BackgroundTopChildren1} />
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
-            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
+            <GoogleReviews />
             <CardsIcons cardsIconsData={cardsIconsData} />
             <SimpleTwoColumns title="Produtos que vendem!" description="Temos uma equipe especializada em conversão, a mineração e o cadastramento dos produtos devem ser levados a sério, por isso oferecemos um serviço completo. Se tratando de dropshipping a seleção e o cadastramento do produto é o que define o sucesso da loja, atuamos com uma execução perfeita desde a escolha do item até a implementação no site. Deixe com a nossa equipe." image={ImageDescription} />
             <Footer linkCtaWhatsapp={whatsapp} />

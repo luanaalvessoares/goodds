@@ -11,22 +11,33 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 
 // Images
-import ImageConsultorias from '../../assets/images/consultoria drop.png';
-import ImageLojaVirtual from '../../assets/images/loja virtual.png';
-import ImageDrop from '../../assets/images/loja drop.png';
-import ImageDropGlobal from '../../assets/images/loja drop global.png';
-import ImageDropLatam from '../../assets/images/loja drop latam.png';
-import ImageDropPrint from '../../assets/images/loja print on demand.png';
-
+import ImageVideosCurtos from '../../assets/images/13.webp';
+import ImageArtesAnuncios from '../../assets/images/14.webp';
+import ImageBannersLoja from '../../assets/images/15.webp';
+import ImageCriacaoLogo from '../../assets/images/16.webp';
+import ImagePostsInstagram from '../../assets/images/17.webp';
+import ImagePacoteLancamento from '../../assets/images/18.webp';
+import ImageConsultorias from '../../assets/images/1.webp';
+import ImageLojaVirtual from '../../assets/images/2.webp';
+import ImageDropshipping from '../../assets/images/3.webp';
+import ImageDropGlobal from '../../assets/images/4.webp';
+import ImageDropLatam from '../../assets/images/5.webp';
+import ImageDropPrint from '../../assets/images/6.webp';
+import ImageMineracaoProdutos from '../../assets/images/7.webp';
+import ImageMarketingLojaDrop from '../../assets/images/8.webp';
+import ImageMarketingLojaVirtual from '../../assets/images/9.webp';
+import ImageLandingPage from '../../assets/images/10.webp';
+import ImageWebsiteInstitucional from '../../assets/images/11.webp';
+import ImageBlog from '../../assets/images/12.webp';
 
 function ServicesCarousel() {
   return (
     <div className={styles.serviceCarouselSection}>
-        <h2>Soluções</h2>
+        <h2>Soluções e Preços</h2>
       <div className={styles.serviceCarouselContainer}>
 
         <Swiper
-          initialSlide={9}
+          initialSlide={7}
           loop={true}
           pagination={{
             clickable: true,
@@ -60,12 +71,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
                 <div className={styles.serviceImage}>
-                    <img src="https://picsum.photos/seed/1/300/300" alt="" />
+                    <img src={ImageVideosCurtos} alt="" />
                 </div>
 
                 <div className={styles.serviceDescription}>
                     <h2>Vídeos Curtos e Reels</h2>
-                    <p>Crie uma conexão instantânea com seu público por meio de vídeos curtos e reels que transmitem a essência da sua marca de forma rápida e impactante.</p>
+                    <p>Crie uma conexão instantânea com seu público de forma impactante.</p>
                 </div>
 
                 <Link className={styles.serviceButtonContainer} to="/videos-curtos-reels">
@@ -85,12 +96,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/2/300/300" alt="" />
+                  <img src={ImageArtesAnuncios} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Artes para Anúncios</h2>
-                  <p>Aprimore sua estratégia de marketing com artes de anúncios bem elaboradas, projetadas para impulsionar o reconhecimento e o engajamento da sua marca.</p>
+                  <h2>Artes para Divulgação</h2>
+                  <p>Criamos artes para promover o seu produto e a sua marca na internet.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/artes-anuncios">
@@ -111,12 +122,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/3/300/300" alt="" />
+                  <img src={ImageBannersLoja} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Banners para Loja</h2>
-                  <p>Criamos banners customizados de produtos e serviços que impulsionam sua loja.</p>
+                  <h2>Criação de Banners</h2>
+                  <p>Desenvolvemos banners personalizados com design exclusivo para sua marca.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/banners-loja">
@@ -137,12 +148,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/4/300/300" alt="" />
+                  <img src={ImageCriacaoLogo} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Criação de Logo</h2>
-                  <p>Desenvolvemos a identidade visual da sua marca.</p>
+                  <h2>Logo Profissional</h2>
+                  <p>Tenha uma identidade visual desenvolvida por uma equipe de especialistas.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/criacao-logo">
@@ -163,12 +174,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/5/300/300" alt="" />
+                  <img src={ImagePostsInstagram} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Posts Instagram</h2>
-                  <p>Destaque-se no Instagram com posts personalizados e feitos sob medida para impulsionar o seu negócio.</p>
+                  <h2>Artes para o Feed</h2>
+                  <p>Destaque seu perfil com posts e copys personalizados que engajam.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/posts-instagram">
@@ -189,12 +200,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/6/300/300" alt="" />
+                  <img src={ImagePacoteLancamento} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Pacote Lançamento de Loja</h2>
-                  <p>Inicie seu negócio online com nossas estratégias de lançamento.</p>
+                  <h2>Sua Loja no Ar</h2>
+                  <p>Seu e-commerce está pronto? É hora de começar com força total!</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/pacote-lancamento-loja">
@@ -219,8 +230,8 @@ function ServicesCarousel() {
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Consultorias</h2>
-                  <p>Independente do momento do seu negócio, nós te mostramos o caminho.</p>
+                  <h2>Consultoria para E-commerce</h2>
+                  <p>Mentoria especializada para todos os momentos do seu negócio.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/consultorias">
@@ -245,8 +256,8 @@ function ServicesCarousel() {
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Loja Virtual</h2>
-                  <p>Entregamos a loja pronta para você vender seus produtos, fazemos todo o layout, configurações e integrações.</p>
+                  <h2>Desenvolvimento de E-commerce</h2>
+                  <p>Entregamos a loja pronta para você vender seus produtos na internet.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/loja-virtual">
@@ -267,12 +278,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src={ImageDrop} alt="" />
+                  <img src={ImageDropshipping} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Dropshipping</h2>
-                  <p>Considerada a primeira agência especializada em Dropshipping do Brasil. Oferecemos pacotes completos para Dropshipping.</p>
+                  <h2>Loja de Dropshipping</h2>
+                  <p>Criamos sua loja completa para que você possa vender sem estoque.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/dropshipping">
@@ -297,8 +308,8 @@ function ServicesCarousel() {
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Dropshipping Global</h2>
-                  <p>Tenha uma loja virtual fora do país e receba em dólar, seu e-commerce em Inglês ou Espanhol com checkout configurado.</p>
+                  <h2>Loja de Dropshipping Global</h2>
+                  <p>Tenha uma loja virtual sem estoque fora do país e receba em dólar.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/dropshipping-global">
@@ -323,8 +334,8 @@ function ServicesCarousel() {
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Dropshipping Latam</h2>
-                  <p>Venda para a América Latina com uma loja bilingue e com checkout configurado.</p>
+                  <h2>Loja de Dropshipping Latam</h2>
+                  <p>Venda para a América Latina com uma loja sem estoque e receba em dólar.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/dropshipping-latam">
@@ -349,8 +360,8 @@ function ServicesCarousel() {
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Dropshipping Print-On-Demand</h2>
-                  <p>Venda produtos personalizados, desenvolva sua marca com produtos premium.</p>
+                  <h2>Loja Print-On-Demand</h2>
+                  <p>Venda produtos personalizados com uma loja de dropshipping sem estoque.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/dropshipping-print-on-demand">
@@ -371,12 +382,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/13/300/300" alt="" />
+                  <img src={ImageMineracaoProdutos} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Mineração de Produtos Dropshipping</h2>
-                  <p>Mineramos e cadastramos no seu site, produtos testados com alto poder de conversão.</p>
+                  <h2>Mineração para Dropshipping</h2>
+                  <p>Selecionamos e cadastramos produtos campeões na sua loja.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/mineracao-produtos-dropshipping">
@@ -397,12 +408,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/14/300/300" alt="" />
+                  <img src={ImageMarketingLojaDrop} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Marketing Loja Dropshipping</h2>
-                  <p>Alcance novos clientes diariamente. Planejamos estratégias e executamos campanhas de marketing para sua Loja Dropshipping.</p>
+                  <h2>Marketing para Dropshipping</h2>
+                  <p>Gerenciamos campanhas patrocinadas para sua Loja de Dropshipping.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/marketing-loja-dropshipping">
@@ -423,12 +434,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/15/300/300" alt="" />
+                  <img src={ImageMarketingLojaVirtual} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Marketing Loja Virtual</h2>
-                  <p>Maximize o alcance do seu público a cada dia. Nossas estratégias de marketing são projetadas para impulsionar o crescimento contínuo da sua Loja Virtual.</p>
+                  <h2>Marketing para Loja Virtual</h2>
+                  <p>Estratégias de marketing patrocinado para impulsionar seu e-commerce.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/marketing-loja-virtual">
@@ -449,12 +460,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/16/300/300" alt="" />
+                  <img src={ImageLandingPage} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
                   <h2>Landing Page</h2>
-                  <p>Ofereça seu produto com uma landing page personalizada e faça-o decolar.</p>
+                  <p>Ofereça produtos e serviços com uma landing page personalizada.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/landing-page">
@@ -475,12 +486,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/17/300/300" alt="" />
+                  <img src={ImageWebsiteInstitucional} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Website Institucional</h2>
-                  <p>Mostre sua marca para o mundo com um website institucional.</p>
+                  <h2>Criação de Site Institucional</h2>
+                  <p>Fortaleça sua marca com um website institucional gerenciável.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/website">
@@ -501,12 +512,12 @@ function ServicesCarousel() {
             <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
-                  <img src="https://picsum.photos/seed/18/300/300" alt="" />
+                  <img src={ImageBlog} alt="" />
               </div>
 
               <div className={styles.serviceDescription}>
-                  <h2>Blog</h2>
-                  <p>Publique ideias, soluções e conteúdos com um blog do seu jeito.</p>
+                  <h2>Desenvolvimento de Blog</h2>
+                  <p>Publique ideias e conteúdos com um blog que expressa sua marca.</p>
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/blog">

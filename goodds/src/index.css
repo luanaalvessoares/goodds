@@ -28,11 +28,41 @@
   color: var(--content-color);
 }
 
+.primaryText {
+  font-size: 3em!important;
+  margin: auto!important;
+  padding-inline: 0.5em!important;
+  padding-bottom: 1em;
+  @media (max-width: 768px) {
+    font-size: 2em!important;
+  }
+}
+
+.secondaryText {
+  font-size: 2em!important;
+  margin: auto!important;
+  padding-inline: 0.5em!important;
+  padding-bottom: 1em;
+  @media (max-width: 768px) {
+    font-size: 1.5em!important;
+  }
+}
+
+.tertiaryText {
+  font-size: 1.8em!important;
+  margin: auto!important;
+  padding-inline: 0.5em!important;
+  padding-bottom: 1em;
+  @media (max-width: 768px) {
+    font-size: 1.2em!important;
+  }
+}
+
 iframe#webpack-dev-server-client-overlay {
   display: none!important
 }
 .hide-resize-observer {
-  display: none !important;
+  display: none!important;
 }
 * {
   box-sizing: border-box!important;
@@ -43,8 +73,11 @@ iframe#webpack-dev-server-client-overlay {
   outline: none!important;
   -webkit-tap-highlight-color: transparent!important;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
-  font-family: 'LatoRegular', sans-serif!important;
+  font-family: 'Lato', sans-serif;
   box-sizing: border-box!important;
 }
 
@@ -58,17 +91,23 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'LatoBold', sans-serif!important;
+  font-weight: 900!important;
 }
 
 p, span {
   font-weight: 300!important;
 }
 
-.Carousel__CarouselInner-sc-f2ox7y-2 {
-  pointer-events: none!important;
-}
-
 .ReviewInfo__InfoContainer-sc-q3e1v-6 {
   display: none!important;
+}
+
+#pageLoja {
+  padding-top: 3.6em;
+}
+
+@media (max-width: 768px) {
+  #pageLoja {
+    padding-top: 3.5em;
+  }
 }

@@ -21,7 +21,7 @@
 .serviceContent {
   margin: 0 auto;
   max-width: 90%;
-  height: 560px;
+  height: 530px;
   border-radius: 20px;
   border: 2px solid #73ecd4;
   display: flex;
@@ -76,7 +76,9 @@
 .btnContent,
 .btnIcon {
     vertical-align: middle;
+    color: #73ecd4;
 }
+
 
 .btnIcon {
     padding-inline: 1em;
@@ -91,10 +93,11 @@
 }
 
 .serviceCarouselSection > h2 {
-  font-size: 3em;
+  font-size: 4em;
   padding-block: 1em 0;
   text-align: center;
   display: block;
+  color: #3f3f3f;
 }
 
 @media (max-width: 768px) {

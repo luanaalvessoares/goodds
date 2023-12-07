@@ -13,6 +13,8 @@ import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
 import SimpleTwoColumns from "../../../components/section-simple-twocolumns/SimpleTwoColumns";
 import ImageHomeMarketplaces from '../../../assets/images/homemarketplaces.webp';
 import Whatsapp from "../../../components/whatsapp/Whatsapp";
+import MainCta from '../../../components/main-cta/MainCta';
+import ImageMainCta from '../../../assets/images/homeastronaut.webp';
 
 function LojaVirtual() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20Loja%20Virtual";
@@ -53,12 +55,13 @@ function LojaVirtual() {
     };
     
     return (
-        <div className="lojaVirtual">
-            <ImageBackground isVideo={false} title="Desenvolvimento de Loja Virtual" description="Criamos seu e-commerce completo com layout personalizado, entregamos pronto para você vender!" image={ImageBg}/>
+        <div className="lojaVirtual" id="pageLoja">
+            <MainCta setTop={false} destaqueTitleText1="Uma no Brasil e Uma Global" destaqueTitleText2="de Dropshipping" titleText="Tenha 02 Lojas" description="Tenha acesso ao Curso mais completo para vender seu produto ou serviço na internet. Aprenda como atrair mais clientes para o seu negócio, investindo pouco e ganhando muito." iconInfo="Aplicado por +9.000 negócios em 23 países" btnText="por" btnTextDestaque1="12x de" btnTextDestaque2="R$497" btnDesc="ou à vista com desconto R$4.699" mainCtaImage={ImageMainCta} />
+            {/* <ImageBackground isVideo={false} title="Desenvolvimento de Loja Virtual" description="Criamos seu e-commerce completo com layout personalizado, entregamos pronto para você vender!" image={ImageBg}/> */}
             <VendaTodoDia image={ImageVenda} itemDescription2="Marketplaces | Pagamentos | Entrega | Redes Sociais" itemDescription4="Loja + Logo + Marketing + Consultoria"/>
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
             <DropdownTableLoja titleIncluded="Loja Virtual" />
-            <GoogleReviews title="Confira depoimentos de quem já comprou e já está vendendo na Internet todos os dias"/>
+            <GoogleReviews />
             <VantagensLoja image={ImageVantagens} vantagemData={vantagemData} />
             <SimpleTwoColumns title="Especialistas em Marketplaces" description="Venda nos principais Marketplaces do Brasil com a nossa solução de consultoria e implementação. Soluções que vão além da criação da sua loja. Decole suas vendas com nossa consultoria estratégica, campanhas de divulgação e anúncios patrocinados." image={ImageHomeMarketplaces} />
             <Footer linkCtaWhatsapp={whatsapp} />

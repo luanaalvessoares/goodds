@@ -30,6 +30,10 @@
     margin-block: 1.5em;
 }
 
+.destaqueText {
+    color: #15907D!important;
+  }
+
 .titleFirstGrid img {
     width: 120px;
     align-self: center;
@@ -58,3 +62,4 @@
         text-align: center;
     }
 }
+

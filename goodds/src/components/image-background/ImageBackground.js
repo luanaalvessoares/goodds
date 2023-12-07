@@ -5,6 +5,7 @@ import VideoHomeBg from '../../assets/images/video-home-bg.mp4'
 import { useLocation } from 'react-router-dom';
 import ContactModal from '../contact-modal/ContactModal';
 import RiArrowRightSLine from 'remixicon-react/ArrowRightSLineIcon';
+import RiFireFill from 'remixicon-react/FireFillIcon';
 
 function ImageBackground({isVideo, image, title, description, title2}) {
     const location = useLocation();
@@ -35,7 +36,10 @@ function ImageBackground({isVideo, image, title, description, title2}) {
                     <div className={styles.contentHeader}>
                         <div className={`${styles.titleHeader} ${location.pathname === '/' ? `${styles.home}` : ''}`}>
                             <h2><span>{title}</span> <span>{title2}</span></h2>
-                            <p>{description}</p>
+                            <p>
+                                <span><RiFireFill /></span>
+                                {description}
+                            </p>
                         </div>
                         <div className={styles.headerContact}>
                             <span className={`${styles.btnHeaderContact} ${styles.btnHeaderContactDesktop}`} onClick={openModal}>

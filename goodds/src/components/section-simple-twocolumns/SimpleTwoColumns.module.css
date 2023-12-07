@@ -17,6 +17,18 @@
 
 }
 
+.destaqueText h4 {
+    display: inline;
+}
+
+.destaqueText {
+    color: #15907D!important;
+  }
+  
+  .strongText {
+    font-weight: bold!important;
+  }
+
 @media (min-width: 992px) {
     .simpleContainer {
         margin: 6em 0;
