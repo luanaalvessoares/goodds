@@ -20,10 +20,10 @@ function DropdownTableLoja(props) {
             packageValue2: <RiCheckFill />,
         },
         {
-            servicePackageTitle: "Produtos",
-            servicePackageDescription: "Quantidade de produtos que você pode cadastrar na sua loja.",
-            packageValue1: "Ilimitados",
-            packageValue2: "Ilimitados",
+            servicePackageTitle: "Mineração e Cadastro de Produtos",
+            servicePackageDescription: "Quantidade de produtos que cadastramos na sua loja.",
+            packageValue1: "30",
+            packageValue2: "60",
         },
         {
             servicePackageTitle: "Hospedagem",
@@ -185,12 +185,6 @@ function DropdownTableLoja(props) {
             packageValue2: <RiCheckFill />,
         },
         {
-            servicePackageTitle: "Google Shopping",
-            servicePackageDescription: "Exiba seus produtos direto nas buscas de Shopping do Google.",
-            packageValue1: <RiCheckFill />,
-            packageValue2: <RiCheckFill />,
-        },
-        {
             servicePackageTitle: "Bling para Marketplaces",
             servicePackageDescription: "Integração da Loja Virtual com o sistema de ERP Bling (Integração dos Marketplaces não inclusa).",
             packageValue1: <RiCheckFill />,
@@ -208,7 +202,7 @@ function DropdownTableLoja(props) {
         {
             servicePackageTitle: "Campanha de Lançamento",
             servicePackageDescription: "Campanha de anúncios e materiais de lançamento criado por nossa equipe de Marketing.",
-            packageValue1: <RiCheckFill />,
+            packageValue1: " ",
             packageValue2: <RiCheckFill />,
         },
         {
@@ -301,7 +295,7 @@ function DropdownTableLoja(props) {
                                     <img src={TableIcon1} alt=""/>
                                     <p className="titleColor">Gestão da Loja</p>
                                 </div>
-                                <div className={`${styles.rowContent} ${styles.itemContains} descriptionColor`}>Start</div>
+                                <div className={`${styles.rowContent} ${styles.itemContains} descriptionColor`}>Super</div>
                                 <div className={`${styles.rowContent} ${styles.itemContains} descriptionColor`}>Mega</div>
                             </div>
         

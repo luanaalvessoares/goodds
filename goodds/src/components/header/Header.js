@@ -167,9 +167,27 @@ function Header() {
                                   </Link>
                               </li>
                               <li>
-                                  <Link to="/marketing-loja-dropshipping" className={styles.dropdownLink}>
-                                    Marketing Loja Dropshipping
-                                    <span className={styles.menuSubtitle}>Anúncios Patrocinados</span>
+                                  <Link to="/pacote-lancamento-loja" className={styles.dropdownLink}>
+                                      Pacote Lançamento de Loja
+                                      <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
+                                  </Link>
+                              </li>
+                              <li>
+                                  <Link to="/posts-instagram" className={styles.dropdownLink}>
+                                      Posts para Instagram
+                                      <span className={styles.menuSubtitle}>Perfil Profissional</span>
+                                  </Link>
+                              </li>
+                              <li>
+                                  <Link to="/artes-anuncios" className={styles.dropdownLink}>
+                                      Artes para Anúncio
+                                      <span className={styles.menuSubtitle}>Promova seu Produto</span>
+                                  </Link>
+                              </li>
+                              <li>
+                                  <Link to="/videos-curtos-reels" className={styles.dropdownLink}>
+                                      Vídeos Curtos e Reels
+                                      <span className={styles.menuSubtitle}>Engaje nas Redes</span>
                                   </Link>
                               </li>
                           </ul>
@@ -183,12 +201,6 @@ function Header() {
       
                           <ul className={styles.dropdownList}>
                             <li>
-                                <Link to="/pacote-lancamento-loja" className={styles.dropdownLink}>
-                                    Pacote Lançamento de Loja
-                                    <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
-                                </Link>
-                            </li>
-                            <li>
                                 <Link to="/mineracao-produtos-dropshipping" className={styles.dropdownLink}>
                                     Mineração de Produtos
                                     <span className={styles.menuSubtitle}>Produtos para Dropshipping</span>
@@ -201,12 +213,6 @@ function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/posts-instagram" className={styles.dropdownLink}>
-                                    Posts para Instagram
-                                    <span className={styles.menuSubtitle}>Perfil Profissional</span>
-                                </Link>
-                            </li>
-                            <li>
                                 <Link to="/criacao-logo" className={styles.dropdownLink}>
                                     Criação de Logo
                                     <span className={styles.menuSubtitle}>Sua Identidade Única</span>
@@ -216,18 +222,6 @@ function Header() {
                                 <Link to="/banners-loja" className={styles.dropdownLink}>
                                     Banners para Loja
                                     <span className={styles.menuSubtitle}>Criação Personalizada</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/artes-anuncios" className={styles.dropdownLink}>
-                                    Artes para Anúncio
-                                    <span className={styles.menuSubtitle}>Promova seu Produto</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/videos-curtos-reels" className={styles.dropdownLink}>
-                                    Vídeos Curtos e Reels
-                                    <span className={styles.menuSubtitle}>Engaje nas Redes</span>
                                 </Link>
                             </li>
                           </ul>
@@ -391,10 +385,31 @@ function Header() {
                           </li>
                         </Link>
 
-                        <Link to="/marketing-loja-dropshipping" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                        <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                           <li>
-                            <span>Marketing Loja Dropshipping</span>
-                            <span className={styles.menuSubtitle}>Anúncios Patrocinados</span>
+                            <span>Pacote Lançamento de Loja</span>
+                            <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
+                          </li>
+                        </Link>
+
+                        <Link to="/posts-instagram" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                          <li>
+                            <span>Posts Instagram</span>
+                            <span className={styles.menuSubtitle}>Perfil Profissional</span>
+                          </li>
+                        </Link>
+
+                        <Link to="/artes-anuncios" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                          <li>
+                            <span>Artes para Anúncio</span>
+                            <span className={styles.menuSubtitle}>Promova seu Produto</span>
+                          </li>
+                        </Link>
+
+                        <Link to="/videos-curtos-reels" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                          <li>
+                            <span>Vídeos Curtos e Reels</span>
+                            <span className={styles.menuSubtitle}>Engaje nas Redes</span>
                           </li>
                         </Link>
                       </ul>
@@ -419,12 +434,6 @@ function Header() {
                     <div className={styles.dropdownGroup}>
 
                       <ul className={styles.dropdownList}>
-                        <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                          <li>
-                            <span>Pacote Lançamento de Loja</span>
-                            <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
-                          </li>
-                        </Link>
 
                         <Link to="/mineracao-produtos-dropshipping" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                           <li>
@@ -440,13 +449,6 @@ function Header() {
                           </li>
                         </Link>
 
-                        <Link to="/posts-instagram" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                          <li>
-                            <span>Posts Instagram</span>
-                            <span className={styles.menuSubtitle}>Perfil Profissional</span>
-                          </li>
-                        </Link>
-
                         <Link to="/criacao-logo" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                           <li>
                             <span>Criação de Logo</span>
@@ -458,20 +460,6 @@ function Header() {
                           <li>
                             <span>Banners para Loja</span>
                             <span className={styles.menuSubtitle}>Criação Personalizada</span>
-                          </li>
-                        </Link>
-
-                        <Link to="/artes-anuncios" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                          <li>
-                            <span>Artes para Anúncio</span>
-                            <span className={styles.menuSubtitle}>Promova seu Produto</span>
-                          </li>
-                        </Link>
-
-                        <Link to="/videos-curtos-reels" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                          <li>
-                            <span>Vídeos Curtos e Reels</span>
-                            <span className={styles.menuSubtitle}>Engaje nas Redes</span>
                           </li>
                         </Link>
 

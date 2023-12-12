@@ -9,7 +9,7 @@ function GoogleReviews({title}) {
             <Helmet>
                 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             </Helmet>
-            <div class="elfsight-app-e212ff39-6252-424e-9ba2-495def5f53e1" data-elfsight-app-lazy></div>
+            <div className="elfsight-app-e212ff39-6252-424e-9ba2-495def5f53e1" data-elfsight-app-lazy></div>
             <div className="bar-white containerReviewsGoogle"></div>
         </section>
     );
