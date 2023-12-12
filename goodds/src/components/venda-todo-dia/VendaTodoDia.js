@@ -17,7 +17,7 @@ function VendaTodoDia(props) {
             <div className={styles.containerChildVenda}>
                 <div className={styles.vendaGrids}>
                     <h2 className={styles.beneficiosTitle}>Venda todos os dias</h2>
-                    <p className={styles.beneficiosSub}>Loja Virtual Profissional</p>
+                    <p className={styles.beneficiosSub}>Com um E-commerce Profissional</p>
                     <motion.div className={styles.gridBeneficios} ref={ref}>
 
                         <motion.div

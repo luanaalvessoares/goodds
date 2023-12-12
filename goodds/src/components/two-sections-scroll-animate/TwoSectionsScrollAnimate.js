@@ -44,8 +44,8 @@ function TwoSectionsScrollAnimate() {
                         }}
                     >
                         <div className={styles.inner}>
-                            <h4 className={styles.name}>Título do Card</h4>
-                            <p className={styles.descr}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <h4 className={styles.name}>Loja de Dropshipping</h4>
+                            <p className={styles.descr}>Desenvolvemos a loja virtual completa para você vender, com Logo, Banners e Integrações de fornecedores de produtos nacionais e internacionais.</p>
                         </div>
                     </motion.div>
 
@@ -61,8 +61,8 @@ function TwoSectionsScrollAnimate() {
                         }}
                     >
                         <div className={styles.inner}>
-                            <h4 className={styles.name}>Título do Card</h4>
-                            <p className={styles.escr}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <h4 className={styles.name}>Mineração de Produtos</h4>
+                            <p className={styles.escr}>Nossos especialistas selecionam e cadastram os produtos na sua loja. Todos os produtos são testados e escolhidos para o seu nicho, só atuamos com fornecedores validados.</p>
                         </div>
                     </motion.div>
 
@@ -78,8 +78,8 @@ function TwoSectionsScrollAnimate() {
                         }}
                     >
                         <div className={styles.inner}>
-                            <h4 className={styles.name}>Título do Card</h4>
-                            <p className={styles.descr}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <h4 className={styles.name}>03 Campanhas de Marketing</h4>
+                            <p className={styles.descr}>Criamos os criativos e configuramos as campanhas com 3 produtos diferentes, você também tem uma assessoria dedicada com um especialista em marketing.</p>
                         </div>
                     </motion.div>
 
@@ -95,8 +95,25 @@ function TwoSectionsScrollAnimate() {
                         }}
                     >
                         <div className={styles.inner}>
-                            <h4 className={styles.name}>Título do Card</h4>
-                            <p className={styles.descr}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <h4 className={styles.name}>Suporte 24hs com Especialistas</h4>
+                            <p className={styles.descr}>Disponibilizamos suporte dedicado trilíngue e especialistas pelo WhatsApp e telefone, também possuímos centenas de vídeos tutoriais para auxiliar você no dia-a-dia</p>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className={`${styles.item} ${styles.headshotChild}`}
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        ref={ref4}
+                        animate={inView4 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
+                        transition={{
+                        duration: 0.8,
+                        delay: 0.5,
+                        ease: [0, 0.71, 0.2, 1.01]
+                        }}
+                    >
+                        <div className={styles.inner}>
+                            <h4 className={styles.name}>Curso e Mentoria +300 Vídeos</h4>
+                            <p className={styles.descr}>Aulas semanais, módulos recorrentes e uma comunidade com interação diária para que a sua jornada conosco seja junto a pessoas incríveis com conhecimentos reais.</p>
                         </div>
                     </motion.div>
 

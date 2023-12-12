@@ -56,7 +56,7 @@ const VantagensLoja = (props) => {
                             {vantagemTitle1 ? null : (
                             <div>
                                 <h3>Mineração de produtos</h3>
-                                <p>Possuímos um pacote completo que inclui a mineração e o cadastro de produtos, selecionamos cada um manualmente para garantir a qualidade dos produtos e um serviço exclusivo.</p>
+                                <p>Selecionamos cada produto manualmente, garantindo assim exclusividade. Após sua aprovação cadastramos com descrições de alta conversão na sua loja.</p>
                             </div>                                
                             )}
                         </div>

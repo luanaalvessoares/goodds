@@ -58,9 +58,47 @@ import IconPlayYT from '../../assets/images/play-yt.svg';
 import VideoTopo from '../../assets/images/video-topo.mp4';
 import ThumbVideoMain from '../../assets/images/thumb-main.webp';
 import ImageGarantia from '../../assets/images/garantia-drop.webp';
+import { Helmet } from 'react-helmet';
 
 function VendaTodosOsDias() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20E-commerce";
+
+    const styleVideo1 = {
+        padding: '56.25% 0 0 0',
+        position: 'relative',
+    }
+    
+    const styleVideo2 = {
+        height: '100%',
+        left: '0',
+        position: 'absolute',
+        top: '0',
+        width: '100%',
+    }
+
+    const styleVideo3 = {
+        height: '100%',
+        position: 'relative',
+        width: '100%',
+    }
+
+    const styleVideo4 = {
+        height: '100%',
+        left: '0',
+        opacity: '0',
+        overflow: 'hidden',
+        position: 'absolute',
+        top: '0',
+        transition: 'opacity 200ms',
+        width: '100%'
+    }
+
+    const styleVideo5 = {
+        filter: 'blur(5px)',
+        height: '100%',
+        objectFit: 'contain',
+        width: '100%',
+    }
 
     const data = {
         rows: [
@@ -198,10 +236,19 @@ function VendaTodosOsDias() {
                             </div>
 
                             <div className={`${styles.gridTwoColumnImage} ${styles.gridTwoColumnsChild}`}>
-                                <video autoPlay loop muted playsInline >
-                                    <source src={VideoTopo} />
-                                    Seu navegador não suporta o elemento de vídeo.
-                                </video>
+                                <Helmet>
+                                    <script src="https://fast.wistia.com/embed/medias/a5l3wvekw9.jsonp" async></script>
+                                    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                                </Helmet>
+                                <div className="wistia_responsive_padding" style={styleVideo1}>
+                                    <div className="wistia_responsive_wrapper" style={styleVideo2}>
+                                        <div className="wistia_embed wistia_async_a5l3wvekw9 seo=true videoFoam=true" style={styleVideo3}>
+                                            <div className="wistia_swatch" style={styleVideo4}>
+                                                <img src="https://fast.wistia.com/embed/medias/a5l3wvekw9/swatch"  style={styleVideo5} alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -243,7 +290,7 @@ function VendaTodosOsDias() {
                                 <div className={styles.stickyInfoCard}>
                                     <span>03</span>
                                     <h4>Mineração de 60 Produtos</h4>
-                                    <p>Nossos especialistas selecionam e cadastram os produtos nas 02 lojas, todos os produtos são testados e escolhidos para o seu nicho, só atuamos com fornecedores validados.</p>
+                                    <p>Nossos especialistas selecionam e cadastram os produtos nas 02 lojas. Todos os produtos são testados e escolhidos para o seu nicho, só atuamos com fornecedores validados.</p>
                                 </div>
                                 <div className={styles.stickyInfoCard}>
                                     <span>04</span>

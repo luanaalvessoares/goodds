@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './PackagesSection.module.css';
 import CheckboxCircleLineIcon from 'remixicon-react/CheckboxCircleLineIcon';
+import CloseCircleLineIcon from 'remixicon-react/CloseCircleLineIcon';
 import { motion } from "framer-motion";
 import { useInView, InView } from "react-intersection-observer";
 
@@ -60,6 +61,12 @@ const PackagesSection = (props) => {
         included2Package1,
         included3Package1,
         included4Package1,
+        included5Package1,
+        included6Package1,
+        included7Package1,
+        included8Package1,
+        included9Package1,
+        included10Package1,
         packageLink1
     } = props.packageData1;
 
@@ -74,6 +81,12 @@ const PackagesSection = (props) => {
         included2Package2,
         included3Package2,
         included4Package2,
+        included5Package2,
+        included6Package2,
+        included7Package2,
+        included8Package2,
+        included9Package2,
+        included10Package2,
         packageLink2
     } = props.packageData2;
 
@@ -106,8 +119,8 @@ const PackagesSection = (props) => {
                             <p className={styles.packageDescription}>{packageDescription1}</p>
                             <h3 className={styles.packagePrice}><span>De: </span><span className={styles.typeCoin}>R$</span><span>{packagePrice1}</span></h3>
                             <div className={styles.packageNewsContainer}>
-                                <h3 className={styles.packageNews}><span>Por: </span><span className={styles.typeCoin}>R$</span><span className={styles.newPricePackage}>{packageNews1}</span> <span>a vista</span></h3>
-                                <p>Ou em 12x de <span>R$</span><span>{packageParcel1}</span> sem juros</p>
+                                <h3 className={styles.packageNews}><span>Por: </span><span className={styles.typeCoin}>R$</span><span className={styles.newPricePackage}>{packageNews1}</span> <span>à vista</span></h3>
+                                <p>ou 12x de <span>R$</span><span>{packageParcel1}</span></p>
                             </div>
                             <p className={styles.includedTitle}>Está incluso no {packageName1}</p>
                             <div className={styles.includedPackage}>
@@ -122,6 +135,29 @@ const PackagesSection = (props) => {
                                     <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included4Package1}</p>
                                 ) : null}
 
+                                {included5Package1 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included5Package1}</p>
+                                ) : null}
+
+                                {included6Package1 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included6Package1}</p>
+                                ) : null}
+
+                                {included7Package1 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included7Package1}</p>
+                                ) : null}
+
+                                {included8Package1 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included8Package1}</p>
+                                ) : null}
+
+                                {included9Package1 ? (
+                                    <p className={styles.iconClose}><span><CloseCircleLineIcon className={styles.checkIcon}/></span> {included9Package1}</p>
+                                ) : null}
+
+                                {included10Package1 ? (
+                                    <p className={styles.iconClose}><span><CloseCircleLineIcon className={styles.checkIcon}/></span> {included10Package1}</p>
+                                ) : null}
                             </div>
                             <a href={packageLink1} className={styles.packageBuy}>
                                 <span>Comprar</span>
@@ -155,8 +191,8 @@ const PackagesSection = (props) => {
                             <p className={styles.packageDescription}>{packageDescription2}</p>
                             <h3 className={styles.packagePrice}><span>De: </span><span className={styles.typeCoin}>R$</span><span>{packagePrice2}</span></h3>
                             <div className={styles.packageNewsContainer}>
-                                <h3 className={styles.packageNews}><span>Por: </span><span className={styles.typeCoin}>R$</span><span className={styles.newPricePackage}>{packageNews2}</span> <span>a vista</span></h3>
-                                <p>Ou em 12x de <span>R$</span><span>{packageParcel2}</span> sem juros</p>
+                                <h3 className={styles.packageNews}><span>Por: </span><span className={styles.typeCoin}>R$</span><span className={styles.newPricePackage}>{packageNews2}</span> <span>à vista</span></h3>
+                                <p>Ou 12x de <span>R$</span><span>{packageParcel2}</span></p>
                             </div>
                             <p className={styles.includedTitle}>Está incluso no {packageName2}</p>
                             <div className={styles.includedPackage}>
@@ -169,6 +205,30 @@ const PackagesSection = (props) => {
 
                                 {included4Package2 ? (
                                     <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included4Package2}</p>
+                                ) : null}
+
+                                {included5Package2 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included5Package2}</p>
+                                ) : null}
+
+                                {included6Package2 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included6Package2}</p>
+                                ) : null}
+
+                                {included7Package2 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included7Package2}</p>
+                                ) : null}
+
+                                {included8Package2 ? (
+                                    <p><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included8Package2}</p>
+                                ) : null}
+
+                                {included9Package2 ? (
+                                    <p className={styles.iconClose2}><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included9Package2}</p>
+                                ) : null}
+
+                                {included10Package2 ? (
+                                    <p className={styles.iconClose2}><span><CheckboxCircleLineIcon className={styles.checkIcon}/></span> {included10Package2}</p>
                                 ) : null}
 
                             </div>
