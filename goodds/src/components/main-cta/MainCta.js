@@ -1,12 +1,32 @@
 import React from 'react';
 import styles from './MainCta.module.css';
 import RiFireFill from 'remixicon-react/FireFillIcon';
+import RiAddFill from 'remixicon-react/AddFillIcon';
 import RiArrowDropRightFill from 'remixicon-react/ArrowDropRightFillIcon';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.webp';
 import SeparatorGradient from '../../assets/images/separator-gradient.svg';
 
 function MainCta(props) {
+    const {
+        titleText,
+        destaqueTitleText2,
+        destaqueTitleText1,
+        description,
+        vantagem1,
+        vantagem2,
+        vantagem3,
+        vantagem4,
+        vantagem5,
+        vantagem6,
+        vantagem7,
+        iconInfo,
+        btnText,
+        btnTextDestaque1,
+        btnTextDestaque2,
+        btnDesc,
+    } = props.data;
+
     return (
         <div className={styles.containerMainCta}>
             <section className={styles.containerChild}>
@@ -29,29 +49,34 @@ function MainCta(props) {
                             <div className={`${styles.gridTwoColumnInfo} ${styles.gridTwoColumnsChild}`}>
                                 <h1 className={styles.gridTwoColumnInfoTitle}>
                                     <span>
-                                        {props.titleText}
-                                        <span className={`${styles.destaqueText} ${styles.mainCtaDestaque} ${styles.mainCtaDestaque2}`}>{props.destaqueTitleText2}</span>
+                                        {titleText}
+                                        <span className={`${styles.destaqueText} ${styles.mainCtaDestaque} ${styles.mainCtaDestaque2}`}>{destaqueTitleText2}</span>
                                     </span>
-                                    <span className={`${styles.destaqueText} ${styles.mainCtaDestaque} ${styles.mainCtaDestaque3}`}>{props.destaqueTitleText1}</span>
+                                    <span className={`${styles.destaqueText} ${styles.mainCtaDestaque} ${styles.mainCtaDestaque3}`}>{destaqueTitleText1}</span>
                                      
                                 </h1>
-                                <p className={styles.gridTwoColumnInfoDescription}>{props.description}</p>
+                                {/* <p className={styles.gridTwoColumnInfoDescription}>{description}</p> */}
+                                <div className={styles.vantagens}>
+                                    <p><span className={styles.iconAdd}><RiAddFill /></span> {vantagem1}</p>
+                                    <p><span className={styles.iconAdd}><RiAddFill /></span> {vantagem2}</p>
+                                    <p><span className={styles.iconAdd}><RiAddFill /></span> {vantagem3}</p>
+                                    <p><span className={styles.iconAdd}><RiAddFill /></span> {vantagem4}</p>
+                                    <p><span className={styles.iconAdd}><RiAddFill /></span> {vantagem5}</p>
+                                    <p><span className={styles.iconAdd}><RiAddFill /></span> {vantagem6}</p>
+                                    <p><span className={styles.iconAdd}><RiAddFill /></span> {vantagem7}</p>
+                                </div>
                                 <p className={`${styles.gridTwoColumnInfoCta} ${styles.destaqueText}`}>
-                                    <span><RiFireFill /> </span>
-                                    {props.iconInfo}
+                                    <span className={styles.iconFire}><RiFireFill /> </span>
+                                    {iconInfo}
                                 </p>
                                 <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
                                     <a href="!#">
-                                        {props.btnText} 
                                         <span>
-                                            <h3> {props.btnTextDestaque1} </h3>
-                                        </span>
-                                        <span>
-                                            <h3>{props.btnTextDestaque2}</h3>
+                                            <p>{btnTextDestaque2}</p>
                                         </span>
                                     </a>
                                     <p>
-                                        <span><RiArrowDropRightFill />{props.btnDesc}</span>
+                                        <span><RiArrowDropRightFill />{btnDesc}</span>
                                     </p>
                                 </div>
                             </div>
@@ -60,10 +85,6 @@ function MainCta(props) {
                                 <img src={props.mainCtaImage} alt=""/>
                             </div>
                         </div>
-
-                        <span className={styles.sectionSeparatorGreen}>
-                            <img src={SeparatorGradient} alt=""/>
-                        </span>
                     </div>
 
                 </div>
