@@ -150,6 +150,10 @@
     margin-right: 8px;
 }
 
+.iconClose {
+    color: #dedede!important;
+}
+
 .packageBuy {
     margin-block: 3em 0;
     display: flex;

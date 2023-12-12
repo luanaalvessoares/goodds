@@ -245,6 +245,14 @@ p span.destaqueText {
     font-size: 16px;
 }
 
+.ctaBtn p span {
+    color: var(--content-color)!important;
+}
+
+.ctaBtn p span svg {
+    vertical-align: middle;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     .containerMainCta h1, .containerMainCta h2 {

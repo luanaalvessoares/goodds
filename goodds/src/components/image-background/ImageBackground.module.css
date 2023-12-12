@@ -52,6 +52,10 @@
     margin-bottom: 20px;
 }
 
+.titleHeader h2 span {
+    font-weight: 700!important;
+}
+
 .titleHeader p {
     font-size: 22px;
     line-height: 1.4;

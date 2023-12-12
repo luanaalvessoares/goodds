@@ -6,7 +6,7 @@
 
 .containerMainCta {
     margin: 0 auto!important;
-    background: linear-gradient(46.87deg, rgb(177, 245, 250) 0%, rgb(77, 255, 158) 96.94%)
+    background: linear-gradient(46.87deg, rgb(208, 253, 239) 0%, rgb(225, 250, 252) 96.94%);
 }
 
 .containerMainCta h1, .containerMainCta h2 {
@@ -59,6 +59,10 @@
     line-height: 1.1;
 }
 
+.gridTwoColumnInfoTitle span {
+    font-weight: 700!important;
+}
+
 .gridTwoColumnInfoTitle span:first-child {
     color: #0c6658;
 }
@@ -87,6 +91,18 @@ p span.destaqueText {
 .containerChild {
     padding: 1em 1.5em;
     width: 100%;
+}
+
+.vantagens {
+    margin-block: 1em;
+}
+
+span.iconAdd {
+    color: #298c7c;
+}
+
+span.iconFire svg {
+    margin-top: -6px;
 }
 
 .containerChild:not(.faqSection) {
@@ -135,6 +151,7 @@ p span.destaqueText {
 .child1 .gridTwoColumnInfoCta {
     margin-block: 1em 2em;
     font-weight: bold!important;
+    color: #15907d;
 }
 
 
@@ -164,11 +181,11 @@ p span.destaqueText {
 
 .ctaBtn a {
     background: #000;
-    padding: 20px 60px;
+    padding: 15px 60px;
     font-size: 22px;
 }
 
-.ctaBtn a span h3 {
+.ctaBtn a span p {
     display: inline;
     color: white;
 }
@@ -180,10 +197,11 @@ p span.destaqueText {
     font-size: 15px;
 }
 
-.ctaBtn p {
+.ctaBtn > p {
     text-align: center;
     margin-block: 1.5em 1em;
-    font-size: 16px;
+    font-size: 14px;
+    margin-left: -10px;
 }
 
 /* Media Queries */
@@ -218,6 +236,15 @@ p span.destaqueText {
         width: 70px!important;
     }
 
+    .vantagens {
+        max-width: max-content;
+        margin: auto;
+    }
+    
+    .vantagens p {
+        text-align: start;
+    }
+
     /* Section 1 */
     .child1 .logo img {
         width: 100px;
@@ -244,6 +271,9 @@ p span.destaqueText {
     }
     .gridTwoColumnInfoTitle span:first-child {
         text-wrap: nowrap;
+    }
+    .gridTwoColumnImage img {
+        margin-top: 8em;
     }
 }
 
