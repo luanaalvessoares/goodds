@@ -16,7 +16,7 @@ function SectionAnuncioMkt() {
                         <img className={styles.anuncioMktGif} src={GifReasons} alt="" />
                         <div className={styles.anuncioMktTitleDesc}>
                             <h2 className={styles.anuncioMktTitle}>Venda muito no Instagram</h2>
-                            <p>Sua loja integrada no Instagram com anúncios de alta conversão para o público certo.</p>
+                            <p>Transforme seu Instagram em uma máquina de vendas! Oferecemos estratégias personalizadas que vão alavancar seu perfil, garantindo mais visibilidade, engajamento e, claro, vendas.</p>
                         </div>
                     </div>
                 </div>

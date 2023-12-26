@@ -10,7 +10,7 @@ function PackagesIncluded(props) {
 
     return (
         <section className={styles.listPackageContainer}>
-            <h2>Incluso em todos os projetos de {props.titleIncludedPackage} da Goodds:</h2>
+            <h2>Incluso em todos os projetos:</h2>
             <div className={styles.listPackage}>
                 <div className={styles.listChild}>
                     <div className={styles.listPackageContent}>

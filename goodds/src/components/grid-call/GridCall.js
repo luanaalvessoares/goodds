@@ -12,7 +12,7 @@ function GridCall() {
             <div className={`${styles.child7} ${styles.child}`}>
                 <div>
                     <div className={styles.titleSub}>
-                        <h2>Acompanhe todas as etapas do desenvolvimento com reuniões de alinhamento</h2>
+                        <h2>Acompanhe todas as etapas do desenvolvimento</h2>
                         <p>Pensamos em absolutamente tudo e compreendemos a importância de você acompanhar de perto todas as execuções.</p>
                     </div>
 
@@ -57,17 +57,11 @@ function GridCall() {
                     </div>
                             
                     <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                        <a href="!#">
-                            Pacote Completo
-                            <span>
-                                <h3> 12x </h3>
-                            </span>
-                            <span>
-                                <h3>R$497</h3>
-                            </span>
+                        <a href="#packageSection">
+                            Preços e Soluções
                         </a>
                         <p>
-                            <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                            <span><RiArrowDropRightFill />Aproveite nossa promoção de 50% OFF</span>
                         </p>
                     </div>
                 </div>

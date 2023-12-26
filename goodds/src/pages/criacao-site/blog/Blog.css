@@ -1,0 +1,11 @@
+#blogPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+#blogPage img {
+    max-width: 150px;
+}

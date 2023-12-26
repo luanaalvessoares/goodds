@@ -9,7 +9,13 @@ import RiFlashlightFill from 'remixicon-react/FlashlightFillIcon';
 import RiReplyAllFill from 'remixicon-react/ReplyAllFillIcon';
 import RiArrowDropRightFill from 'remixicon-react/ArrowDropRightFillIcon';
 
-function IncludedGrid6() {
+function IncludedGrid6(props) {
+    const {
+        gridTitle4,
+        gridSubtitle4,
+        ctaText,
+    } = props.gridData;
+
     return (
         <section className={`${styles.containerChild} ${stylesMain.sectionMain}`}>
             <div className={`${styles.child6} ${styles.child}`}>
@@ -55,8 +61,8 @@ function IncludedGrid6() {
                                 <span className={`${styles.destaqueText} ${styles.iconStyle}`}><RiLayout3Fill /></span>
                             </p>
                             <p>
-                                <span className={styles.destaqueText}><h6>Mineração de Produtos e Fornecedores</h6></span>
-                                Aprenda como selecionar produtos de alta conversão e escolher os fornecedores certos para sua Loja de Dropshipping.
+                                <span className={styles.destaqueText}><h6>{gridTitle4 ? gridTitle4 : 'Mineração de Produtos e Fornecedores'}</h6></span>
+                                {gridSubtitle4 ? gridSubtitle4 : 'Aprenda como selecionar produtos de alta conversão e escolher os fornecedores certos para sua Loja de Dropshipping.'}
                             </p>
                         </div>
                         <div className={`${styles.gridCardInfoChild} ${styles.borderLeft}`}>
@@ -79,19 +85,8 @@ function IncludedGrid6() {
                         </div>
                     </div>
 
-                    <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                        <a href="!#">
-                            Pacote Completo 
-                            <span>
-                                <h3> 12x </h3>
-                            </span>
-                            <span>
-                                <h3>R$497</h3>
-                            </span>
-                        </a>
-                        <p>
-                            <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
-                        </p>
+                    <div className={stylesMain.ctaText}>
+                        <h3>{ctaText ? ctaText : 'Você está a um clique de ter uma loja completa desenvolvida pela primeira agência especializada em Dropshipping do Brasil. Contrate agora e conquiste a sua liberdade financeira.'}</h3>
                     </div>
                 </div>
             </div>

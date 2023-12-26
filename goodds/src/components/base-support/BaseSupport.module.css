@@ -86,3 +86,7 @@
         grid-template-columns: 1fr;
     }
 }
+
+#pageLoja .baseSupport {
+    display: none;
+}

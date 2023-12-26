@@ -28,7 +28,7 @@ function ParceirosHomeCarousel() {
                 <Swiper
                     spaceBetween={15}
                     loop={true}
-                    autoplay={{ delay: 3000 }}
+                    autoplay={{ delay: 1000 }}
                     grabCursor={true}
                     modules={[Autoplay]}
                     breakpoints={{

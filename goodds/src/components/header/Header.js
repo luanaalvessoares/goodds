@@ -9,6 +9,7 @@ import navicon4 from '../../assets/images/navicon-4.webp';
 import navicon5 from '../../assets/images/navicon-5.webp';
 import navicon6 from '../../assets/images/navicon-6.webp';
 import navicon7 from '../../assets/images/navicon-7.webp';
+import ImageDropGlobal from '../../assets/images/drop-global-menu.webp';
 import ContactModal from '../contact-modal/ContactModal';
 
 function Header() {
@@ -88,7 +89,7 @@ function Header() {
                       <div className={styles.dropdownGroup}>
                           <div className={styles.dropdownIcon}>
                               <img src={navicon1} alt=""/>
-                              <span className={styles.dropdownTitle}>Criação de Loja Virtual</span>
+                              <span className={styles.dropdownTitle}>Criação e Desenvolvimento</span>
                           </div>
 
                           <ul className={styles.dropdownList}>
@@ -99,55 +100,30 @@ function Header() {
                                   </Link>
                               </li>
                               <li>
-                                  <Link to="/dropshipping-global" className={styles.dropdownLink}>
-                                    Loja Dropshipping Global
-                                    <span className={styles.menuSubtitle}>Venda na Gringa Sem Estoque</span>
-                                    </Link>
-                              </li>
-                              <li>
-                                  <Link to="/dropshipping-latam" className={styles.dropdownLink}>
-                                    Loja Dropshipping Latam
-                                    <span className={styles.menuSubtitle}>Venda na América Latina Sem Estoque</span>
-                                  </Link>
-                              </li>
-                              <li>
-                                  <Link to="/dropshipping-print-on-demand" className={styles.dropdownLink}>
-                                    Loja Dropshipping Print on Demand
-                                    <span className={styles.menuSubtitle}>Produtos Personalizados Sem Estoque</span>
-                                  </Link>
-                              </li>
-                              <li>
                                   <Link to="/loja-virtual" className={styles.dropdownLink}>
                                     Loja Virtual Tradicional
                                     <span className={styles.menuSubtitle}>Desenvolvimento de E-commerce</span>
                                   </Link>
                               </li>
-                          </ul>
-                      </div>
-                      
-                      <div className={styles.dropdownGroup}>
-                          <div className={styles.dropdownIcon}>
-                              <img src={navicon2} alt=""/>
-                              <span className={styles.dropdownTitle}>Criação de Site</span>
-                          </div>
-      
-                          <ul className={styles.dropdownList}>
                               <li>
-                                  <Link to="/website-institucional" className={styles.dropdownLink}>
+                                  <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Website Institucional
                                     <span className={styles.menuSubtitle}>Criação de Site</span>
+                                    <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
                               </li>
                               <li>
-                                  <Link to="/landing-page" className={styles.dropdownLink}>
+                                  <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Landing Page
                                     <span className={styles.menuSubtitle}>Páginas Personalizadas</span>
+                                    <span className={`${styles.emBreve} ${styles.emBreveBlog}`}>EM BREVE</span>
                                   </Link>
                               </li>
                               <li>
-                                  <Link to="/blog" className={styles.dropdownLink}>
+                                  <Link to="/blog" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Criação de Blog
                                     <span className={styles.menuSubtitle}>Publique Ideias</span>
+                                    <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
                               </li>
                           </ul>
@@ -167,9 +143,10 @@ function Header() {
                                   </Link>
                               </li>
                               <li>
-                                  <Link to="/pacote-lancamento-loja" className={styles.dropdownLink}>
+                                  <Link to="/pacote-lancamento-loja"  className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                       Pacote Lançamento de Loja
                                       <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
+                                    <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
                               </li>
                               <li>
@@ -227,6 +204,21 @@ function Header() {
                           </ul>
                       </div>
 
+                      <div className={styles.dropdownGroup}>
+                          <div className={styles.dropdownIcon}>
+                              <img src={navicon2} alt=""/>
+                              <span className={styles.dropdownTitle}>Dropshipping Global 2 em 1</span>
+                          </div>
+      
+                          <ul className={styles.dropdownList}>
+                            <li>
+                                <Link to="/dropshipping" className={styles.dropdownLink}>
+                                  <img src={ImageDropGlobal} alt="" className={styles.imageDropMenu} />
+                                </Link>
+                            </li>
+                          </ul>
+                      </div>
+
                   </div>
 
                   <div className={styles.ctaHeaderDesktop}>
@@ -241,15 +233,6 @@ function Header() {
                 <Link to="/venda-todos-os-dias" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                   <div className={`${styles.navLink} ${styles.dropdownButton}`}>
                     Drop 2 em 1
-                  </div>
-                </Link>
-              </li>
-
-              {/* DROPDOWN DESKTOP 3 */}
-              <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
-                <Link to="/plataformas" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                  <div className={`${styles.navLink} ${styles.dropdownButton}`}>
-                    Plataformas
                   </div>
                 </Link>
               </li>
@@ -269,7 +252,7 @@ function Header() {
                 <div className={`${styles.navLink} ${styles.dropdownButton}`} onClick={() => toggleItem(1)}>
                   <span>
                       <img src={navicon1} alt="" width="35"/>
-                      Criação de Loja Virtual
+                      Criação e Desenvolvimento
                   </span>
                   <i className={`ri-arrow-down-s-line ${styles.dropdownArrow}`}></i>
                 </div>
@@ -286,27 +269,6 @@ function Header() {
                             <span className={styles.menuSubtitle}>Venda Sem Estoque</span>
                           </li>
                         </Link>
-
-                        <Link to="/dropshipping-global" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                          <li>
-                            <span>Loja Dropshipping Global</span>
-                            <span className={styles.menuSubtitle}>Venda na Gringa Sem Estoque</span>
-                          </li>
-                        </Link>
-
-                        <Link to="/dropshipping-latam" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                          <li>
-                            <span>Loja Dropshipping Latam</span>
-                            <span className={styles.menuSubtitle}>Venda na América Latina Sem Estoque</span>
-                          </li>
-                        </Link>
-
-                        <Link to="/dropshipping-print-on-demand" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
-                          <li>
-                            <span>Loja Dropshipping Print on Demand</span>
-                            <span className={styles.menuSubtitle}>Produtos Personalizados Sem Estoque</span>
-                          </li>
-                        </Link>
                         
                         <Link to="/loja-virtual" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                           <li>
@@ -314,45 +276,33 @@ function Header() {
                             <span className={styles.menuSubtitle}>Desenvolvimento de E-commerce</span>
                           </li>
                         </Link>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
 
-
-              {/* DROPDOWN MOBILE 2 */}
-              <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile} ${openMenuItem === 2 ? `${styles.showDropdown}` : ''}`}>
-                <div className={`${styles.navLink} ${styles.dropdownButton}`} onClick={() => toggleItem(2)}>
-                  <span>
-                      <img src={navicon2} alt="" width="35"/>
-                      Criação de Site
-                  </span>
-                  <i className={`ri-arrow-down-s-line ${styles.dropdownArrow}`}></i>
-                </div>
-
-                <div className={styles.dropdownContainer}>
-                  <div className={styles.dropdownContent}>
-                    <div className={styles.dropdownGroup}>
-
-                      <ul className={styles.dropdownList}>
-                        <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                        <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
-                            <span>Website Institucional</span>
+                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
+                              Website Institucional
+                              <span className={`${styles.emBreve}`}>EM BREVE</span>
+                            </span>
                             <span className={styles.menuSubtitle}>Criação de Site</span>
                           </li>
                         </Link>
 
-                        <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                        <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
-                            <span>Landing Page</span>
+                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
+                              Landing Page
+                              <span className={`${styles.emBreve}`}>EM BREVE</span>
+                            </span>
                             <span className={styles.menuSubtitle}>Páginas Personalizadas</span>
                           </li>
                         </Link>
 
-                        <Link to="/blog" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                        <Link to="/blog" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
-                            <span>Blog</span>
+                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
+                              Criação de Blog
+                              <span className={`${styles.emBreve}`}>EM BREVE</span>
+                            </span>
                             <span className={styles.menuSubtitle}>Publique Ideias</span>
                           </li>
                         </Link>
@@ -385,9 +335,12 @@ function Header() {
                           </li>
                         </Link>
 
-                        <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                        <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
-                            <span>Pacote Lançamento de Loja</span>
+                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
+                              Pacote Lançamento de Loja
+                              <span className={`${styles.emBreve}`}>EM BREVE</span>
+                            </span>
                             <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
                           </li>
                         </Link>
@@ -504,6 +457,33 @@ function Header() {
                         O que há de novo
                     </Link>
                   </span>
+                </div>
+              </li>
+
+
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile} ${styles.imageDropGlobalMobile}`}>
+                <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                  <span>
+                      <img src={navicon4} alt="" width="35"/>
+                      Dropshipping Global
+                  </span>
+                </div>
+
+                <div>
+                  <div className={styles.dropdownContent}>
+                    <div>
+
+                      <ul className={styles.dropdownList}>
+
+                        <Link to="/dropshipping" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                          <li>
+                            <img src={ImageDropGlobal} alt="" className={styles.imageDropMenu} />
+                          </li>
+                        </Link>
+
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </li>
 

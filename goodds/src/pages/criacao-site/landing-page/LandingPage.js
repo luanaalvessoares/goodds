@@ -9,6 +9,7 @@ import PackagesSection from "../../../components/packages-section/PackagesSectio
 import GoogleReviews from "../../../components/google-reviews/GoogleReviews";
 import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
 import ImageVantagens from '../../../assets/images/section-vantagesdrop.webp';
+import Loading from '../../../assets/images/loading-gif.gif';
 
 function LandingPage() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20Landing%20Page";
@@ -40,14 +41,20 @@ function LandingPage() {
     };
 
     return (
-        <div>
-            <SectionTopWebsites title="Criamos seu E-commerce" subtitle="Somos uma Agência Especializada em Loja Virtual, Dropshipping e Marketplace." image={ImageTop} />
+        <div id="landingPage">
+
+            <h1> EM CONSTRUÇÃO </h1>
+            
+            <img src={Loading} alt="Carregando" />
+
+
+            {/* <SectionTopWebsites title="Criamos seu E-commerce" subtitle="Somos uma Agência Especializada em Loja Virtual, Dropshipping e Marketplace." image={ImageTop} />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
             <GoogleReviews />
             <VantagensLoja image={ImageVantagens} vantagemData="" />
-            <Footer linkCtaWhatsapp={whatsapp} />
-            <Whatsapp whatsappMessage={whatsapp} />
+            <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />
+            <Whatsapp whatsappMessage={whatsapp} /> */}
         </div>
     )
 }

@@ -13,6 +13,10 @@ const VantagensLoja = (props) => {
         vantagemSubtitle3,
         vantagemTitle4,
         vantagemSubtitle4,
+        vantagemTitle5,
+        vantagemSubtitle5,
+        vantagemTitle6,
+        vantagemSubtitle6,
     } = props.vantagemData;
 
     return (
@@ -46,18 +50,16 @@ const VantagensLoja = (props) => {
                                 <p>{vantagemSubtitle4 ? vantagemSubtitle4 : 'Todas as lojas são entregues já integradas com milhares de fornecedores de dentro e de fora do país.'}</p>
                             </div>
 
-                            {vantagemTitle1 ? null : (
                             <div>
-                                <h3>Variedades de nichos</h3>
-                                <p>Os fornecedores disponibilizam milhares de produtos. A loja é ilimitada e você pode oferecer aos seus clientes, quantos produtos quiser.</p>
-                            </div>                                
-                            )}
+                                <h3>{vantagemTitle5 ? vantagemTitle5 : 'Variedades de nichos'}</h3>
+                                <p>{vantagemSubtitle5 ? vantagemSubtitle5 : 'Os fornecedores disponibilizam milhares de produtos. A loja é ilimitada e você pode oferecer aos seus clientes, quantos produtos quiser.'}</p>
+                            </div>
 
-                            {vantagemTitle1 ? null : (
-                            <div>
-                                <h3>Mineração de produtos</h3>
-                                <p>Selecionamos cada produto manualmente, garantindo assim exclusividade. Após sua aprovação cadastramos com descrições de alta conversão na sua loja.</p>
-                            </div>                                
+                            {props.lastInfo && (
+                                <div>
+                                    <h3>{vantagemTitle6 ? vantagemTitle6 : 'Mineração de produtos'}</h3>
+                                    <p>{vantagemSubtitle6 ? vantagemSubtitle6 : 'Selecionamos cada produto manualmente, garantindo assim exclusividade. Após sua aprovação cadastramos com descrições de alta conversão na sua loja.'}</p>
+                                </div>
                             )}
                         </div>
                     </div>

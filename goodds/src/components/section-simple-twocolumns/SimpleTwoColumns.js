@@ -7,7 +7,11 @@ function SimpleTwoColumns(props) {
             <div className={styles.containerTwoColumnsDefault}>
                 <div className={styles.containerChildTwoColumnsDefault}>
                     <div className={styles.simpleContent}>
-                        <h2 className={styles.simpleTitle}>{props.title}</h2>
+                        <h2 className={styles.simpleTitle}>
+                            {props.title}
+                            <br/>
+                            {props.destaqueTitle}
+                        </h2>
                         <p><span>{props.descriptionOne} </span> <span className={`${styles.destaqueText} ${styles.strongText}`}><h4>{props.descriptionDestaque} </h4></span>{props.description}</p>
                     </div>
                 </div>

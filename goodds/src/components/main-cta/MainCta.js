@@ -48,12 +48,9 @@ function MainCta(props) {
                         <div className={styles.gridTwoColumns}>
                             <div className={`${styles.gridTwoColumnInfo} ${styles.gridTwoColumnsChild}`}>
                                 <h1 className={styles.gridTwoColumnInfoTitle}>
-                                    <span>
-                                        {titleText}
-                                        <span className={`${styles.destaqueText} ${styles.mainCtaDestaque} ${styles.mainCtaDestaque2}`}>{destaqueTitleText2}</span>
-                                    </span>
-                                    <span className={`${styles.destaqueText} ${styles.mainCtaDestaque} ${styles.mainCtaDestaque3}`}>{destaqueTitleText1}</span>
-                                     
+                                        <span>{destaqueTitleText1}</span>
+                                        <span className={styles.primaryDestaqueText}>{titleText}</span>
+                                        <span>{destaqueTitleText2}</span>
                                 </h1>
                                 {/* <p className={styles.gridTwoColumnInfoDescription}>{description}</p> */}
                                 <div className={styles.vantagens}>
@@ -70,7 +67,7 @@ function MainCta(props) {
                                     {iconInfo}
                                 </p>
                                 <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                                    <a href="!#">
+                                    <a href="#packageSection">
                                         <span>
                                             <p>{btnTextDestaque2}</p>
                                         </span>
@@ -86,6 +83,10 @@ function MainCta(props) {
                             </div>
                         </div>
                     </div>
+
+                    <span className={styles.sectionSeparatorGreen}>
+                            <img src={SeparatorGradient} alt=""/>
+                    </span>
 
                 </div>
             </section>

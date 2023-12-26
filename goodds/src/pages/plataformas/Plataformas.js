@@ -309,7 +309,7 @@ function Plataformas() {
             </div>
 
             <Whatsapp whatsappMessage={whatsapp} />
-            <Footer />
+            <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />
         </section>
     )
 }

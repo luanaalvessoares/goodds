@@ -11,12 +11,12 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 
 // Images
-import ImageVideosCurtos from '../../assets/images/13.webp';
-import ImageArtesAnuncios from '../../assets/images/14.webp';
-import ImageBannersLoja from '../../assets/images/15.webp';
-import ImageCriacaoLogo from '../../assets/images/16.webp';
-import ImagePostsInstagram from '../../assets/images/17.webp';
-import ImagePacoteLancamento from '../../assets/images/18.webp';
+import ImageVideosCurtos from '../../assets/images/12.webp';
+import ImageArtesAnuncios from '../../assets/images/13.webp';
+import ImageBannersLoja from '../../assets/images/14.webp';
+import ImageCriacaoLogo from '../../assets/images/15.webp';
+import ImagePostsInstagram from '../../assets/images/16.webp';
+import ImagePacoteLancamento from '../../assets/images/17.webp';
 import ImageConsultorias from '../../assets/images/1.webp';
 import ImageLojaVirtual from '../../assets/images/2.webp';
 import ImageDropshipping from '../../assets/images/3.webp';
@@ -24,11 +24,10 @@ import ImageDropGlobal from '../../assets/images/4.webp';
 import ImageDropLatam from '../../assets/images/5.webp';
 import ImageDropPrint from '../../assets/images/6.webp';
 import ImageMineracaoProdutos from '../../assets/images/7.webp';
-import ImageMarketingLojaDrop from '../../assets/images/8.webp';
-import ImageMarketingLojaVirtual from '../../assets/images/9.webp';
-import ImageLandingPage from '../../assets/images/10.webp';
-import ImageWebsiteInstitucional from '../../assets/images/11.webp';
-import ImageBlog from '../../assets/images/12.webp';
+import ImageMarketingLojaVirtual from '../../assets/images/8.webp';
+import ImageLandingPage from '../../assets/images/9.webp';
+import ImageWebsiteInstitucional from '../../assets/images/10.webp';
+import ImageBlog from '../../assets/images/11.webp';
 
 function ServicesCarousel() {
   return (
@@ -312,7 +311,7 @@ function ServicesCarousel() {
                   <p>Tenha uma loja virtual sem estoque fora do país e receba em dólar.</p>
               </div>
 
-              <Link className={styles.serviceButtonContainer} to="/dropshipping-global">
+              <Link className={styles.serviceButtonContainer} to="/dropshipping">
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -338,7 +337,7 @@ function ServicesCarousel() {
                   <p>Venda para a América Latina com uma loja sem estoque e receba em dólar.</p>
               </div>
 
-              <Link className={styles.serviceButtonContainer} to="/dropshipping-latam">
+              <Link className={styles.serviceButtonContainer} to="/dropshipping">
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -364,7 +363,7 @@ function ServicesCarousel() {
                   <p>Venda produtos personalizados com uma loja de dropshipping sem estoque.</p>
               </div>
 
-              <Link className={styles.serviceButtonContainer} to="/dropshipping-print-on-demand">
+              <Link className={styles.serviceButtonContainer} to="/dropshipping">
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -391,32 +390,6 @@ function ServicesCarousel() {
               </div>
 
               <Link className={styles.serviceButtonContainer} to="/mineracao-produtos-dropshipping">
-                  <div className={styles.serviceButton}>
-                    <div className={styles.arrowContainer}>
-                        <span className={styles.btnContent}>Preços</span>
-                        <span className={styles.btnIcon}>
-                          <ArrowRightCircleLine />
-                        </span>
-                    </div>
-                  </div>                
-              </Link>
-            </div>
-          </SwiperSlide>
-
-            
-            
-            <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageMarketingLojaDrop} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Marketing para Dropshipping</h2>
-                  <p>Gerenciamos campanhas patrocinadas para sua Loja de Dropshipping.</p>
-              </div>
-
-              <Link className={styles.serviceButtonContainer} to="/marketing-loja-dropshipping">
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -494,7 +467,7 @@ function ServicesCarousel() {
                   <p>Fortaleça sua marca com um website institucional gerenciável.</p>
               </div>
 
-              <Link className={styles.serviceButtonContainer} to="/website">
+              <Link className={styles.serviceButtonContainer} to="/website-institucional">
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>

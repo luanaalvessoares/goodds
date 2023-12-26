@@ -1,13 +1,14 @@
 import React, { useRef, useEffect, useState } from 'react';
 import styles from './ImageBackground.module.css'
 import SuportAvatar from '../../assets/images/support-avatar-bg.webp'
-import VideoHomeBg from '../../assets/images/video-home-bg.mp4'
+import Video1 from '../../assets/images/video-home-bg.mp4'
+import Video2 from '../../assets/images/video-banners.mp4'
 import { useLocation } from 'react-router-dom';
 import ContactModal from '../contact-modal/ContactModal';
 import RiArrowRightSLine from 'remixicon-react/ArrowRightSLineIcon';
 import RiFireFill from 'remixicon-react/FireFillIcon';
 
-function ImageBackground({isVideo, image, title, description, title2}) {
+function ImageBackground(props) {
     const location = useLocation();
 
     // Open Modal
@@ -23,24 +24,28 @@ function ImageBackground({isVideo, image, title, description, title2}) {
         setIsModalOpen(false);
     };
 
+    const videoSrc = props.videoOption === 1 ? Video1 : Video2;
+
     return (
         <div id={styles.headerBgSection}>
             <section className={styles.bgHeader}>
-                {isVideo ? (
-                    <video src={VideoHomeBg} autoPlay loop muted playsInline className={styles.imageBg} />
+                {props.isVideo ? (
+                    <video src={videoSrc} autoPlay loop muted playsInline className={styles.imageBg} />
                 ) : (
-                    <img src={image} alt="" className={styles.imageBg} />
+                    <img src={props.image} alt="" className={styles.imageBg} />
                 )}
 
                 <div className={styles.headerOverlay}>
                     <div className={styles.contentHeader}>
-                        <div className={`${styles.titleHeader} ${location.pathname === '/' ? `${styles.home}` : ''}`}>
-                            <h2><span>{title}</span> <span>{title2}</span></h2>
+                        <div id={location.pathname === '/' ? '' : 'titleImageBG'} className={`${styles.titleHeader} ${location.pathname === '/' ? `${styles.home}` : ''}`}>
+                            <h2><span>{props.title}</span> <span>{props.title2}</span></h2>
                             <p>
                                 <span><RiFireFill /></span>
-                                {description}
+                                {props.description}
                             </p>
                         </div>
+
+                        {props.cta && (
                         <div className={styles.headerContact}>
                             <span className={`${styles.btnHeaderContact} ${styles.btnHeaderContactDesktop}`} onClick={openModal}>
                                 <div className={styles.contactBgImage}>
@@ -69,6 +74,7 @@ function ImageBackground({isVideo, image, title, description, title2}) {
                                 </div>
                             </a>
                         </div>
+                        )}
                     </div>				
                 </div>
             </section>

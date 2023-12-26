@@ -55,10 +55,10 @@ import ImageMainCta from '../../assets/images/imagenew.png';
 import ImageBandeiraBr from '../../assets/images/br-lp-global.svg';
 import ImageBandeiraUsa from '../../assets/images/usa-lp-global.svg';
 import IconPlayYT from '../../assets/images/play-yt.svg';
-import VideoTopo from '../../assets/images/video-topo.mp4';
 import ThumbVideoMain from '../../assets/images/thumb-main.webp';
 import ImageGarantia from '../../assets/images/garantia-drop.webp';
 import { Helmet } from 'react-helmet';
+import ImagePrincipal from '../../assets/images/image-lp-dropglobal.webp';
 
 function VendaTodosOsDias() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20E-commerce";
@@ -157,7 +157,7 @@ function VendaTodosOsDias() {
                             </Link>
 
                             <div className={styles.especialistasBtn}>
-                                <a href="" rel="noreferrer">
+                                <a href={whatsapp} rel="noreferrer">
                                     Equipe de Vendas
                                 </a>
                             </div>
@@ -168,12 +168,6 @@ function VendaTodosOsDias() {
                                     Pacote completo com
                                     <span className={` ${styles.mainCtaDestaque} ${styles.mainCtaDestaque3}`}> DUAS </span>
                                     Lojas de Dropshipping
-                                    {/* <span>
-                                        Opotunidade única:
-                                        <span className={` ${styles.mainCtaDestaque} ${styles.mainCtaDestaque2}`}></span>
-                                    </span>
-                                    <span className={` ${styles.mainCtaDestaque} ${styles.mainCtaDestaque3}`}>01 no Brasil e 01 Global</span> */}
-                                     
                                 </h1>
                                 <div className={styles.lojaUSAeBR}>
                                     <h5>
@@ -188,7 +182,7 @@ function VendaTodosOsDias() {
                                 <div className={styles.lojaUSAeBRBenefits}>
                                     <p>
                                         <span><RiAddFill /> </span>
-                                        Criação da Marca e Logo
+                                        Criação da Marca e do Logo
                                     </p>
                                     <p>
                                         <span><RiAddFill /> </span>
@@ -212,7 +206,7 @@ function VendaTodosOsDias() {
                                     </p>
                                     <p>
                                         <span><RiAddFill /> </span>
-                                        Garantia de 01 ano
+                                        Garantia Vitalícia
                                     </p>
                                 </div>
                                 <h5 className={styles.gridTwoColumnInfoCta}>
@@ -220,7 +214,7 @@ function VendaTodosOsDias() {
                                     Mais de 9.000 clientes em 12 países
                                 </h5>
                                 <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn} ${styles.ctaBtnChild1}`}>
-                                    <a href="!#">
+                                    <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                         Pacote Completo
                                         <span>
                                             <h3> 12x de </h3>
@@ -236,25 +230,9 @@ function VendaTodosOsDias() {
                             </div>
 
                             <div className={`${styles.gridTwoColumnImage} ${styles.gridTwoColumnsChild}`}>
-                                <Helmet>
-                                    <script src="https://fast.wistia.com/embed/medias/a5l3wvekw9.jsonp" async></script>
-                                    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                                </Helmet>
-                                <div className="wistia_responsive_padding" style={styleVideo1}>
-                                    <div className="wistia_responsive_wrapper" style={styleVideo2}>
-                                        <div className="wistia_embed wistia_async_a5l3wvekw9 seo=true videoFoam=true" style={styleVideo3}>
-                                            <div className="wistia_swatch" style={styleVideo4}>
-                                                <img src="https://fast.wistia.com/embed/medias/a5l3wvekw9/swatch"  style={styleVideo5} alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src={ImagePrincipal} alt=""/>
                             </div>
                         </div>
-
-                        <span className={styles.sectionSeparatorGreen}>
-                            <img src={SeparatorGradient} alt=""/>
-                        </span>
                     </div>
 
                 </div>
@@ -415,7 +393,7 @@ function VendaTodosOsDias() {
 
 
                         <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                            <a href="!#">
+                            <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                 Pacote Completo
                                 <span>
                                     <h3> 12x </h3>
@@ -456,7 +434,7 @@ function VendaTodosOsDias() {
                                     <span className={styles.underlineText}> O nosso pacote foi desenvolvido com base na experiência e entrega de mais de 9.000 Lojas Virtuais em 12 países.</span>
                                 </p>
                                 <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                                    <a href="!#">
+                                    <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                         Pacote Completo
                                         <span>
                                             <h3> 12x </h3>
@@ -534,7 +512,7 @@ function VendaTodosOsDias() {
                         </div>
 
                         <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                            <a href="!#">
+                            <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                 Pacote Completo 
                                 <span>
                                     <h3> 12x </h3>
@@ -624,7 +602,7 @@ function VendaTodosOsDias() {
                         </div>
 
                         <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                            <a href="!#">
+                            <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                 Pacote Completo 
                                 <span>
                                     <h3> 12x </h3>
@@ -694,7 +672,7 @@ function VendaTodosOsDias() {
                         </div>
                                 
                         <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                            <a href="!#">
+                            <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                 Pacote Completo
                                 <span>
                                     <h3> 12x </h3>
@@ -723,7 +701,7 @@ function VendaTodosOsDias() {
                         </div>
 
                         <div className={styles.gridCardsInfos}>
-                            <div className={styles.gridCardInfoChild}>
+                            <div className={`${styles.gridCardInfoChild}`}>
                                 <img src={ImageParceiroPrintful} alt="" />
                             </div>
 
@@ -737,50 +715,62 @@ function VendaTodosOsDias() {
                         <div className={styles.gridCardsMiniInfos}>
                             <div className={styles.gridCardMiniInfoChild}>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
-                                </div>
-                                <div>
-                                    <p>Tema Extra de Alta Conversão</p>
-                                </div>
-                            </div>
-                            <div className={styles.gridCardMiniInfoChild}>
-                                <div>
-                                    <span><RiCheckDoubleFill /></span>
-                                </div>
-                                <div>
-                                    <p>Curso de Técnicas e Estratégias de Vendas</p>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Tema Extra de Alta Conversão</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.gridCardMiniInfoChild}>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
-                                </div>
-                                <div>
-                                    <p>Acesso a Fornecedores Nacionais Exclusivos</p>
-                                </div>
-                            </div>
-                            <div className={styles.gridCardMiniInfoChild}>
-                                <div>
-                                    <span><RiCheckDoubleFill /></span>
-                                </div>
-                                <div>
-                                    <p>Consultoria de Contabilidade</p>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Curso de Técnicas e Estratégias de Vendas</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.gridCardMiniInfoChild}>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
-                                </div>
-                                <div>
-                                    <p>Condições Especiais em Apps e Plataformas</p>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Acesso a Fornecedores Nacionais Exclusivos</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.gridCardMiniInfoChild}>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Consultoria de Contabilidade</p>
+                                    </div>
                                 </div>
+                            </div>
+                            <div className={styles.gridCardMiniInfoChild}>
                                 <div>
-                                    <p>Receba um Funil de Vendas Validado</p>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Condições Especiais em Apps e Plataformas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.gridCardMiniInfoChild}>
+                                <div>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Receba um Funil de Vendas Validado</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -795,27 +785,31 @@ function VendaTodosOsDias() {
                         <div className={`${styles.gridCardsMiniInfos} ${styles.miniInfoTwoColumns}`}>
                             <div className={styles.gridCardMiniInfoChild}>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
-                                </div>
-                                <div>
-                                    <p>Metodologia para Mineração Global</p>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Metodologia para Mineração Global</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.gridCardMiniInfoChild}>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
-                                </div>
-                                <div>
-                                    <p>Estudo Analítico dos Principais Países</p>
+                                    <div>
+                                        <span><RiCheckDoubleFill /></span>
+                                    </div>
+                                    <div>
+                                        <p>Estudo Analítico dos Principais Países</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                            <a href="!#">
+                        <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn} ${styles.ctaBtnChild1}`}>
+                            <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                 Pacote Completo
                                 <span>
-                                    <h3> 12x </h3>
+                                    <h3> 12x de </h3>
                                 </span>
                                 <span>
                                     <h3>R$497</h3>
@@ -825,10 +819,7 @@ function VendaTodosOsDias() {
                                 <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                             </p>
                         </div>
-        
-                        <span className={styles.sectionSeparator}>
-                            <img src={SeparatorGradient} alt=""/>
-                        </span>
+
                     </div>
                 </div>
             </section>
@@ -958,7 +949,9 @@ function VendaTodosOsDias() {
                                 </div>
 
                                 <div className={styles.inscrever}>
-                                    <h3>CONTRATE AGORA</h3>
+                                    <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
+                                        <h3>CONTRATE AGORA</h3>
+                                    </a>
                                 </div>
 
                                 <div className={styles.paymentIcons}>
@@ -1028,8 +1021,8 @@ function VendaTodosOsDias() {
                         </div>
 
                         <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                            <a href="!#">
-                                Inscreva-se por 
+                            <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
+                                Pacote Completo 
                                 <span>
                                     <h3> 12x </h3>
                                 </span>
@@ -1054,7 +1047,7 @@ function VendaTodosOsDias() {
 
                         <p>Somos a Primeira Agência especializada em Dropshipping do Brasil e já entregamos mais de 9.000 lojas em 12 países.</p>
 
-                        <a href="!#">
+                        <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                             Quero Minhas Lojas
                             <span><RiArrowRightSLine /></span>
                         </a>

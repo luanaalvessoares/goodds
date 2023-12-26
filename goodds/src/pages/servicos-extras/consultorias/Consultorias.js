@@ -15,39 +15,56 @@ import DeskImageClient from '../../../assets/images/desktop1.webp';
 function Consultorias() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20Consultor%20Especialista";
 
+
     const packageData1 = {
-        packageTitle1: "Start",
-        packageDescription1: "Desenvolvimento de Loja Virtual Profissional com ferramentas que potencializam suas vendas.",
-        packagePrice1: "3.999",
-        packageNews1: "1.999",
-        packageParcel1: "208,25",
-        packageName1: "Start:",
-        included1Package1: "Criação da Loja Virtual",
-        included2Package1: "Criação da Logomarca",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-start/p"
+        packageTitle1: "Consultoria Marketplace",
+        packageDescription1: "Mentoria com um especialista para discussão de todos os assuntos relacionados a venda nos marketplaces e apresentação de soluções para o momento do seu negócio",
+        packagePrice1: "1.999",
+        packageNews1: "999",
+        packageParcel1: "416,58",
+        packageName1: "",
+        included1Package1: "Call de até 1h",
+        included2Package1: "Resumo da consultoria em PDF",
+        included3Package1: "Consultor dedicado",
+        included4Package1: "Configuração e integração do Bling",
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-mega/p"
     };
     const packageData2 = {
-        packageTitle2: "Mega",
-        packageDescription2: "Considerada a melhor e mais completa solução da Goodds, inclui todo o desenvolvimento da Loja virtual, a integração com 01 marketplace, 30 dias de acessoria de marketing e anúncios.",
-        packagePrice2: "5.999",
-        packageNews2: "3.999",
-        packageParcel2: "416,58",
-        packageName2: "Mega:",
-        included1Package2: "Criação da Loja Virtual",
-        included2Package2: "Criação da Logomarca",
-        included3Package2: "30 dias de acessoria de Marketing",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-mega/p"
+        packageTitle2: "Consultoria de Loja Virtual",
+        packageDescription2: "Análise técnica do e-commerce executada por uma equipe de TI especializada, com apresentação e entrega de relatório e sugestões de melhorias na loja virtual.",
+        packagePrice2: "1.999",
+        packageNews2: "999",
+        packageParcel2: "208,25",
+        packageName2: "",
+        included1Package2: "Call de até 1h para apresentação do relatório",
+        included2Package2: "Relatório pós análise em PDF",
+        included3Package2: "Consultor dedicado",
+        included4Package2: "Análise do layout e das integrações",
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-start/p"
+    };
+    const packageData3 = {
+        packageTitle3: "Consultoria de Dropshipping",
+        packageDescription3: "Mentoria com um especialista para discussão de todos os assuntos relacionados a dropshipping e apresentação de soluções para o momento do seu negócio.",
+        packagePrice3: "1.999",
+        packageNews3: "999",
+        packageParcel3: "208,25",
+        packageName3: "",
+        included1Package3: "Call de até 1h",
+        included2Package3: "Resumo da consultoria em PDF",
+        included3Package3: "Consultor dedicado",
+        included4Package3: "Dropshipping Nacional e Global",
+        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-start/p"
     };
     
     return (
         <div>
             <TitleDescription title="Consultoria estratégica para sua Loja Virtual" description="Independente do momento do seu negócio, nós te mostramos o caminho." />
-            <SectionTopConsultorias title="Uma mentoria feita por especialistas que amam Dropshipping." subtitle="Apresentamos técnicas, ferramentas e processos que facilitam a jornada da sua loja, rumo ao sucesso. Otimizamos a operação do seu negócio de forma simplificada." image={ImageTop} />
-            <PackagesSection packageData1={packageData1}  packageData2={packageData2} sectionPackageTitle="Tenha uma Loja Completa" />
+            <SectionTopConsultorias title="Mentorias feitas por especialistas que amam venda online." subtitle="Apresentamos técnicas, ferramentas e processos que facilitam a jornada da sua loja, rumo ao sucesso. Otimizamos a operação do seu negócio de forma simplificada." image={ImageTop} />
+            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Escolha sua Consultoria" />
             <GoogleReviews />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             <SectionClientReview title="Planejamos seu caminho para o crescimento" image={ImageClient} comment="Experiência Excelente, equipe SUPER competente, criativos e atenciosos. Me ajudaram com a idéia do nome da minha loja e o logo ficou demais. Atedimento nota mil. Só tenho que agradecer pelo comprometimento e suporte que superou as minhas expectativas." clientName="Rosana Januário — Loja TendTudo" deskImageClient={DeskImageClient} />
-            <Footer linkCtaWhatsapp={whatsapp} />
+            <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />
             <Whatsapp whatsappMessage={whatsapp} />
         </div>
     )

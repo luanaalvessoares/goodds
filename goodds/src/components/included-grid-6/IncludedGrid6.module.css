@@ -1,3 +1,9 @@
 .sectionMain {
     box-shadow: none!important;
 }
+
+.ctaText {
+    max-width: 700px;
+    margin: 3em auto 2em;
+    text-align: center;
+}

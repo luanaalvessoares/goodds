@@ -2,17 +2,17 @@ import React from 'react';
 import styles from './Footer.module.css';
 import BaseSupport from '../base-support/BaseSupport';
 import logo from '../../assets/images/logo.webp';
+import { Link } from "react-router-dom";
 import footericon1 from '../../assets/images/footericon-5.webp';
 import footericon2 from '../../assets/images/footericon-1.webp';
 import footericon3 from '../../assets/images/footericon-2.webp';
 import footericon4 from '../../assets/images/footericon-4.webp';
 import FooterCta from '../footer-cta/FooterCta';
 
-function Footer({linkCtaWhatsapp}) {
+function Footer(props) {
     return (
         <div className={styles.containerFooter}>
-            <FooterCta linkCtaWhatsapp={linkCtaWhatsapp} />
-            <BaseSupport />
+            <FooterCta linkCtaWhatsapp={props.linkCtaWhatsapp} />
             <div className={styles.containerSolutionsFooter}>
                 <div className={styles.footerContent}>
                     <div className={styles.footerLogo}>
@@ -21,15 +21,15 @@ function Footer({linkCtaWhatsapp}) {
                     <div className={styles.footerMenuLinks}>
                         <div className={styles.footerMenuLinksRow}>
                             <div>
-                                <a href="#!">Desenvolvimento de Loja</a>
+                                <Link to="/dropshipping">Desenvolvimento de Loja Dropshipping</Link>
                                 <span className={styles.separatorFooter}>|</span>
                             </div>
                             <div>
-                                <a href="#!">Loja Print-On-demand</a>
+                                <Link to="/marketing-loja-virtual">Marketing para E-commerce</Link>
                                 <span className={styles.separatorFooter}>|</span>
                             </div>
                             <div>
-                                <a href="#!">Consultoria Marketplace</a>
+                                <Link to="/mineracao-produtos-dropshipping">Mineração de Produtos</Link>
                                 <span className={styles.separatorFooter}>|</span>
                             </div>
                         </div>
@@ -38,15 +38,15 @@ function Footer({linkCtaWhatsapp}) {
                         </div>					
                         <div className={styles.footerMenuLinksRow}>
                             <div>
-                                <a href="#!">Soluções Dropshipping</a>
+                                <Link to="/dropshipping">Soluções Dropshipping</Link>
                                 <span className={styles.separatorFooter}>|</span>
                             </div>
                             <div>
-                                <a href="#!">Marketing para Ecommerce</a>
+                                <Link to="/plataformas">Plataformas</Link>
                                 <span className={styles.separatorFooter}>|</span>
                             </div>
                             <div>
-                                <a href="#!">Contato</a>
+                                <a href="https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20dropshipping">Contato</a>
                             </div>
                         </div>
                     </div>

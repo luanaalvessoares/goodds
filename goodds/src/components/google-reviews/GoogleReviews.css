@@ -43,6 +43,15 @@ h1 {
     font-weight: 900!important;
 }
 
+@media (min-width: 992px) {
+    .secondaryTextReviews {
+        font-size: 2.6em!important;
+        max-width: 800px;
+    }
+    
+}
+
+
 /* .Carousel__CarouselInner-sc-f2ox7y-2 a.ReviewLinkContainer__Link-sc-1v4k9l9-0.eGiiJN.es-review-link-container.ReviewSource__SourceBottomContainer-sc-14gktmv-6.hGKziR.es-review-source-source-bottom-container.Classic__StyledSource-sc-fc18im-1.cAfqdd {
     display: none!important;
 } */

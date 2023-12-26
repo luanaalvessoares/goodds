@@ -98,6 +98,11 @@ p, span {
   font-weight: 300!important;
 }
 
+p:not(span),
+p:not(> span) {
+  color: #656565!important;
+}
+
 .ReviewInfo__InfoContainer-sc-q3e1v-6 {
   display: none!important;
 }
@@ -110,4 +115,8 @@ p, span {
   #pageLoja {
     padding-top: 3.5em;
   }
+}
+
+#pageLoja .baseSupport {
+  display: none;
 }

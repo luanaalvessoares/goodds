@@ -81,7 +81,7 @@
     font-weight: bold;
     margin-block: 0.1em 0.6em;
     width: max-content;
-    color: #FFF;
+    color: #FFF!important;
 }
 
 .beneficiosSub {
@@ -118,9 +118,19 @@
 }
 
 @media (max-width: 660px) {
-    .beneficiosTitle,
+    .beneficiosTitle {
+        font-size: 6.5vw!important;
+    }
     .beneficiosSub {
-        font-size: 4.5vw!important;
+        font-size: 5.5vw!important;
+    }
+
+    .containerChildVenda:first-child {
+        margin-bottom: 2em;
+    }
+
+    .containerVenda {
+        margin: 3em auto 0em;
     }
 }
 
@@ -139,6 +149,7 @@
         width: 60%;
     }
 }
+
 
 .beneficiosSub {
     font-weight: bold!important;

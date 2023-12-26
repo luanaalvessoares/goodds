@@ -1,0 +1,11 @@
+#websiteInstitucional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+#websiteInstitucional img {
+    max-width: 150px;
+}

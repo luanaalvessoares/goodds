@@ -35,7 +35,7 @@
 
 .titleHeader p,
 .titleHeader h2 {
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     word-wrap: break-word;
     font-weight: bold!important;
 }
@@ -64,6 +64,7 @@
 .titleHeader {
     margin-bottom: 50px;
     height: 50%;
+    text-align: center;
 }
 
 .headerContact {
@@ -86,11 +87,11 @@
 }
 
 .btnHeaderContact p:first-child {
-    color: white;
+    color: white!important;
 }
 
 .btnHeaderContact p:last-child {
-    color: #39d6be;
+    color: #39d6be!important;
 }
 
 .bgArrow {
@@ -184,11 +185,6 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .titleHeader {
-        padding-left: 2em;
-    }
-}
 
 .titleHeader.home {
     text-align: center!important;
