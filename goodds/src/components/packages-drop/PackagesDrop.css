@@ -1,0 +1,104 @@
+#packagesDrop {
+    margin-top: 5em;
+}
+
+
+.titlePackagesDrop {
+    text-align: center;
+    padding-bottom: 1.5em;
+    font-size: 1.5rem;
+}
+
+.swiper-pagination {
+    max-width: max-content;
+    background: #effbf7;
+    padding: 0.8em;
+    border-radius: 50px;
+    border: 2px solid #73ecd4;
+}
+
+.swiper-pagination-bullet {
+    width: 0px!important;
+    height: 0px!important;
+    opacity: 1;
+}
+  
+.swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+    background-color: #000;
+    color: #FFF;
+    padding: 0.8em 2.2em;
+    border-radius: 50px;
+}
+
+.inner-span {
+    text-wrap: nowrap;
+    font-size: 16px;
+    font-weight: bold!important;
+    transition: 300ms background ease;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination-bullet {
+        width: 150px!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-pagination-bullet {
+        width: 100px!important;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+        padding: 0.8em 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-pagination {
+        padding: 0.6em 0.8em;
+    }
+    .inner-span {
+        text-wrap: nowrap;
+        font-size: 14px;
+        font-weight: bold!important;
+    }
+    .swiper-pagination-bullet {
+        width: 80px!important;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+        padding: 0.74em 0.6em 0.68em;
+    }
+}
+
+@media (max-width: 385px) {
+    .swiper-pagination {
+        padding: 0.6em 0.4em;
+    }
+    .inner-span {
+        text-wrap: nowrap;
+        font-size: 12px;
+        font-weight: bold!important;
+    }
+    .swiper-pagination-bullet {
+        width: 70px!important;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+        padding: 1em 1em 0.8em;
+    }
+}
+
+.swiper-pagination {
+    top: 25px!important;
+    bottom: auto!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) {
+    #packagesDrop {
+        margin-top: 2em;
+    }
+    .titlePackagesDrop {
+        font-size: 1.5rem;
+        padding-bottom: 0.5em;
+    }
+}

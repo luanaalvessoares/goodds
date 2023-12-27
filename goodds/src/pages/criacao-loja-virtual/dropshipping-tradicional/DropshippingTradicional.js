@@ -2,7 +2,6 @@ import React from "react";
 import './DropshippingTradicional.css'
 import Footer from "../../../components/footer/Footer";
 import VendaTodoDia from "../../../components/venda-todo-dia/VendaTodoDia";
-import PackagesSection from "../../../components/packages-section/PackagesSection";
 import DropdownTableLoja from "../../../components/dropdown-table/DropdownTableLoja";
 import GoogleReviews from "../../../components/google-reviews/GoogleReviews";
 import VantagensLoja from "../../../components/vantagens-loja/VantagensLoja";
@@ -19,6 +18,8 @@ import IncludedGrid6 from "../../../components/included-grid-6/IncludedGrid6";
 import GridCall from "../../../components/grid-call/GridCall";
 import SectionBonus from "../../../components/section-bonus/SectionBonus";
 import ImagePrimeiraAgencia from '../../../assets/images/home-primeira-agencia.webp';
+
+import PackagesDrop from "../../../components/packages-drop/PackagesDrop";
 
 function DropshippingTradicional() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20dropshipping";
@@ -39,64 +40,6 @@ function DropshippingTradicional() {
         btnTextDestaque2: "Preços e Soluções",
         btnDesc: "Aproveite nossa promoção de 50% OFF"
     }
-
-    const packageData1 = {
-        packageTitle1: "Super",
-        packageDescription1: "Desenvolvimento da Loja Virtual com logo profissional, mineração e cadastro de 15 produtos já integrados com fornecedores.",
-        packagePrice1: "3.999",
-        packageNews1: "1.999",
-        packageParcel1: "202,58",
-        packageName1: " no Super",
-        included1Package1: "Criação da Loja Virtual Completa",
-        included2Package1: "Criação da Logomarca",
-        included3Package1: "15 Produtos Exclusivos",
-        included4Package1: "Mentoria + Consultoria",
-        included5Package1: "Curso com Mais de 300 Aulas",
-        included6Package1: "Suporte Especializado 24h",
-        included7Package1: "Garantia Vitalícia",
-        included8Package1: "Domínio Grátis (www.suamarca.com.br)",
-        included11Package1: "Anúncios (Facebook e Instagram)",
-        included12Package1: "30 Dias de Assessoria de Marketing",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-megaa/p"
-    };
-    const packageData2 = {
-        packageTitle2: "Mega",
-        packageDescription2: "Desenvolvimento da Loja Virtual e da Logo com mineração e cadastro exclusivo de 30 produtos já integrados com fornecedores + 1 anúncio.",
-        packagePrice2: "5.999",
-        packageNews2: "2.999",
-        packageParcel2: "303,92",
-        packageName2: " no Mega",
-        included1Package2: "Criação da Loja Virtual Completa",
-        included2Package2: "Criação da Logomarca",
-        included3Package2: "30 Produtos Exclusivos",
-        included4Package2: "Mentoria + Consultoria",
-        included5Package2: "Curso com Mais de 300 Aulas",
-        included6Package2: "Suporte Especializado 24h",
-        included7Package2: "Garantia Vitalícia",
-        included8Package2: "Domínio Grátis (www.suamarca.com.br)",
-        included9Package2: "1 Anúncio (Facebook e Instagram)",
-        included11Package2: "30 Dias de Assessoria de Marketing",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-start/p"
-    };
-    const packageData3 = {
-        packageTitle3: "Especial",
-        packageDescription3: "A solução mais completa e mais vendida, inclui tudo do pacote Mega + 30 produtos extras + assessoria de marketing dedidacada e 3 anúncios.",
-        packagePrice3: "7.999",
-        packageNews3: "3.999",
-        packageParcel3: "405,27",
-        packageName3: " no Especial",
-        included1Package3: "Criação da Loja Virtual Completa",
-        included2Package3: "Criação da Logomarca",
-        included3Package3: "60 Produtos Exclusivos",
-        included4Package3: "Mentoria + Consultoria",
-        included5Package3: "Curso com Mais de 300 Aulas",
-        included6Package3: "Suporte Especializado 24h",
-        included7Package3: "Garantia Vitalícia",
-        included8Package3: "Domínio Grátis (www.suamarca.com.br)",
-        included9Package3: "3 Anúncios (Facebook e Instagram)",
-        included10Package3: "30 Dias de Assessoria de Marketing",
-        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-megaa/p"
-    };
 
     const grid1Data = {
         gridTitle1: "01 E-commerce Completo: ",
@@ -137,7 +80,7 @@ function DropshippingTradicional() {
             <DropHome title="Nacional e Internacional" subtitle="1ª Agência do Brasil especializada em " descriptionDestaque="Dropshipping Nacional, Latam e Global." image={ImagePrimeiraAgencia} />
             <VantagensLoja image={ImageVantagens} vantagemData="" />
             <GridCall />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha uma Loja Completa" />
+            <PackagesDrop />
             <DropdownTableLoja />
             <GoogleReviews />
             <VendaTodoDia image={ImageVendaTodoDia} />
