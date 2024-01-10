@@ -5,6 +5,11 @@
     --destaque-color2: #000000;
 }
 
+img {
+    width: 100%;
+}
+
+
 
 .containerMainCta {
     margin: 0 auto!important;
@@ -372,7 +377,7 @@ p span.destaqueText {
 }
 
 .container p {
-    font-size: 19px;
+    font-size: 19px!important;
     line-height: 1.5;
     color: var(--content-color);
 }
@@ -412,7 +417,7 @@ p span.destaqueText {
 
 
 .containerChild:not(.containerMainCta) {
-    padding: 2em 1.5em;
+    padding: 0 1.5em 2em;
     width: 100%;
 }
 
@@ -484,7 +489,7 @@ p span.destaqueText {
 /* section 2 */
 .setaPrimeiraSecao img {
     position: absolute;
-    top: -34px!important;
+    top: 0px!important;
 }
 
 .child2 .gridTwoColumnsChild {
@@ -585,6 +590,9 @@ p span.destaqueText {
     text-align: center;
     margin: auto;
     padding-bottom: 1em;
+    color: var(--title-color);
+    font-size: 2.2em;
+    max-width: 700px;
 }
 
 .child4 .destaqueText {
@@ -595,10 +603,16 @@ p span.destaqueText {
     .child4 .gridTwoColumns {
         gap: 3em;
     }
+    .child4 .gridTwoColumnInfo > p,
+    .child5 p,
+    .child6 p {
+        font-size: 19px!important;
+    }
 }
 
 .child4 .gridTwoColumnInfo > p {
     margin-block: 1em;
+    font-size: 16px;
 }
 
 .child4 .gridTwoColumnInfo .gridTwoColumnInfoBtn {
@@ -617,7 +631,9 @@ p span.destaqueText {
     margin: auto;
     padding-bottom: 1em;
     font-size: 2.6rem;
+    color: var(--title-color);
 }
+
 
 .gridCardsInfos {
     display: grid;
@@ -649,6 +665,8 @@ p span.destaqueText {
     margin: auto;
     font-size: 18px;
     margin-block: 2em;
+    max-width: 700px;
+    color: var(--title-color);
 }
 
 .child5 h6 {
@@ -661,6 +679,13 @@ p span.destaqueText {
     margin: auto;
 }
 
+@media (max-width: 768px) {
+    .child5 h2,
+    .child6 h2 {
+        font-size: 2em!important;
+    }
+}
+
 /* Section 6 */
 .child6 .titleSub {
     text-align: center;
@@ -670,6 +695,8 @@ p span.destaqueText {
 
 .child6 .titleSub h2 {
     margin: auto;
+    font-size: 2.2rem;
+    color: var(--title-color);
 }
 
 .child6 .gridCardInfoChild.gridCardInfoChild {
@@ -717,12 +744,15 @@ p span.destaqueText {
 
 .child7 .titleSub h2 {
     margin: auto;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     padding-bottom: 0.5em;
 }
 
+
 .child7 h3 {
     margin-bottom: 0.3em;
+    font-size: 22px;
+    color: var(--title-color);
 }
 
 .child7 .gridCardInfoChild {
@@ -747,11 +777,20 @@ p span.destaqueText {
 
 .child7 .titleSub h2 {
     max-width: 800px!important;
+    color: var(--title-color);
+}
+
+.child7 h2 {
+    color: var(--title-color);
 }
 
 .child7 .titleSub p {
     max-width: 1000px;
     margin: auto;
+}
+
+.child7 p {
+    font-size: 19px;
 }
 
 .child7 .gridCardInfoChild img {
@@ -771,6 +810,23 @@ p span.destaqueText {
 
 .child7 .ctaBtn {
     margin: auto;
+}
+
+@media (max-width: 768px) {
+    .child7 p {
+        font-size: 16px!important;
+    }
+    .child7 h3 {
+        font-size: 18px!important;
+    }
+    .child7 h2 {
+        font-size: 1.8em!important;
+    }
+
+    .child8 .gridCardInfoChild h2,
+    .child8 .gridCardInfoChild p {
+        text-align: center!important;
+    }
 }
 
 /* Section 8 */
@@ -807,6 +863,10 @@ p span.destaqueText {
     padding-bottom: 10px;
 }
 
+.child8 h2 {
+    color: var(--title-color);
+}
+
 .child8 .gridCardsMiniInfos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -841,10 +901,6 @@ p span.destaqueText {
     background-color: #c2fff3;
     padding: 10px;
     border-radius: 5px;
-}
-
-.child8 .gridCardMiniInfoChild div:first-child span svg {
-    vertical-align: middle;
 }
 
 .child8 .gridCardsMiniInfos.miniInfoTwoColumns {
@@ -989,6 +1045,10 @@ p span.destaqueText {
     padding-block: 0.5em;
 }
 
+.child9 .logoInscrever h1 {
+    margin-block: 0;
+}
+
 /* Section 10 */
 .child10 div:first-child h2 {
     margin: auto;
@@ -1011,6 +1071,7 @@ p span.destaqueText {
 
 .child10 .gridTwoColumnsChild h3 {
     margin-block: 0.5em;
+    font-size: 1.8em;
 }
 
 .child10 .gridTwoColumnsChild {
@@ -1023,6 +1084,7 @@ p span.destaqueText {
 
 .child10 .gridTwoColumnsChild:last-child p {
     padding-bottom: 0.6em;
+    font-size: 18px;
 }
 
 /* Section 11 */
@@ -1113,17 +1175,16 @@ p span.destaqueText {
 .ctaBtn p {
     text-align: center;
     margin-block: 1.5em 1em;
-    font-size: 14px;
-    margin-left: -6px;
+    font-size: 16px!important;
 }
 
 /* Media Queries */
 @media (min-width: 768px) {
     .container h1, .container h2 {
-        max-width: 700px;
+        max-width: 700px!important;
     }
     .container h3, .container h4, .container h5, .container h6 {
-        max-width: 700px;
+        max-width: 700px!important;
     }
     .child1 .logo {
         padding-inline: 1.5em;
@@ -1165,9 +1226,6 @@ p span.destaqueText {
         top: 0;
         transition: padding 0.3s ease;
         padding-top: 2em;
-    }
-    .child6 .titleSub h2 {
-        font-size: 2.6em;
     }
 }
 
@@ -1295,12 +1353,9 @@ p span.destaqueText {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .ctaBtn a {
         padding: 20px;
-    }
-    .child1 .gridTwoColumnInfoTitle {
-
     }
 }
 
@@ -1329,4 +1384,14 @@ p span.destaqueText {
     .child1 .gridTwoColumnInfo.gridTwoColumnsChild {
         padding-left: 1.5em;
     }
+}
+
+
+.checkIconDrop svg {
+    padding-top: 8px;
+    transform: scale(1.5);
+}
+
+.ctaBtnDesc {
+    margin-left: -10px;
 }

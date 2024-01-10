@@ -1,0 +1,101 @@
+.contactPage {
+    max-width: 700px;
+    margin: 6em auto;
+    padding-inline: 1em;
+}
+
+.contactPage h2 {
+    text-align: center;
+    margin-block: 0 1em;
+    color: #5f5f5f;
+}
+
+.contactModalInput,
+.contactModalTextarea {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.5em 2px;
+    border: 0.5px solid #c9c9c9;
+    border-radius: 5px;
+}
+
+.contactModalSubmit {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-block: 0.6em;
+    padding: 0.6em;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold!important;
+    font-size: 20px;
+    background-color: #298C7D;
+    transition: background-color 0.3s ease;
+}
+
+.contactModalSubmit:hover {
+    background-color: #3aa595;
+}
+
+.contactModalWhatsapp {
+    color: #5f5f5f;
+    margin: 1.5em auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contactModalWhatsapp a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contactModalWhatsapp span {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contactModalWhatsapp svg {
+    width: 18px;
+}
+
+button:disabled {
+    opacity: 0.5!important;
+    cursor: not-allowed!important;
+}
+
+.gridContacts {
+    margin-block: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gridContacts p {
+    font-size: 15px;
+}
+
+.gridContacts span {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.gridContacts svg {
+    width: 18px;
+}
+
+@media (min-width: 768px) {
+    .contactPage h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridContacts {
+        margin-block: 1em;
+        display: flex;
+        justify-content: center!important;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

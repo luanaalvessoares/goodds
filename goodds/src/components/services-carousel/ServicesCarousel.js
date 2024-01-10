@@ -68,68 +68,68 @@ function ServicesCarousel() {
         >
 
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-                <div className={styles.serviceImage}>
-                    <img src={ImageVideosCurtos} alt="" />
-                </div>
+              <Link className={styles.serviceButtonContainer} to="/videos-curtos-reels">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageVideosCurtos} alt="" />
+                  </div>
 
-                <div className={styles.serviceDescription}>
-                    <h2>Vídeos Curtos e Reels</h2>
-                    <p>Crie uma conexão instantânea com seu público de forma impactante.</p>
-                </div>
+                  <div className={styles.serviceDescription}>
+                      <h2>Vídeos Curtos e Reels</h2>
+                      <p>Crie uma conexão instantânea com seu público de forma impactante.</p>
+                  </div>
 
-                <Link className={styles.serviceButtonContainer} to="/videos-curtos-reels">
-                    <div className={styles.serviceButton}>
-                    <div className={styles.arrowContainer}>
-                        <span className={styles.btnContent}>Preços</span>
-                        <span className={styles.btnIcon}>
-                          <ArrowRightCircleLine />
-                        </span>
+                      <div className={styles.serviceButton}>
+                      <div className={styles.arrowContainer}>
+                          <span className={styles.btnContent}>Preços</span>
+                          <span className={styles.btnIcon}>
+                            <ArrowRightCircleLine />
+                          </span>
+                      </div>
                     </div>
-                    </div>                
+                  </div>                
                 </Link>
-              </div>
             </SwiperSlide>
 
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageArtesAnuncios} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Artes para Divulgação</h2>
-                  <p>Criamos artes para promover o seu produto e a sua marca na internet.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/artes-anuncios">
-                  <div className={styles.serviceButton}>
-                    <div className={styles.arrowContainer}>
-                        <span className={styles.btnContent}>Preços</span>
-                        <span className={styles.btnIcon}>
-                          <ArrowRightCircleLine />
-                        </span>
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageArtesAnuncios} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Artes para Divulgação</h2>
+                      <p>Criamos artes para promover o seu produto e a sua marca na internet.</p>
+                  </div>
+
+                    <div className={styles.serviceButton}>
+                      <div className={styles.arrowContainer}>
+                          <span className={styles.btnContent}>Preços</span>
+                          <span className={styles.btnIcon}>
+                            <ArrowRightCircleLine />
+                          </span>
+                      </div>
                     </div>
-                  </div>                
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageBannersLoja} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Criação de Banners</h2>
-                  <p>Desenvolvemos banners personalizados com design exclusivo para sua marca.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/banners-loja">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageBannersLoja} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Criação de Banners</h2>
+                      <p>Desenvolvemos banners personalizados com design exclusivo para sua marca.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -137,25 +137,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageCriacaoLogo} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Logo Profissional</h2>
-                  <p>Tenha uma identidade visual desenvolvida por uma equipe de especialistas.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/criacao-logo">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageCriacaoLogo} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Logo Profissional</h2>
+                      <p>Tenha uma identidade visual desenvolvida por uma equipe de especialistas.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -163,25 +163,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImagePostsInstagram} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Artes para o Feed</h2>
-                  <p>Destaque seu perfil com posts e copys personalizados que engajam.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/posts-instagram">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImagePostsInstagram} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Artes para o Feed</h2>
+                      <p>Destaque seu perfil com posts e copys personalizados que engajam.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -189,14 +189,14 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
-            <SwiperSlide className={styles.swiperContent}>
+            {/* <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
                   <img src={ImagePacoteLancamento} alt="" />
@@ -218,22 +218,22 @@ function ServicesCarousel() {
                   </div>                
               </Link>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageConsultorias} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Consultoria para E-commerce</h2>
-                  <p>Mentoria especializada para todos os momentos do seu negócio.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/consultorias">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageConsultorias} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Consultoria para E-commerce</h2>
+                      <p>Mentoria especializada para todos os momentos do seu negócio.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -241,25 +241,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageLojaVirtual} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Desenvolvimento de E-commerce</h2>
-                  <p>Entregamos a loja pronta para você vender seus produtos na internet.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/loja-virtual">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageLojaVirtual} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Desenvolvimento de E-commerce</h2>
+                      <p>Entregamos a loja pronta para você vender seus produtos na internet.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -267,25 +267,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageDropshipping} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Loja de Dropshipping</h2>
-                  <p>Criamos sua loja completa para que você possa vender sem estoque.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/dropshipping">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageDropshipping} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Loja de Dropshipping</h2>
+                      <p>Criamos sua loja completa para que você possa vender sem estoque.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -293,25 +293,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageDropGlobal} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Loja de Dropshipping Global</h2>
-                  <p>Tenha uma loja virtual sem estoque fora do país e receba em dólar.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/dropshipping">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageDropGlobal} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Loja de Dropshipping Global</h2>
+                      <p>Tenha uma loja virtual sem estoque fora do país e receba em dólar.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -319,25 +319,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageDropLatam} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Loja de Dropshipping Latam</h2>
-                  <p>Venda para a América Latina com uma loja sem estoque e receba em dólar.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/dropshipping">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageDropLatam} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Loja de Dropshipping Latam</h2>
+                      <p>Venda para a América Latina com uma loja sem estoque e receba em dólar.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -345,25 +345,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
 
             
             
           <SwiperSlide className={styles.swiperContent}>
-            <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageDropPrint} alt="" />
-              </div>
+              <Link className={styles.serviceButtonContainer} to="/print-on-demand">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageDropPrint} alt="" />
+                  </div>
 
-              <div className={styles.serviceDescription}>
-                  <h2>Loja Print-On-Demand</h2>
-                  <p>Venda produtos personalizados com uma loja de dropshipping sem estoque.</p>
-              </div>
+                  <div className={styles.serviceDescription}>
+                      <h2>Loja Print-On-Demand</h2>
+                      <p>Venda produtos personalizados com uma loja de dropshipping sem estoque.</p>
+                  </div>
 
-              <Link className={styles.serviceButtonContainer} to="/dropshipping">
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -371,25 +371,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageMineracaoProdutos} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Mineração para Dropshipping</h2>
-                  <p>Selecionamos e cadastramos produtos campeões na sua loja.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/mineracao-produtos-dropshipping">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageMineracaoProdutos} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Mineração para Dropshipping</h2>
+                      <p>Selecionamos e cadastramos produtos campeões na sua loja.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -397,25 +397,25 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
             <SwiperSlide className={styles.swiperContent}>
-              <div className={styles.serviceContent}>
-              <div className={styles.serviceImage}>
-                  <img src={ImageMarketingLojaVirtual} alt="" />
-              </div>
-
-              <div className={styles.serviceDescription}>
-                  <h2>Marketing para Loja Virtual</h2>
-                  <p>Estratégias de marketing patrocinado para impulsionar seu e-commerce.</p>
-              </div>
-
               <Link className={styles.serviceButtonContainer} to="/marketing-loja-virtual">
+                <div className={styles.serviceContent}>
+                  <div className={styles.serviceImage}>
+                      <img src={ImageMarketingLojaVirtual} alt="" />
+                  </div>
+
+                  <div className={styles.serviceDescription}>
+                      <h2>Marketing para Loja Virtual</h2>
+                      <p>Estratégias de marketing patrocinado para impulsionar seu e-commerce.</p>
+                  </div>
+
                   <div className={styles.serviceButton}>
                     <div className={styles.arrowContainer}>
                         <span className={styles.btnContent}>Preços</span>
@@ -423,14 +423,14 @@ function ServicesCarousel() {
                           <ArrowRightCircleLine />
                         </span>
                     </div>
-                  </div>                
+                  </div>
+                </div>
               </Link>
-            </div>
           </SwiperSlide>
 
             
             
-            <SwiperSlide className={styles.swiperContent}>
+            {/* <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
                   <img src={ImageLandingPage} alt="" />
@@ -452,11 +452,11 @@ function ServicesCarousel() {
                   </div>                
               </Link>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
             
             
-            <SwiperSlide className={styles.swiperContent}>
+            {/* <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
                   <img src={ImageWebsiteInstitucional} alt="" />
@@ -478,11 +478,11 @@ function ServicesCarousel() {
                   </div>                
               </Link>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
             
             
-            <SwiperSlide className={styles.swiperContent}>
+            {/* <SwiperSlide className={styles.swiperContent}>
               <div className={styles.serviceContent}>
               <div className={styles.serviceImage}>
                   <img src={ImageBlog} alt="" />
@@ -504,7 +504,7 @@ function ServicesCarousel() {
                   </div>                
               </Link>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           <div className={styles.spacingNavigation}></div>
         </Swiper>

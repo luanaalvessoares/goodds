@@ -37,7 +37,8 @@ function LojaVirtual() {
         vantagem7: "Garantia Vitalícia",
         iconInfo:"Mais de 9.000 clientes em 12 países",
         btnTextDestaque2: "Preços e Soluções",
-        btnDesc: "Aproveite nossa promoção de 50% OFF"
+        btnDesc: "Aproveite nossa promoção de 50% OFF",
+        linkBtn: "#packageSection"
     }
 
     const vantagemData = {
@@ -57,16 +58,17 @@ function LojaVirtual() {
         packageParcel1: "202,58",
         packageName1: " no Super",
         included1Package1: "Criação da Loja Virtual Completa",
-        included2Package1: "Criação da Logomarca",
-        included3Package1: "Layout Personalizado",
-        included4Package1: "Mentoria + Consultoria",
-        included5Package1: "Curso com Mais de 300 Aulas",
-        included6Package1: "Suporte Especializado 24h",
-        included7Package1: "Garantia Vitalícia",
-        included8Package1: "Domínio Grátis (www.suamarca.com.br)",
-        included11Package1: "Anúncios (Facebook e Instagram)",
-        included12Package1: "30 Dias de Assessoria de Marketing",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-megaa/p"
+        included2Package1: "Layout Personalizado",
+        included3Package1: "Mentoria + Consultoria",
+        included4Package1: "Curso com Mais de 300 Aulas",
+        included5Package1: "Suporte Especializado 24h",
+        included6Package1: "Garantia Vitalícia",
+        included7Package1: "Domínio Grátis (www.suamarca.com.br)",
+        included13Package1: "Criação da Logomarca",
+        included14Package1: "Anúncios (Facebook e Instagram)",
+        included15Package1: "30 Dias de Assessoria de Marketing",
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-start/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "Mega",
@@ -84,8 +86,9 @@ function LojaVirtual() {
         included7Package2: "Garantia Vitalícia",
         included8Package2: "Domínio Grátis (www.suamarca.com.br)",
         included9Package2: "1 Anúncio (Facebook e Instagram)",
-        included11Package2: "30 Dias de Assessoria de Marketing",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-start/p"
+        included13Package2: "30 Dias de Assessoria de Marketing",
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/pacote-e-commerce-completo-mega/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "Especial",
@@ -104,7 +107,8 @@ function LojaVirtual() {
         included8Package3: "Domínio Grátis (www.suamarca.com.br)",
         included9Package3: "3 Anúncios (Facebook e Instagram)",
         included10Package3: "30 Dias de Assessoria de Marketing",
-        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-megagoodds/p"
+        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/pacote-e-commerce-completo-especial/p",
+        btnName3: "Comprar"
     };
 
     const grid1Data = {
@@ -146,7 +150,7 @@ function LojaVirtual() {
             <DropHome title="Nacional e Internacional" subtitle="Agência especializada em " descriptionDestaque="venda online dentro e fora do Brasil." image={ImagePrimeiraAgencia} />
             <VantagensLoja image={ImageVantagens} vantagemData={vantagemData} lastInfo={false} />
             <GridCall />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha uma Loja Completa" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha uma Loja Completa" />
             <DropdownTableLoja />
             <GoogleReviews />
             <VendaTodoDia image={ImageVendaTodoDia} itemDescription2="Apps | Pagamentos | Entrega | Redes Sociais" itemDescription4="Loja + Logo + Marketing" />

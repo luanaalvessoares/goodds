@@ -3,7 +3,7 @@ import styles from '../../pages/venda-todos-os-dias/VendaTodosOsDias.module.css'
 import stylesMain from './SectionBonus.module.css';
 import RiCheckDoubleFill from 'remixicon-react/CheckDoubleFillIcon';
 import RiArrowDropRightFill from 'remixicon-react/ArrowDropRightFillIcon';
-import ImageParceiroPrintful from '../../assets/images/parceiro-printful.svg';
+import ImageParceiroPrintful from '../../assets/images/parceiro-printful.webp';
 
 function SectionBonus(props) {
     const {
@@ -44,7 +44,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus1 ? bonus1 : 'Tema Extra de Alta Conversão'}</p>
@@ -54,7 +54,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus2 ? bonus2 : 'Curso de Técnicas e Estratégias de Vendas'}</p>
@@ -64,7 +64,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus3 ? bonus3 : 'Acesso a Fornecedores Nacionais Exclusivos'}</p>
@@ -74,7 +74,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus4 ? bonus4 : 'Consultoria de Contabilidade'}</p>
@@ -84,7 +84,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus5 ? bonus5 : 'Condições Especiais em Apps e Plataformas'}</p>
@@ -94,7 +94,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus6 ? bonus6 : 'Receba um Funil de Vendas Validado'}</p>
@@ -114,7 +114,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus7 ? bonus7 : 'Metodologia para Mineração Global'}</p>
@@ -124,7 +124,7 @@ function SectionBonus(props) {
                         <div className={styles.gridCardMiniInfoChild}>
                             <div>
                                 <div>
-                                    <span><RiCheckDoubleFill /></span>
+                                    <span className={styles.checkIconDrop}><RiCheckDoubleFill /></span>
                                 </div>
                                 <div>
                                     <p>{bonus8 ? bonus8 : 'Estudo Analítico dos Principais Países'}</p>
@@ -138,7 +138,7 @@ function SectionBonus(props) {
                             Preços e Soluções
                         </a>
                         <p>
-                            <span><RiArrowDropRightFill />Aproveite nossa promoção de 50% OFF</span>
+                            <span className={styles.ctaBtnDesc}><RiArrowDropRightFill />Aproveite nossa promoção de 50% OFF</span>
                         </p>
                     </div>
                 </div>

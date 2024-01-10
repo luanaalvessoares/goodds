@@ -135,7 +135,7 @@ a {
 		align-items: center;
 		justify-content: center;
 		flex-direction: row!important;
-		gap: 12px;
+		gap: 6px;
 	}
 	.footerPartners {
 		gap: 40px!important;

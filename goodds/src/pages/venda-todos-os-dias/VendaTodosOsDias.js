@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import styles from './VendaTodosOsDias.module.css';
 import GoogleReviews from '../../components/google-reviews/GoogleReviews';
 import logo from '../../assets/images/logo.webp';
 import ImageVantagesDrop from '../../assets/images/section-vantagesdrop.webp';
-import ImageMarketplaces from '../../assets/images/homemarketplaces.webp';
 import ImageCall1 from '../../assets/images/call-start.svg';
 import ImageCall2 from '../../assets/images/call-aprovacao.svg';
 import ImageCall3 from '../../assets/images/call-marketing.svg';
@@ -22,18 +21,14 @@ import RiLayout3Fill from 'remixicon-react/Layout3FillIcon';
 import RiFlashlightFill from 'remixicon-react/FlashlightFillIcon';
 import RiReplyAllFill from 'remixicon-react/ReplyAllFillIcon';
 import RiCheckDoubleFill from 'remixicon-react/CheckDoubleFillIcon';
-import RiFilmFill from 'remixicon-react/FilmFillIcon';
 import RiFileList3Fill from 'remixicon-react/FileList3FillIcon';
-import RiFileSettingsFill from 'remixicon-react/FileSettingsFillIcon';
 import RiCheckFill from 'remixicon-react/CheckFillIcon';
 import RiArrowRightSLine from 'remixicon-react/ArrowRightSLineIcon';
 import RiAddFill from 'remixicon-react/AddFillIcon';
 import RiLayout5Fill from 'remixicon-react/Layout5FillIcon';
 import RiAlarmFill from 'remixicon-react/AlarmFillIcon';
 import Separator from '../../assets/images/separator-lp.svg';
-import SeparatorGreen from '../../assets/images/separator-green.svg';
 import RiFireFill from 'remixicon-react/FireFillIcon';
-import { Link } from 'react-router-dom';
 import SeparatorGradient from '../../assets/images/separator-gradient.svg';
 import Faq from 'react-faq-component';
 import Whatsapp from '../../components/whatsapp/Whatsapp';
@@ -45,7 +40,7 @@ import Thumb5 from '../../assets/images/thumb5.webp';
 import Thumb6 from '../../assets/images/thumb6.webp';
 import Thumb7 from '../../assets/images/thumb7.webp';
 import Thumb8 from '../../assets/images/thumb8.webp';
-import ImageParceiroPrintful from '../../assets/images/parceiro-printful.svg';
+import ImageParceiroPrintful from '../../assets/images/parceiro-printful.webp';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -57,48 +52,11 @@ import ImageBandeiraUsa from '../../assets/images/usa-lp-global.svg';
 import IconPlayYT from '../../assets/images/play-yt.svg';
 import ThumbVideoMain from '../../assets/images/thumb-main.webp';
 import ImageGarantia from '../../assets/images/garantia-drop.webp';
-import { Helmet } from 'react-helmet';
 import ImagePrincipal from '../../assets/images/image-lp-dropglobal.webp';
+import { Link } from 'react-router-dom';
 
 function VendaTodosOsDias() {
-    const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20E-commerce";
-
-    const styleVideo1 = {
-        padding: '56.25% 0 0 0',
-        position: 'relative',
-    }
-    
-    const styleVideo2 = {
-        height: '100%',
-        left: '0',
-        position: 'absolute',
-        top: '0',
-        width: '100%',
-    }
-
-    const styleVideo3 = {
-        height: '100%',
-        position: 'relative',
-        width: '100%',
-    }
-
-    const styleVideo4 = {
-        height: '100%',
-        left: '0',
-        opacity: '0',
-        overflow: 'hidden',
-        position: 'absolute',
-        top: '0',
-        transition: 'opacity 200ms',
-        width: '100%'
-    }
-
-    const styleVideo5 = {
-        filter: 'blur(5px)',
-        height: '100%',
-        objectFit: 'contain',
-        width: '100%',
-    }
+    const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20sobre%20o%20Pacote%20Dropshipping%20Dois%20em%20Um";
 
     const data = {
         rows: [
@@ -127,7 +85,7 @@ function VendaTodosOsDias() {
             content: "Disponibilizamos um especialista dedicado em marketing por 30 dias para gerenciar seus anúncios e campanhas. Após esse período você pode contratar a assessoria mensal de marketing ou seguir por conta própria gerenciando as campanhas que já estarão vendendo."
           },
           {
-            title: "Como funciona a mineração e o cadastro dos 60 produtos?",
+            title: "Como funciona a mineração e o cadastro dos 30 produtos?",
             content: "Temos um departamento especializado em mineração e cadastro de produtos, que faz manualmente toda a seleção para garantir exclusividade. Escolhemos os melhores produtos para o nicho da sua loja e após a sua aprovação fazemos o cadastro em português na loja nacional e em inglês ou espanhol na loja global."
           },
           {
@@ -157,9 +115,9 @@ function VendaTodosOsDias() {
                             </Link>
 
                             <div className={styles.especialistasBtn}>
-                                <a href={whatsapp} rel="noreferrer">
+                                <Link to="/contato">
                                     Equipe de Vendas
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className={styles.gridTwoColumns}>
@@ -186,7 +144,7 @@ function VendaTodosOsDias() {
                                     </p>
                                     <p>
                                         <span><RiAddFill /> </span>
-                                        60 Produtos nas duas Lojas (português e inglês)
+                                        30 Produtos nas duas Lojas (português e inglês)
                                     </p>
                                     <p>
                                         <span><RiAddFill /> </span>
@@ -220,11 +178,11 @@ function VendaTodosOsDias() {
                                             <h3> 12x de </h3>
                                         </span>
                                         <span>
-                                            <h3>R$497</h3>
+                                            <h3>R$506,61</h3>
                                         </span>
                                     </a>
                                     <p>
-                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                                     </p>
                                 </div>
                             </div>
@@ -239,6 +197,10 @@ function VendaTodosOsDias() {
             </section>
 
             <section className={styles.containerChild}>
+                <span className={`${styles.sectionSeparatorGreen} ${styles.setaPrimeiraSecao}`}>
+                    <img src={SeparatorGradient} alt=""/>
+                </span>
+
                 <div className={`${styles.child2} ${styles.child}`}>
                     <div>
                         <div className={styles.gridTwoColumns}>
@@ -267,7 +229,7 @@ function VendaTodosOsDias() {
                                 </div>
                                 <div className={styles.stickyInfoCard}>
                                     <span>03</span>
-                                    <h4>Mineração de 60 Produtos</h4>
+                                    <h4>Mineração de 30 Produtos</h4>
                                     <p>Nossos especialistas selecionam e cadastram os produtos nas 02 lojas. Todos os produtos são testados e escolhidos para o seu nicho, só atuamos com fornecedores validados.</p>
                                 </div>
                                 <div className={styles.stickyInfoCard}>
@@ -277,7 +239,7 @@ function VendaTodosOsDias() {
                                 </div>
                                 <div className={styles.stickyInfoCard}>
                                     <span>05</span>
-                                    <h4>Suporte 24hs com Especialistas</h4>
+                                    <h4>Suporte Dedicado 24hrs</h4>
                                     <p>Disponibilizamos suporte dedicado trilíngue e especialistas pelo WhatsApp e telefone, também possuímos centenas de vídeos tutoriais para auxiliar você no dia-a-dia</p>
                                 </div>
                                 <div className={styles.stickyInfoCard}>
@@ -387,7 +349,7 @@ function VendaTodosOsDias() {
                         </div>       
 
 
-                        <div>
+                        <div className={styles.reviewsGoogle}>
                             <GoogleReviews />
                         </div>
 
@@ -399,11 +361,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$497</h3>
+                                    <h3>R$506,61</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                             </p>
                         </div>
                         
@@ -440,11 +402,11 @@ function VendaTodosOsDias() {
                                             <h3> 12x </h3>
                                         </span>
                                         <span>
-                                            <h3>R$497</h3>
+                                            <h3>R$506,61</h3>
                                         </span>
                                     </a>
                                     <p>
-                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                                     </p>
                                 </div>
                             </div>
@@ -492,7 +454,7 @@ function VendaTodosOsDias() {
                                     <span className={`${styles.destaqueText} ${styles.iconStyle}`}><RiMedal2Fill /></span>
                                 </p>
                                 <p>
-                                    <span className={styles.destaqueText}><h6>60 Produtos Validados nas 02 lojas: </h6></span>
+                                    <span className={styles.destaqueText}><h6>30 Produtos Validados nas 02 lojas: </h6></span>
                                     faremos a seleção de cada produto e após sua aprovação cadastraremos com descrições de alta conversão.
                                 </p>
                             </div>
@@ -518,11 +480,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$497</h3>
+                                    <h3>R$506,61</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                             </p>
                         </div>
                                         
@@ -608,11 +570,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$497</h3>
+                                    <h3>R$506,61</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                             </p>
                         </div>
                                 
@@ -678,11 +640,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$497</h3>
+                                    <h3>R$506,61</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                             </p>
                         </div>
         
@@ -701,7 +663,7 @@ function VendaTodosOsDias() {
                         </div>
 
                         <div className={styles.gridCardsInfos}>
-                            <div className={`${styles.gridCardInfoChild}`}>
+                            <div className={styles.gridCardInfoChild}>
                                 <img src={ImageParceiroPrintful} alt="" />
                             </div>
 
@@ -805,21 +767,24 @@ function VendaTodosOsDias() {
                             </div>
                         </div>
 
-                        <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn} ${styles.ctaBtnChild1}`}>
+                        <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
                             <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
                                 Pacote Completo
                                 <span>
-                                    <h3> 12x de </h3>
+                                    <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$497</h3>
+                                    <h3>R$506,61</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                             </p>
                         </div>
-
+        
+                        <span className={styles.sectionSeparator}>
+                            <img src={SeparatorGradient} alt=""/>
+                        </span>
                     </div>
                 </div>
             </section>
@@ -886,12 +851,12 @@ function VendaTodosOsDias() {
                                 </p>
                                 <p>
                                     <span className={styles.destaqueText}><RiCheckFill /></span>
-                                    60 Produtos (português e inglês) - 
+                                    30 Produtos (português e inglês) - 
                                     <span className={styles.destaqueText}> R$2.799</span>
                                 </p>
                                 <p>
                                     <span className={styles.destaqueText}><RiCheckFill /></span>
-                                    03 Anúncios + Assessor de Marketing - 
+                                    03 Anúncios + Assessor de Mkt - 
                                     <span className={styles.destaqueText}> R$1.999</span>
                                 </p>
                                 <p>
@@ -921,14 +886,15 @@ function VendaTodosOsDias() {
                                 </p>
 
                                 <h2>
-                                    TOTAL DE:
-                                    <span className={styles.destaqueText}> R$21.591</span>
+                                    TOTAL:
+                                    <span className={`${styles.destaqueText} ${styles.valorTotal}`}> R$21.591</span>
                                 </h2>
                             </div>
 
                             <div className={styles.gridTwoColumnsChild}>
                                 <div className={styles.logoInscrever}>
-                                    <img src={logo} alt="" />
+                                    <span>Pacote Completo</span>
+                                    <h1>DROP 2 EM 1</h1>
                                 </div>
 
                                 <div className={styles.ctaOther}>
@@ -937,20 +903,20 @@ function VendaTodosOsDias() {
                                         <span className={`${styles.ctaDestaque} ${styles.destaqueText}`}>
                                             <span>12x de </span>
                                             <span>
-                                                <h3>R$497,00</h3>
+                                                <h3>R$506,61</h3>
                                             </span>
                                         </span>
                                     </p>
                                     <p>
                                         ou
-                                        <span className={styles.underlineText}> R$4.997 </span>
-                                        à vista
+                                        <span className={styles.underlineText}> R$4.999 </span>
+                                        à vista com desconto
                                     </p>
                                 </div>
 
                                 <div className={styles.inscrever}>
                                     <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
-                                        <h3>CONTRATE AGORA</h3>
+                                        <h3>COMPRE AGORA</h3>
                                     </a>
                                 </div>
 
@@ -977,7 +943,7 @@ function VendaTodosOsDias() {
                             </h2>
                         </div> */}
 
-                        <div>
+                        <div className={styles.reviewsGoogle}>
                             <GoogleReviews />
                         </div>
 
@@ -990,12 +956,8 @@ function VendaTodosOsDias() {
 
                             <div className={styles.gridTwoColumnsChild}>
                                 <div>
-                                    <h3>Garantia de Suporte por 1 Ano</h3>
-                                    <p>Ao adquirir nossa solução, você estará automaticamente coberto por nossa Garantia de Suporte Exclusivo por 1 ano. Isso significa que durante 365 dias, a partir da data da sua compra.</p>
-                                </div>
-                                <div>
-                                    <h3>Garantia de Funcionamento Técnico</h3>
-                                    <p>Você recebe nossa Garantia Técnica de 1 Ano, assegurando que a solução adquirida funcionará conforme especificações técnicas prometidas. Esta garantia é válida por 365 dias a partir da data de compra.</p>
+                                    <h3>Garantia Vitalícia</h3>
+                                    <p>Você recebe nossa Garantia Técnica para sempre, assegurando que a solução adquirida funcionará conforme especificações técnicas prometidas. Esta garantia é válida para clientes que possuírem nosso suporte mensal.</p>
                                 </div>
                             </div>
                         </div>
@@ -1013,7 +975,7 @@ function VendaTodosOsDias() {
                     <div>
                         <div className={styles.title}>
                             <h2>Ainda com dúvida?</h2>
-                            <p>Abaixo você encontra as perguntas mais comuns sobre o treinamento</p>
+                            <p>Abaixo você encontra as perguntas mais comuns sobre o pacote</p>
                         </div>
 
                         <div className={styles.faq}>
@@ -1022,16 +984,16 @@ function VendaTodosOsDias() {
 
                         <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
                             <a href="https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-mega-2-em-1-brasil-e-global/p">
-                                Pacote Completo 
+                                Pacote Completo
                                 <span>
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$497</h3>
+                                    <h3>R$506,61</h3>
                                 </span>
                             </a>
                             <p>
-                            <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
+                            <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
                             </p>
                         </div>
                     </div>
@@ -1053,7 +1015,7 @@ function VendaTodosOsDias() {
                         </a>
 
                         <div className={styles.copy}>
-                            <p>© 2023 Goodds - Todos os direitos reservados</p>
+                            <p>© 2024 Goodds - Todos os direitos reservados</p>
                         </div>  
                     </div>
                 </div>

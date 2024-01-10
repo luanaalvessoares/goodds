@@ -25,6 +25,7 @@ function MainCta(props) {
         btnTextDestaque1,
         btnTextDestaque2,
         btnDesc,
+        linkBtn
     } = props.data;
 
     return (
@@ -48,9 +49,9 @@ function MainCta(props) {
                         <div className={styles.gridTwoColumns}>
                             <div className={`${styles.gridTwoColumnInfo} ${styles.gridTwoColumnsChild}`}>
                                 <h1 className={styles.gridTwoColumnInfoTitle}>
-                                        <span>{destaqueTitleText1}</span>
-                                        <span className={styles.primaryDestaqueText}>{titleText}</span>
-                                        <span>{destaqueTitleText2}</span>
+                                    <span>{destaqueTitleText1}</span>
+                                    <span className={styles.primaryDestaqueText}>{titleText}</span>
+                                    <span>{destaqueTitleText2}</span>
                                 </h1>
                                 {/* <p className={styles.gridTwoColumnInfoDescription}>{description}</p> */}
                                 <div className={styles.vantagens}>
@@ -67,7 +68,7 @@ function MainCta(props) {
                                     {iconInfo}
                                 </p>
                                 <div className={`${styles.gridTwoColumnInfoBtn} ${styles.ctaBtn}`}>
-                                    <a href="#packageSection">
+                                    <a href={linkBtn}>
                                         <span>
                                             <p>{btnTextDestaque2}</p>
                                         </span>
@@ -85,7 +86,7 @@ function MainCta(props) {
                     </div>
 
                     <span className={styles.sectionSeparatorGreen}>
-                            <img src={SeparatorGradient} alt=""/>
+                        <img src={SeparatorGradient} alt=""/>
                     </span>
 
                 </div>

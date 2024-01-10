@@ -278,13 +278,13 @@ function DropdownTableLoja(props) {
 
     return (
         <section className={styles.compareTableSection}>
-            <h2 onClick={toggleDropdown} className={`${styles.compareTitle} titleColor`}>
+            {/* <h2 onClick={toggleDropdown} className={`${styles.compareTitle} titleColor`}>
                 Compare os Pacotes
                 <span>
                     <RiArrowDownSLine  className={`${styles.dropdownArrow} titleColor ${isDropdownOpen ? `${styles.open}` : ''}`}/>
                 </span>
 
-            </h2>
+            </h2> */}
 
             {isDropdownOpen && 
                 <section>

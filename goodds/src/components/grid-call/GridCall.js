@@ -61,7 +61,7 @@ function GridCall() {
                             Preços e Soluções
                         </a>
                         <p>
-                            <span><RiArrowDropRightFill />Aproveite nossa promoção de 50% OFF</span>
+                            <span className={styles.ctaBtnDesc}><RiArrowDropRightFill />Aproveite nossa promoção de 50% OFF</span>
                         </p>
                     </div>
                 </div>

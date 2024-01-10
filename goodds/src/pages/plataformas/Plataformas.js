@@ -42,15 +42,15 @@ function Plataformas() {
                         <div className={styles.checkVantagens}>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 1
+                                Venda em qualquer lugar do mundo
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 2
+                                Várias aplicações e ferramentas
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 3
+                                Segurança elevada
                             </p>
                         </div>
                     </div>
@@ -79,15 +79,15 @@ function Plataformas() {
                         <div className={styles.checkVantagens}>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 1
+                                Ampla personalização
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 2
+                                Flexibilidade
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 3
+                                Variedade em integrações
                             </p>
                         </div>
                     </div>
@@ -108,15 +108,15 @@ function Plataformas() {
                         <div className={styles.checkVantagens}>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 1
+                                Checkout fluído
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 2
+                                Alta conversão
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 3
+                                Recursos complementares
                             </p>
                         </div>
                     </div>
@@ -140,20 +140,20 @@ function Plataformas() {
                             <span>Checkout Transparente + Agilidade</span>
                         </div>
 
-                        <p>Uma plataforma de e-commerce completa para gerenciar e expandir o seu negócio, escolhida por milhares de lojas no mundo todo.</p>
+                        <p>Uma plataforma completa que permite a criação, desenvolvimento e hospedagem de lojas online, além de fornecer um checkout dinâmico.</p>
 
                         <div className={styles.checkVantagens}>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 1
+                                Baixo investimento
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 2
+                                Checkout fluído
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 3
+                                Alta taxa de aprovação
                             </p>
                         </div>
                     </div>
@@ -169,20 +169,20 @@ function Plataformas() {
                             <span>Checkout Transparente + Agilidade</span>
                         </div>
 
-                        <p>Uma plataforma de e-commerce completa para gerenciar e expandir o seu negócio, escolhida por milhares de lojas no mundo todo.</p>
+                        <p>Plataforma brasileira para criação de ecommerce. Desenvolva e gerencie sua loja virtual de forma simples e prática.</p>
 
                         <div className={styles.checkVantagens}>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 1
+                                Baixo investimento
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 2
+                                Praticidade
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 3
+                                Facilidade de uso
                             </p>
                         </div>
                     </div>
@@ -206,20 +206,20 @@ function Plataformas() {
                             <span>Checkout Transparente + Agilidade</span>
                         </div>
 
-                        <p>Uma plataforma de e-commerce completa para gerenciar e expandir o seu negócio, escolhida por milhares de lojas no mundo todo.</p>
+                        <p>A Nuvemshop é uma plataforma de e-commerce completa para quem deseja vender online, líder na América Latina e em praticidade na gestão de negócio.</p>
 
                         <div className={styles.checkVantagens}>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 1
+                                Facilidade de uso
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 2
+                                Ambiente seguro
                             </p>
                             <p>
                                 <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                Vantagem 3
+                                Diversas ferramentas
                             </p>
                         </div>
                     </div>

@@ -120,3 +120,11 @@ p:not(> span) {
 #pageLoja .baseSupport {
   display: none;
 }
+
+#packageDropDuplo .packageBuy {
+  background: linear-gradient(46.87deg, rgb(177, 245, 250) 0%, rgb(77, 255, 158) 96.94%)!important;
+}
+
+html {
+  scroll-behavior: smooth;
+}

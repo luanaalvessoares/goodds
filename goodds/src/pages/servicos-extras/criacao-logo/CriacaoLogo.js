@@ -28,26 +28,28 @@ function CriacaoLogo() {
         packageDescription1: "Desenvolvimento da Logo simples para aplicação na loja virtual e redes sociais.",
         packagePrice1: "1.399",
         packageNews1: "699",
-        packageParcel1: "312,42",
+        packageParcel1: "70,84",
         packageName1: "",
         included1Package1: "Criação da Logo Exclusiva",
         included2Package1: "Design Personalizado",
         included3Package1: "Arquivo em PNG",
-        included11Package1: "Manual da marca",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        included13Package1: "Manual da marca",
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/criacao-de-logo/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "Logo com Manual",
         packageDescription2: "Desenvolvimento da Logo completa com manual da marca para aplicação na loja virtual, redes sociais e materiais impressos.",
         packagePrice2: "2.799",
         packageNews2: "1.399",
-        packageParcel2: "520,75",
+        packageParcel2: "141,78",
         packageName2: "",
         included1Package2: "Criação da Logo Exclusiva",
         included2Package2: "Design Personalizado",
         included3Package2: "Arquivo em PNG e PSD",
         included4Package2: "Manual da marca",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/criacao-de-logo-com-manual-de-identidade/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "",
@@ -60,12 +62,13 @@ function CriacaoLogo() {
         included2Package3: "",
         included3Package3: "",
         included4Package3: "",
-        packageLink3: ""
+        packageLink3: "",
+        btnName3: "Comprar"
     };
 
     return (
         <div>
-            <ImageBackground isVideo="true" videoOption="2" cta={false} title="Criamos dua identidade visual" title2=" com logos profissionais" description="Design que reflete a essência e eleva o reconhecimento da sua marca"/>
+            <ImageBackground isVideo="true" videoOption="2" cta={false} title="Identidade Visual" title2=" com Logos Profissionais" description="Design que reflete a essência e eleva o reconhecimento da sua marca"/>
             
             <section className={styles.plataformasContainer}>
 
@@ -125,7 +128,7 @@ function CriacaoLogo() {
                         <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
                             <div className={styles.title}>
                                 <h2>Design Personalizado</h2>
-                                <span>Sua logo imconparável</span>
+                                <span>Sua logo incomparável</span>
                             </div>
 
                             <p>Entendemos sua marca para criar uma logomarca que não só se destaca, mas também conta a sua história de maneira única.</p>
@@ -157,7 +160,7 @@ function CriacaoLogo() {
             </section>
 
             <GoogleReviews />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={false} packageData3={packageData3} sectionPackageTitle="Tenha um Logo profissional" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={false} packageData3={packageData3} sectionPackageTitle="Tenha um Logo profissional" />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             
             <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />

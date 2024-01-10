@@ -28,26 +28,28 @@ function ArtesAnuncios() {
         packageDescription1: "Criação de 01 arte profissional para anúncios e campanhas patrocinadas.",
         packagePrice1: "399",
         packageNews1: "199",
-        packageParcel1: "312,42",
+        packageParcel1: "20,17",
         packageName1: "",
         included1Package1: "01 Arte",
         included2Package1: "Planejamento Estratégico",
         included3Package1: "Copy Persuasiva",
         included4Package1: "Design Profissional",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/pacote-criacao-de-arte-01/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "03 Artes",
         packageDescription2: "Criação de 03 artes profissionais para anúncios e campanhas patrocinadas.",
         packagePrice2: "999",
         packageNews2: "499",
-        packageParcel2: "520,75",
+        packageParcel2: "50,57",
         packageName2: "",
         included1Package2: "03 Artes",
         included2Package2: "Planejamento Estratégico",
         included3Package2: "Copy Persuasiva",
         included4Package2: "Design Profissional",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/pacote-criacao-de-artes-para-anuncios/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "",
@@ -60,7 +62,8 @@ function ArtesAnuncios() {
         included2Package3: "",
         included3Package3: "",
         included4Package3: "",
-        packageLink3: ""
+        packageLink3: "",
+        btnName3: ""
     };
 
     return (
@@ -157,7 +160,7 @@ function ArtesAnuncios() {
             </section>
 
             <GoogleReviews />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={false} packageData3={packageData3} sectionPackageTitle="Artes e anúncios profissionais" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={false} packageData3={packageData3} sectionPackageTitle="Artes e anúncios profissionais" />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
 
             <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />

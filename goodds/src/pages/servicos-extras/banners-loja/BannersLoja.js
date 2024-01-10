@@ -26,28 +26,30 @@ function BannersLoja() {
     const packageData1 = {
         packageTitle1: "01 banner",
         packageDescription1: "Desenvolvimento de 01 banner profissional exclusivo para o seu site.",
-        packagePrice1: "279",
-        packageNews1: "139",
-        packageParcel1: "312,42",
-        packageName1: "Start:",
+        packagePrice1: "399",
+        packageNews1: "199",
+        packageParcel1: "20,17",
+        packageName1: "",
         included1Package1: "01 arte",
         included2Package1: "Planejamento estratégico",
         included3Package1: "Copy persuasiva",
         included4Package1: "Design profissional",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/criacao-de-banner-para-loja-virtual/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "03 banners",
         packageDescription2: "Desenvolvimento de 03 banners profissionais exclusivos para o seu site.",
-        packagePrice2: "417",
-        packageNews2: "299",
-        packageParcel2: "520,75",
-        packageName2: "Mega:",
+        packagePrice2: "999",
+        packageNews2: "499",
+        packageParcel2: "50,57",
+        packageName2: "",
         included1Package2: "03 artes",
         included2Package2: "Planejamento estratégico",
         included3Package2: "Copy persuasiva",
         included4Package2: "Design profissional",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/criacao-de-banners-para-loja-virtual/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "",
@@ -60,8 +62,14 @@ function BannersLoja() {
         included2Package3: "",
         included3Package3: "",
         included4Package3: "",
-        packageLink3: ""
+        packageLink3: "",
+        btnName2: ""
     };
+
+    const secondBannerStyle = {
+        marginBlock: '-6em',
+      };
+    
 
     return (
         <div>
@@ -77,7 +85,7 @@ function BannersLoja() {
                                 <span>Uma imagem vale mais que mil palavras</span>
                             </div>
 
-                            <p>Nossos banners são criados para atrair imediatamente a atenção do seu pblico alvo, combinando estética e clareza para destacar seus produtos.</p>
+                            <p>Nossos banners são criados para atrair imediatamente a atenção do seu público alvo, combinando estética e clareza para destacar seus produtos.</p>
 
                             <div className={styles.checkVantagens}>
                                 <p>
@@ -105,7 +113,7 @@ function BannersLoja() {
                 <div className={`${styles.plataformaWoocommerce} ${styles.plataformaSection}`}>
                     <div className={styles.gridPlataformas}>
                         <div className={styles.gridPlataformasChild}>
-                            <img src={ImageBannersLoja2} alt="" />
+                            <img src={ImageBannersLoja2} alt="" style={secondBannerStyle} />
                         </div>
                         
                         <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
@@ -128,7 +136,7 @@ function BannersLoja() {
                                 <span>Desenvolvimento rápido e exclusivo</span>
                             </div>
 
-                            <p>Cada banner é cuidadosamente personalizado para se alinhar à identidade visual da sua marca, garantindo consistência e profisssionalismo.</p>
+                            <p>Cada banner é cuidadosamente personalizado para se alinhar à identidade visual da sua marca, garantindo consistência e profissionalismo.</p>
                         </div>
 
                         <div className={styles.gridPlataformasChild}>
@@ -157,7 +165,7 @@ function BannersLoja() {
             </section>
 
             <GoogleReviews />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={false} packageData3={packageData3} sectionPackageTitle="Banners para sua loja" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={false} packageData3={packageData3} sectionPackageTitle="Banners para sua loja" />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             
             <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />

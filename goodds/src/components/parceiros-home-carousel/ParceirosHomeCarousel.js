@@ -3,20 +3,20 @@ import styles from './ParceirosHomeCarousel.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import ParceiroShopify from '../../assets/images/parceiro-shopify.svg';
-import ParceiroNuvemShop from '../../assets/images/parceiro-nuvemshop.svg';
-import ParceiroWooCommerce from '../../assets/images/parceiro-woocommerce.svg';
-import ParceiroPlaceX from '../../assets/images/parceiro-placex.svg';
-import ParceiroPrintful from '../../assets/images/parceiro-printful.svg';
-import ParceiroAppMax from '../../assets/images/parceiro-appmax.svg';
-import ParceiroYampi from '../../assets/images/parceiro-yampi.svg';
-import ParceiroADMiner from '../../assets/images/parceiro-adminer.svg';
-import ParceiroMinea from '../../assets/images/parceiro-minea.svg';
-import ParceiroDSLite from '../../assets/images/parceiro-dslite.svg';
-import ParceiroMercadoLivre from '../../assets/images/parceiro-mercadolivre.svg';
-import ParceiroShein from '../../assets/images/parceiro-shein.svg';
-import ParceiroShopee from '../../assets/images/parceiro-shopee.svg';
-import ParceiroRDStation from '../../assets/images/parceiro-rdstation.svg';
+import ParceiroShopify from '../../assets/images/parceiro-shopify.webp';
+import ParceiroNuvemShop from '../../assets/images/parceiro-nuvemshop.webp';
+import ParceiroWooCommerce from '../../assets/images/parceiro-woocommerce.webp';
+import ParceiroPlaceX from '../../assets/images/parceiro-placex.webp';
+import ParceiroPrintful from '../../assets/images/parceiro-printful.webp';
+import ParceiroAppMax from '../../assets/images/parceiro-appmax.webp';
+import ParceiroYampi from '../../assets/images/parceiro-yampi.webp';
+import ParceiroADMiner from '../../assets/images/parceiro-adminer.webp';
+import ParceiroMinea from '../../assets/images/parceiro-minea.webp';
+import ParceiroDSLite from '../../assets/images/parceiro-dslite.webp';
+import ParceiroMercadoLivre from '../../assets/images/parceiro-mercadolivre.webp';
+import ParceiroShein from '../../assets/images/parceiro-shein.webp';
+import ParceiroShopee from '../../assets/images/parceiro-shopee.webp';
+import ParceiroRDStation from '../../assets/images/parceiro-rdstation.webp';
 
 function ParceirosHomeCarousel() {
     return (

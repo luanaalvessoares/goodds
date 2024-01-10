@@ -9,8 +9,8 @@ import navicon4 from '../../assets/images/navicon-4.webp';
 import navicon5 from '../../assets/images/navicon-5.webp';
 import navicon6 from '../../assets/images/navicon-6.webp';
 import navicon7 from '../../assets/images/navicon-7.webp';
+import navicon8 from '../../assets/images/navicon-8.webp';
 import ImageDropGlobal from '../../assets/images/drop-global-menu.webp';
-import ContactModal from '../contact-modal/ContactModal';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,19 +43,6 @@ function Header() {
       setOpenMenuItem(null);
       setIsHovered(false);
   }, [location]);
-
-  // Open Modal
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Função para abrir o modal
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  // Função para fechar o modal
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   return (
       <header className={styles.header}>
@@ -105,13 +92,13 @@ function Header() {
                                     <span className={styles.menuSubtitle}>Desenvolvimento de E-commerce</span>
                                   </Link>
                               </li>
-                              <li>
+                              {/* <li>
                                   <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Website Institucional
                                     <span className={styles.menuSubtitle}>Criação de Site</span>
                                     <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
-                              </li>
+                              </li> */}
                               <li>
                                   <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Landing Page
@@ -119,13 +106,21 @@ function Header() {
                                     <span className={`${styles.emBreve} ${styles.emBreveBlog}`}>EM BREVE</span>
                                   </Link>
                               </li>
+
                               <li>
+                                  <Link to="/print-on-demand" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
+                                    Loja Print-on-Demand
+                                    <span className={styles.menuSubtitle}>Produtos Personalizados Sob Demanda</span>
+                                    <span className={`${styles.emBreve} ${styles.emBrevePrint}`}>EM BREVE</span>
+                                  </Link>
+                              </li>
+                              {/* <li>
                                   <Link to="/blog" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Criação de Blog
                                     <span className={styles.menuSubtitle}>Publique Ideias</span>
                                     <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
-                              </li>
+                              </li> */}
                           </ul>
                       </div>
                       
@@ -140,13 +135,6 @@ function Header() {
                                   <Link to="/marketing-loja-virtual" className={styles.dropdownLink}>
                                     Marketing Loja Virtual
                                     <span className={styles.menuSubtitle}>Anúncios Patrocinados</span>
-                                  </Link>
-                              </li>
-                              <li>
-                                  <Link to="/pacote-lancamento-loja"  className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
-                                      Pacote Lançamento de Loja
-                                      <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
-                                    <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
                               </li>
                               <li>
@@ -165,6 +153,13 @@ function Header() {
                                   <Link to="/videos-curtos-reels" className={styles.dropdownLink}>
                                       Vídeos Curtos e Reels
                                       <span className={styles.menuSubtitle}>Engaje nas Redes</span>
+                                  </Link>
+                              </li>
+                              <li>
+                                  <Link to="/pacote-lancamento-loja"  className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
+                                      Pacote Lançamento de Loja
+                                      <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
+                                    <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
                               </li>
                           </ul>
@@ -223,7 +218,7 @@ function Header() {
 
                   <div className={styles.ctaHeaderDesktop}>
                     <h4>Venda todos os dias</h4>
-                    <a onClick={openModal}><span>Falar com um especialista</span></a>
+                    <Link to="/contato"><span>Falar com um especialista</span></Link>
                   </div>
                 </div>
               </li>
@@ -237,7 +232,7 @@ function Header() {
                 </Link>
               </li>
 
-              {/* DROPDOWN DESKTOP 4 */}
+              {/* DROPDOWN DESKTOP 3 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
                 <Link to="https://bloggoodds.com.br/" target="_blank" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                   <div className={`${styles.navLink} ${styles.dropdownButton}`}>
@@ -246,6 +241,16 @@ function Header() {
                 </Link>
               </li>
               
+              {/* DROPDOWN DESKTOP 4
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
+                <Link to="/gratuito" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                  <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                    Gratuito
+                  </div>
+                </Link>
+              </li> */}
+
+
 
               {/* DROPDOWN MOBILE 1 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile} ${openMenuItem === 1 ? `${styles.showDropdown}` : ''}`}>
@@ -277,13 +282,24 @@ function Header() {
                           </li>
                         </Link>
 
-                        <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
+                        {/* <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
                             <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
                               Website Institucional
                               <span className={`${styles.emBreve}`}>EM BREVE</span>
                             </span>
                             <span className={styles.menuSubtitle}>Criação de Site</span>
+                          </li>
+                        </Link> */}
+
+
+                        <Link to="/print-on-demand" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
+                          <li>
+                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
+                              Loja Print-on-Demand
+                              <span className={`${styles.emBreve}`}>EM BREVE</span>
+                            </span>
+                            <span className={styles.menuSubtitle}>Produtos Personalizados Sob Demanda</span>
                           </li>
                         </Link>
 
@@ -297,7 +313,7 @@ function Header() {
                           </li>
                         </Link>
 
-                        <Link to="/blog" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
+                        {/* <Link to="/blog" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
                             <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
                               Criação de Blog
@@ -305,7 +321,7 @@ function Header() {
                             </span>
                             <span className={styles.menuSubtitle}>Publique Ideias</span>
                           </li>
-                        </Link>
+                        </Link> */}
                       </ul>
                     </div>
                   </div>
@@ -313,7 +329,7 @@ function Header() {
               </li>
 
 
-              {/* DROPDOWN MOBILE 3 */}
+              {/* DROPDOWN MOBILE 2 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile} ${openMenuItem === 3 ? `${styles.showDropdown}` : ''}`}>
                 <div className={`${styles.navLink} ${styles.dropdownButton}`} onClick={() => toggleItem(3)}>
                   <span>
@@ -332,16 +348,6 @@ function Header() {
                           <li>
                             <span>Marketing Loja Virtual</span>
                             <span className={styles.menuSubtitle}>Anúncios Patrocinados</span>
-                          </li>
-                        </Link>
-
-                        <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
-                          <li>
-                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
-                              Pacote Lançamento de Loja
-                              <span className={`${styles.emBreve}`}>EM BREVE</span>
-                            </span>
-                            <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
                           </li>
                         </Link>
 
@@ -365,6 +371,16 @@ function Header() {
                             <span className={styles.menuSubtitle}>Engaje nas Redes</span>
                           </li>
                         </Link>
+
+                        <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
+                          <li>
+                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
+                              Pacote Lançamento de Loja
+                              <span className={`${styles.emBreve}`}>EM BREVE</span>
+                            </span>
+                            <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
+                          </li>
+                        </Link>
                       </ul>
                     </div>
                   </div>
@@ -372,7 +388,7 @@ function Header() {
               </li>
 
 
-              {/* DROPDOWN MOBILE 4 */}
+              {/* DROPDOWN MOBILE 3 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile} ${openMenuItem === 4 ? `${styles.showDropdown}` : ''}`}>
                 <div className={`${styles.navLink} ${styles.dropdownButton}`} onClick={() => toggleItem(4)}>
                   <span>
@@ -422,7 +438,7 @@ function Header() {
                 </div>
               </li>
 
-              {/* DROPDOWN MOBILE 5 */}
+              {/* DROPDOWN MOBILE 4
               <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile}`}>
                 <div className={`${styles.navLink} ${styles.dropdownButton}`}>
                   <span>
@@ -432,10 +448,10 @@ function Header() {
                     </Link>
                   </span>
                 </div>
-              </li>
+              </li> */}
 
 
-              {/* DROPDOWN MOBILE 6 */}
+              {/* DROPDOWN MOBILE 5 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile}`}>
                 <div className={`${styles.navLink} ${styles.dropdownButton}`}>
                   <span>
@@ -448,11 +464,11 @@ function Header() {
               </li>
 
 
-              {/* DROPDOWN MOBILE 7 */}
+              {/* DROPDOWN MOBILE 6 */}
               <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile}`}>
                 <div className={`${styles.navLink} ${styles.dropdownButton}`}>
                   <span>
-                    <Link className={styles.newsLinks} to="https://goodds.com.br/blog/">
+                    <Link className={styles.newsLinks} to="https://bloggoodds.com.br/">
                         <img src={navicon6} alt="" width="35"/>
                         O que há de novo
                     </Link>
@@ -460,13 +476,28 @@ function Header() {
                 </div>
               </li>
 
+              
+              {/* DROPDOWN MOBILE 7
+              <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile}`}>
+                <div className={`${styles.navLink} ${styles.dropdownButton}`}>
+                  <span>
+                    <Link className={styles.newsLinks} to="/gratuito">
+                        <img src={navicon8} alt="" width="35"/>
+                        Gratuito
+                    </Link>
+                  </span>
+                </div>
+              </li> */}
+
 
               <li className={`${styles.dropdownItem} ${styles.dropdownItemMobile} ${styles.imageDropGlobalMobile}`}>
                 <div className={`${styles.navLink} ${styles.dropdownButton}`}>
-                  <span>
-                      <img src={navicon4} alt="" width="35"/>
-                      Dropshipping Global
-                  </span>
+                    <span>
+                      <Link className={styles.newsLinks} to="/dropshipping">
+                          <img src={navicon4} alt="" width="35"/>
+                          Dropshipping Global
+                      </Link>                        
+                    </span>
                 </div>
 
                 <div>
@@ -498,10 +529,9 @@ function Header() {
           </div>
 
           <div className={styles.navCallToAction}>
-            <a className={styles.btnCallToAction} onClick={openModal}>
+            <Link className={styles.btnCallToAction} to="/contato">
               Equipe de Vendas
-            </a>
-            <ContactModal isOpen={isModalOpen} onRequestClose={closeModal} />
+            </Link>
           </div>
 
         </nav>

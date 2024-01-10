@@ -29,39 +29,42 @@ function VideoCurtoReels() {
         packageDescription1: "Fazemos a edição e a produção de um vídeo com 15 segundos de conteúdo para as redes sociais e aplicação em campanhas patrocinadas.",
         packagePrice1: "999",
         packageNews1: "499",
-        packageParcel1: "",
+        packageParcel1: "50,57",
         packageName1: "",
         included1Package1: "15 segundos de vídeo",
         included2Package1: "Planejamento estratégico",
         included3Package1: "Desenvolvimento artístico e criativo",
         included4Package1: "Finalização e pós produção",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/criacao-de-videos-para-anuncios/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "30 segundos",
         packageDescription2: "Fazemos a edição e a produção de um vídeo com 30 segundos de conteúdo para as redes sociais e aplicação em campanhas patrocinadas.",
         packagePrice2: "1.999",
         packageNews2: "999",
-        packageParcel2: "312,42",
+        packageParcel2: "101,24",
         packageName2: "",
         included1Package2: "30 segundos de vídeo",
         included2Package2: "Planejamento estratégico",
         included3Package2: "Desenvolvimento artístico e criativo",
         included4Package2: "Finalização e pós produção",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/criacao-de-videos-para-anuncios-30-segundos/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "60 segundos",
         packageDescription3: "Fazemos a edição e a produção de um vídeo com 60 segundos de conteúdo para as redes sociais e aplicação em campanhas patrocinadas.",
         packagePrice3: "2.999",
         packageNews3: "1.499",
-        packageParcel3: "520,75",
+        packageParcel3: "151,91",
         packageName3: "",
         included1Package3: "60 segundos de vídeo",
         included2Package3: "Planejamento estratégico",
         included3Package3: "Desenvolvimento artístico e criativo",
         included4Package3: "Finalização e pós produção",
-        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/criacao-de-videos-para-anuncios-60-segundos/p",
+        btnName3: "Comprar"
     };
 
     return (
@@ -112,7 +115,7 @@ function VideoCurtoReels() {
                         <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
                             <div className={styles.title}>
                                 <h2>Vídeos Personalizados</h2>
-                                <span>Design eclusivo</span>
+                                <span>Design Exclusivo</span>
                             </div>
 
                             <p>Cada vídeo é cuidadosamente criado para refletir os valores e a identidade da sua marca e dos seus produtos, criando uma conexão genuína com seu público.</p>
@@ -158,7 +161,7 @@ function VideoCurtoReels() {
             </section>
 
             <GoogleReviews />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha uma Loja Completa" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Vídeos para sua marca" />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
 
             <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />

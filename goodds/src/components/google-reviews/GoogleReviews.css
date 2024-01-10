@@ -1,44 +1,13 @@
-.reviewScript {
-    margin-block: 4em;
-    z-index: -1!important;
-}
-
-.containerReviewsGoogle,
-.Main__Content-sc-1w4nyzp-1.eOTuFu.es-main-content,
-.Carousel__CarouselContainer-sc-tyvl4o-0.hDDUYK.es-carousel-layout-container,
-.Carousel__CarouselContainer-sc-f2ox7y-0.cWBoky.es-carousel-layout,
-.Carousel__CarouselOuter-sc-f2ox7y-1.fvIQjw,
-.Carousel__CarouselInner-sc-f2ox7y-2.bOAeit,
-.Carousel__CarouselSwiperWrapper-sc-f2ox7y-10.eDfoHK,
-.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-autoheight.swiper-watch-progress.swiper-backface-hidden,
-.swiper-wrapper {
-    z-index: -1!important;
-}
-
-.reviewScript h1 {
-    font-size: 1.4em;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-.fBHjnG {
-    flex: inherit;
-}
-/* .WidgetTitle__Header-sc-ruy1gu-2.iFEZzR {
-    display: none;
-}
-.HeaderWriteReviewButton__Component-sc-aghmpr-0.hYjZwu.Header__StyledHeaderWriteReviewButton-sc-gozq6j-4.jeuPze {
-    display: none;
-} */
-.gGgqlY {
-    border-radius: 8px;
-    justify-content: center;
-}
-
 h1 {
     color: #3f3f3f;
 }
 
-.destaqueText {
+.reviewScript {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.secondaryTextReviews .destaqueText {
     color: #38d6be!important;
     font-weight: 900!important;
 }
@@ -46,12 +15,13 @@ h1 {
 @media (min-width: 992px) {
     .secondaryTextReviews {
         font-size: 2.6em!important;
-        max-width: 800px;
+        max-width: 800px!important;
     }
     
 }
 
-
-/* .Carousel__CarouselInner-sc-f2ox7y-2 a.ReviewLinkContainer__Link-sc-1v4k9l9-0.eGiiJN.es-review-link-container.ReviewSource__SourceBottomContainer-sc-14gktmv-6.hGKziR.es-review-source-source-bottom-container.Classic__StyledSource-sc-fc18im-1.cAfqdd {
-    display: none!important;
-} */
+@media (min-width: 576px) {
+    .secondaryTextReviews .destaqueText {
+        display: block;
+    }
+}

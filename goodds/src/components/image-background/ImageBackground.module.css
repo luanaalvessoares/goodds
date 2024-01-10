@@ -198,12 +198,15 @@
     .titleHeader.home h2 {
         font-size: 2.25em!important;
     }
+}
+
+@media (max-width: 576px) {
     .btnHeaderContactDesktop {
         display: none!important;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .btnHeaderContactMobile {
         display: none!important;
     }

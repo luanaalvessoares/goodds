@@ -29,33 +29,36 @@ function MineracaoProdutosDropshipping() {
         included2Package1: "Cadastro após aprovação",
         included3Package1: "Copywriting otimizado",
         included4Package1: "Tratamento das imagens",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/pacote-de-mineracao-e-cadastro-30-produtos/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "60 produtos",
         packageDescription2: "Mineração e cadastro profissional de 60 produtos com padronização de imagens e descrição otimizada.",
         packagePrice2: "3.999",
         packageNews2: "1.899",
-        packageParcel2: "194,25",
+        packageParcel2: "192,45",
         packageName2: "",
         included1Package2: "Seleção exclusiva",
         included2Package2: "Cadastro após aprovação",
         included3Package2: "Copywriting otimizado",
         included4Package2: "Tratamento das imagens",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/mineracao-e-cadastro-de-produtos-para-dropshipping-60-produtos/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "90 produtos",
         packageDescription3: "Mineração e cadastro profissional de 90 produtos com padronização de imagens e descrição otimizada.",
         packagePrice3: "5.999",
         packageNews3: "2.699",
-        packageParcel3: "274,33",
+        packageParcel3: "273,52",
         packageName3: "",
         included1Package3: "Seleção exclusiva",
         included2Package3: "Cadastro após aprovação",
         included3Package3: "Copywriting otimizado",
         included4Package3: "Tratamento das imagens",
-        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/mineracao-e-cadastro-de-produtos-para-dropshipping-90-produtos/p",
+        btnName3: "Comprar"
     };
 
     const cardsIconsData = {
@@ -80,7 +83,7 @@ function MineracaoProdutosDropshipping() {
             <CardsIcons cardsIconsData={cardsIconsData} />
             <SimpleTwoColumns title="Produtos que vendem!" description="Possuímos um departamento exclusivo de produtos. No dropshipping a seleção e o cadastramento do produto é um dos pilares que define o sucesso da loja. Atuamos com uma execução perfeita desde a escolha do item até a implementação no site." image={ImageDescription} />
             <GoogleReviews />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha uma Loja Completa" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Mineração de produtos" />
             <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />
             <Whatsapp whatsappMessage={whatsapp} />
         </div>

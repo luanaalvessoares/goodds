@@ -13,7 +13,7 @@ function SectionVendasMkt() {
                 <div className={styles.containerChildTwoColumnsDefault}>
                     <div className={styles.vendasMktContent}>
                         <h2 className={styles.vendasMktTitle}>Anúncios Patrocinados que Funcionam</h2>
-                        <p>Possuímos um método validado por milhares de clientes para sua Loja Virtual performar ao máximo no Instagram e no Facebook..</p>
+                        <p>Possuímos um método validado por milhares de clientes para sua Loja Virtual performar ao máximo no Instagram e no Facebook.</p>
                         <div className={styles.vendasMktDescription}>
                             <div className={styles.vendasMktGrid}>
                                 <div className={styles.vendasMktGridItem}>

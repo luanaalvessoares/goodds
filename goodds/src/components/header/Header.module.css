@@ -489,6 +489,12 @@ a {
   right: -30px;
 }
 
+.emBreve.emBrevePrint {
+  position: absolute;
+  top: 2px;
+  right: -5px;
+}
+
 
 .itemEmBreveMobile .emBreve {
   border-radius: 40px;

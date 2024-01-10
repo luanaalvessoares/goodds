@@ -18,49 +18,52 @@ function Consultorias() {
 
     const packageData1 = {
         packageTitle1: "Consultoria Marketplace",
-        packageDescription1: "Mentoria com um especialista para discussão de todos os assuntos relacionados a venda nos marketplaces e apresentação de soluções para o momento do seu negócio",
+        packageDescription1: "Mentoria com um especialista para discussão de todas as consultorias relacionados a venda nos marketplaces e apresentação de soluções para o momento do seu negócio",
         packagePrice1: "1.999",
         packageNews1: "999",
-        packageParcel1: "416,58",
+        packageParcel1: "101,24",
         packageName1: "",
         included1Package1: "Call de até 1h",
         included2Package1: "Resumo da consultoria em PDF",
         included3Package1: "Consultor dedicado",
         included4Package1: "Configuração e integração do Bling",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-mega/p"
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/consultoria-para-marketplace/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "Consultoria de Loja Virtual",
         packageDescription2: "Análise técnica do e-commerce executada por uma equipe de TI especializada, com apresentação e entrega de relatório e sugestões de melhorias na loja virtual.",
         packagePrice2: "1.999",
         packageNews2: "999",
-        packageParcel2: "208,25",
+        packageParcel2: "101,24",
         packageName2: "",
         included1Package2: "Call de até 1h para apresentação do relatório",
         included2Package2: "Relatório pós análise em PDF",
         included3Package2: "Consultor dedicado",
         included4Package2: "Análise do layout e das integrações",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-start/p"
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/consultoria-analise-tecnica-de-e-commerce/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "Consultoria de Dropshipping",
-        packageDescription3: "Mentoria com um especialista para discussão de todos os assuntos relacionados a dropshipping e apresentação de soluções para o momento do seu negócio.",
+        packageDescription3: "Mentoria com um especialista para discussão de todas as consultorias relacionados a dropshipping e apresentação de soluções para o momento do seu negócio.",
         packagePrice3: "1.999",
         packageNews3: "999",
-        packageParcel3: "208,25",
+        packageParcel3: "101,24",
         packageName3: "",
         included1Package3: "Call de até 1h",
         included2Package3: "Resumo da consultoria em PDF",
         included3Package3: "Consultor dedicado",
         included4Package3: "Dropshipping Nacional e Global",
-        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-e-commerce-start/p"
+        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/consultoria-de-dropshipping/p",
+        btnName3: "Comprar"
     };
     
     return (
         <div>
             <TitleDescription title="Consultoria estratégica para sua Loja Virtual" description="Independente do momento do seu negócio, nós te mostramos o caminho." />
             <SectionTopConsultorias title="Mentorias feitas por especialistas que amam venda online." subtitle="Apresentamos técnicas, ferramentas e processos que facilitam a jornada da sua loja, rumo ao sucesso. Otimizamos a operação do seu negócio de forma simplificada." image={ImageTop} />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Escolha sua Consultoria" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Escolha sua Consultoria" />
             <GoogleReviews />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             <SectionClientReview title="Planejamos seu caminho para o crescimento" image={ImageClient} comment="Experiência Excelente, equipe SUPER competente, criativos e atenciosos. Me ajudaram com a idéia do nome da minha loja e o logo ficou demais. Atedimento nota mil. Só tenho que agradecer pelo comprometimento e suporte que superou as minhas expectativas." clientName="Rosana Januário — Loja TendTudo" deskImageClient={DeskImageClient} />

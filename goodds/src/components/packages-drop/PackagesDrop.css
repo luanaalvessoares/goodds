@@ -2,14 +2,18 @@
     margin-top: 5em;
 }
 
+.slidesPackagesDrop > div {
+    position: relative;
+}
 
-.titlePackagesDrop {
+
+#packagesDrop .titlePackagesDrop {
     text-align: center;
     padding-bottom: 1.5em;
     font-size: 1.5rem;
 }
 
-.swiper-pagination {
+#packagesDrop .swiper-pagination {
     max-width: max-content;
     background: #effbf7;
     padding: 0.8em;
@@ -17,20 +21,19 @@
     border: 2px solid #73ecd4;
 }
 
-.swiper-pagination-bullet {
+#packagesDrop .swiper-pagination-bullet {
     width: 0px!important;
     height: 0px!important;
     opacity: 1;
 }
   
-.swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
-    background-color: #000;
-    color: #FFF;
-    padding: 0.8em 2.2em;
+#packagesDrop .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+    background-color: #77fac5;
+    padding: 0.75em 2.2em 0.8em;
     border-radius: 50px;
 }
 
-.inner-span {
+#packagesDrop .inner-span {
     text-wrap: nowrap;
     font-size: 16px;
     font-weight: bold!important;
@@ -38,55 +41,64 @@
 }
 
 @media (min-width: 768px) {
-    .swiper-pagination-bullet {
-        width: 150px!important;
+    #packagesDrop .swiper-pagination-bullet {
+        width: 200px!important;
     }
 }
 
-@media (max-width: 768px) {
-    .swiper-pagination-bullet {
-        width: 100px!important;
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    #packagesDrop .swiper-pagination-bullet {
+        width: 170px!important;
     }
-    .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+    #packagesDrop .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+        padding: 0.8em 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    #packagesDrop .swiper-pagination-bullet {
+        width: 140px!important;
+    }
+    #packagesDrop .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
         padding: 0.8em 1.2em;
     }
 }
 
 @media (max-width: 480px) {
-    .swiper-pagination {
-        padding: 0.6em 0.8em;
+    #packagesDrop .swiper-pagination {
+        padding: 0.6em 0.4em;
     }
-    .inner-span {
-        text-wrap: nowrap;
-        font-size: 14px;
+    #packagesDrop .inner-span {
+        text-wrap: nowrap!important;
+        font-size: 13px;
         font-weight: bold!important;
     }
-    .swiper-pagination-bullet {
-        width: 80px!important;
+    #packagesDrop .swiper-pagination-bullet {
+        width: 115px!important;
     }
-    .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
-        padding: 0.74em 0.6em 0.68em;
+    #packagesDrop .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+        padding: 0.9em 0.5em 0.7em;
     }
 }
 
 @media (max-width: 385px) {
-    .swiper-pagination {
+    #packagesDrop .swiper-pagination {
         padding: 0.6em 0.4em;
     }
-    .inner-span {
+    #packagesDrop .inner-span {
         text-wrap: nowrap;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: bold!important;
     }
-    .swiper-pagination-bullet {
-        width: 70px!important;
+    #packagesDrop .swiper-pagination-bullet {
+        width: 90px!important;
     }
-    .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
+    #packagesDrop .swiper-pagination-bullet.swiper-pagination-bullet-active .inner-span {
         padding: 1em 1em 0.8em;
     }
 }
 
-.swiper-pagination {
+#packagesDrop .swiper-pagination {
     top: 25px!important;
     bottom: auto!important;
     left: 50%!important;
@@ -97,7 +109,7 @@
     #packagesDrop {
         margin-top: 2em;
     }
-    .titlePackagesDrop {
+    #packagesDrop .titlePackagesDrop {
         font-size: 1.5rem;
         padding-bottom: 0.5em;
     }

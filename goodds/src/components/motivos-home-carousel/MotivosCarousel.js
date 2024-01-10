@@ -46,20 +46,13 @@ function MotivosCarousel() {
                         <p>Oferecemos soluções completas com baixo investimento para que você escale o seu negócio conforme o tamanho da sua empresa. A idéia aqui é gastar pouco e ganhar muito!</p>
                     </div>
                 </SwiperSlide>
-                
-                <SwiperSlide className={styles.swiperContent}>
-                    <div>
-                        <h3>As melhores funcionalidades para o seu sistema</h3>
-                        <p>Um sistema completo com funções e recursos para você operar com facilidade seu Website. São funcionalidades poderosas focadas na facilidade de administração e no aumento da visualização da sua marca.</p>
-                    </div>
-                </SwiperSlide>
 
-                <SwiperSlide className={styles.swiperContent}>
+                {/* <SwiperSlide className={styles.swiperContent}>
                     <div>
                         <h3>Acesse tudo via Celular ou Tablet</h3>
                         <p>Com o sistema responsivo, você poderá acessar seu site de qualquer dispositivo que tenha conexão com a internet. Gerencie os pedidos, clientes e pagamentos pelo Celular ou Tablet.</p>
                     </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
 
                 <div className={styles.spacingNavigation}></div>
             </Swiper>

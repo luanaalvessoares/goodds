@@ -1,5 +1,5 @@
 .serviceCarouselContainer {
-  padding-block: 3em 2em;
+  padding-block: 3em 1em;
   max-width: 1200px;
   display: flex;
   flex-direction: row;
@@ -31,8 +31,8 @@
 
 .serviceContent .serviceImage img {
   width: 100%!important;
-  height: 340px!important;
   object-fit: cover;
+  background-position: center top;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -103,5 +103,5 @@
 @media (max-width: 768px) {
   .serviceCarouselSection > h2 {
     font-size: 2.6em;
-  }  
+  }
 }

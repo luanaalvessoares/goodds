@@ -29,7 +29,7 @@ function PostsInstagram() {
         packageDescription1: "15 posts Instagram no Feed + 6 posts no Instagram Stories",
         packagePrice1: "1.999",
         packageNews1: "999",
-        packageParcel1: "312,42",
+        packageParcel1: "101,24",
         packageName1: " no Insta Start",
         included1Package1: "15 posts no Feed",
         included2Package1: "6 posts no Stories",
@@ -37,14 +37,15 @@ function PostsInstagram() {
         included4Package1: "Copys persuasivas",
         included5Package1: "Artes profissionais",
         included6Package1: "Gestão de postagens",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/pacote-insta-start/p",
+        btnName1: "Comprar"
     };
     const packageData2 = {
         packageTitle2: "Insta Pro",
         packageDescription2: "30 posts Instagram no Feed + 15 posts no Instagram Stories.",
         packagePrice2: "3.798",
         packageNews2: "1.899",
-        packageParcel2: "520,75",
+        packageParcel2: "192,45",
         packageName2: " no Insta Pro",
         included1Package2: "30 posts no Feed",
         included2Package2: "15 posts no Stories",
@@ -52,14 +53,15 @@ function PostsInstagram() {
         included4Package2: "Copys persuasivas",
         included5Package2: "Artes profissionais",
         included6Package2: "Gestão de postagens",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/pacote-insta-pro/p",
+        btnName2: "Comprar"
     };
     const packageData3 = {
         packageTitle3: "Insta Super",
         packageDescription3: "60 posts Instagram no Feed + 30 posts no Instagram Stories.",
         packagePrice3: "7.398",
         packageNews3: "3.699",
-        packageParcel3: "520,75",
+        packageParcel3: "374,86",
         packageName3: " no Insta Super",
         included1Package3: "60 posts no Feed",
         included2Package3: "30 posts no Stories",
@@ -67,7 +69,8 @@ function PostsInstagram() {
         included4Package3: "Copys persuasivas",
         included5Package3: "Artes profissionais",
         included6Package3: "Gestão de postagens",
-        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+        packageLink3: "https://dropshipping-goodds.catalog.yampi.io/pacote-insta-super/p",
+        btnName3: "Comprar"
     };
 
     return (
@@ -166,7 +169,7 @@ function PostsInstagram() {
             </section>
 
             <GoogleReviews />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha um Instagram Profissional" />
+            <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha um Instagram Profissional" />
             <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
             
             <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />

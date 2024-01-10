@@ -1,0 +1,97 @@
+.freeContentContainer {
+    background-color: #1b1c1e;
+}
+
+.centeredContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.pageTitle {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    margin-block: 0 0.5em;
+    color: #FFF!important;
+}
+
+.centeredContent.containerCards {
+    padding-bottom: 6em;
+}
+
+.cardsFreeContent {
+    background-color: #262626;
+    border-radius: 5px;
+    color: #FFF!important;
+    text-align: center;
+    margin-block: 0.8em;
+    padding-block: 1em;
+}
+
+.cardsFreeContent h3 {
+    font-size: 24px;
+}
+
+.cardsFreeContent p {
+    color: #FFF!important;
+    margin-top: 0.5em;
+    font-size: 22px;
+}
+
+.freeContentFooter {
+    background-color: #000;
+    padding-block: 3em 1em;
+}
+
+.footerSeparator {
+    width: 80px;
+    height: 2px;
+    background-color: #73ecd4;
+    margin-block: 1em 3em;
+}
+
+.redesSociais {
+    display: flex;
+    gap: 15px;
+    margin-block: 1.5em 3em;
+}
+
+.redesSociais a {
+    border: 1px solid #73ecd4;
+    border-radius: 3px;
+    color: #73ecd4;
+    padding: 6px;
+}
+
+.redesSociais span {
+    vertical-align: middle;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    color: #FFF!important;
+    font-size: 14px;
+}
+
+@media (min-width: 577px) {
+    .cardsFreeContent {
+        min-width: 550px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardsFreeContent {
+        width: 100%;
+    }
+    .centeredContent.containerCards {
+        margin-inline: 0.5em;
+    }
+}

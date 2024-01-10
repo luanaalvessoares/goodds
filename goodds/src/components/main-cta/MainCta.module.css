@@ -149,9 +149,9 @@ span.iconFire svg {
 }
 
 .child1 .gridTwoColumnInfoCta {
-    margin-block: 1em 2em;
+    margin-block: 1em;
     font-weight: bold!important;
-    color: #15907d;
+    color: #15907d!important;
 }
 
 
@@ -180,14 +180,15 @@ span.iconFire svg {
 }
 
 .ctaBtn a {
-    background: #000;
+    background: linear-gradient(46.87deg, rgb(177, 245, 250) 0%, rgb(77, 255, 158) 96.94%)!important;
     padding: 15px 60px;
     font-size: 22px;
 }
 
 .ctaBtn a span p {
     display: inline;
-    color: white!important;
+    color: #000!important;
+    font-weight: bold!important;
 }
 .ctaBtn a span:first-child {
     font-size: 10px;
@@ -274,6 +275,12 @@ span.iconFire svg {
     }
     .primaryDestaqueText {
         text-wrap: nowrap;
+    }
+    .gridTwoColumnInfoCta.destaqueText {
+        text-align: center
+    }
+    .gridTwoColumnInfoBtn.ctaBtn {
+        margin: auto;
     }
 }
 

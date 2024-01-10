@@ -21,7 +21,7 @@ function Footer(props) {
                     <div className={styles.footerMenuLinks}>
                         <div className={styles.footerMenuLinksRow}>
                             <div>
-                                <Link to="/dropshipping">Desenvolvimento de Loja Dropshipping</Link>
+                                <Link to="/dropshipping">Loja Dropshipping</Link>
                                 <span className={styles.separatorFooter}>|</span>
                             </div>
                             <div>
@@ -46,7 +46,7 @@ function Footer(props) {
                                 <span className={styles.separatorFooter}>|</span>
                             </div>
                             <div>
-                                <a href="https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20dropshipping">Contato</a>
+                                <Link to="/contato">Contato</Link>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ function Footer(props) {
                         </div>
                     </div>
                     <div className={styles.footerCopyright}>
-                        <p>2023 © GOODDS - TODOS OS DIREITOS RESERVADOS.</p>
+                        <p>2024 © GOODDS - TODOS OS DIREITOS RESERVADOS.</p>
                     </div>
                 </div>
             </div>

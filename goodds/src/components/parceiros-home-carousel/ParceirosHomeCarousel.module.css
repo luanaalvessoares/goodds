@@ -16,3 +16,9 @@
     font-size: 3em;
     padding-bottom: 1em;
 }
+
+.swiperContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
