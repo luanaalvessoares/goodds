@@ -92,6 +92,12 @@ function Header() {
                                     <span className={styles.menuSubtitle}>Desenvolvimento de E-commerce</span>
                                   </Link>
                               </li>
+                              <li>
+                                  <Link to="/print-on-demand" className={styles.dropdownLink}>
+                                  Loja Print-on-Demand
+                                    <span className={styles.menuSubtitle}>Produtos Personalizados Sob Demanda</span>
+                                  </Link>
+                              </li>
                               {/* <li>
                                   <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Website Institucional
@@ -104,14 +110,6 @@ function Header() {
                                     Landing Page
                                     <span className={styles.menuSubtitle}>Páginas Personalizadas</span>
                                     <span className={`${styles.emBreve} ${styles.emBreveBlog}`}>EM BREVE</span>
-                                  </Link>
-                              </li>
-
-                              <li>
-                                  <Link to="/print-on-demand" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
-                                    Loja Print-on-Demand
-                                    <span className={styles.menuSubtitle}>Produtos Personalizados Sob Demanda</span>
-                                    <span className={`${styles.emBreve} ${styles.emBrevePrint}`}>EM BREVE</span>
                                   </Link>
                               </li>
                               {/* <li>
@@ -227,7 +225,7 @@ function Header() {
               <li className={`${styles.dropdownItem} ${styles.dropdownItemDesktop}`}>
                 <Link to="/venda-todos-os-dias" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                   <div className={`${styles.navLink} ${styles.dropdownButton}`}>
-                    Drop 2 em 1
+                    Promoção Drop 2 em 1
                   </div>
                 </Link>
               </li>
@@ -281,6 +279,13 @@ function Header() {
                             <span className={styles.menuSubtitle}>Desenvolvimento de E-commerce</span>
                           </li>
                         </Link>
+                        
+                        <Link to="/print-on-demand" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                          <li>
+                            <span>Loja Print-on-Demand</span>
+                            <span className={styles.menuSubtitle}>Produtos Personalizados Sob Demanda</span>
+                          </li>
+                        </Link>
 
                         {/* <Link to="/website-institucional" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
@@ -292,16 +297,6 @@ function Header() {
                           </li>
                         </Link> */}
 
-
-                        <Link to="/print-on-demand" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
-                          <li>
-                            <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
-                              Loja Print-on-Demand
-                              <span className={`${styles.emBreve}`}>EM BREVE</span>
-                            </span>
-                            <span className={styles.menuSubtitle}>Produtos Personalizados Sob Demanda</span>
-                          </li>
-                        </Link>
 
                         <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
@@ -457,7 +452,7 @@ function Header() {
                   <span>
                     <Link className={styles.newsLinks} to="/venda-todos-os-dias">
                         <img src={navicon5} alt="" width="35"/>
-                        Drop 2 em 1
+                        Promoção Drop 2 em 1
                     </Link>
                   </span>
                 </div>
@@ -523,7 +518,7 @@ function Header() {
 
               <div className={styles.ctaHeaderMobile}>
                 <h4>Comece a vender com a Goodds</h4>
-                <a href="https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20E-commerce"><span>Falar com um especialista</span></a>
+                <Link to="/contato"><span>Falar com um especialista</span></Link>
               </div>
 
           </div>

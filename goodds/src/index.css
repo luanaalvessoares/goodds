@@ -128,3 +128,7 @@ p:not(> span) {
 html {
   scroll-behavior: smooth;
 }
+
+#pagePrint .destaqueText {
+  color: #ffa51f!important;
+}

@@ -44,14 +44,14 @@
     background-color: #303030;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .ctaButtonDesktop,
     .ctaButtonDesktopLink {
         display: none!important;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .ctaButtonMobile {
         display: none!important;
     }

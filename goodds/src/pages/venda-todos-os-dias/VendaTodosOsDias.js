@@ -55,6 +55,8 @@ import ImageGarantia from '../../assets/images/garantia-drop.webp';
 import ImagePrincipal from '../../assets/images/image-lp-dropglobal.webp';
 import { Link } from 'react-router-dom';
 
+import { Helmet } from 'react-helmet';
+
 function VendaTodosOsDias() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20sobre%20o%20Pacote%20Dropshipping%20Dois%20em%20Um";
 

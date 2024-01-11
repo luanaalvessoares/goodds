@@ -18,7 +18,7 @@ function Consultorias() {
 
     const packageData1 = {
         packageTitle1: "Consultoria Marketplace",
-        packageDescription1: "Mentoria com um especialista para discussão de todas as consultorias relacionados a venda nos marketplaces e apresentação de soluções para o momento do seu negócio",
+        packageDescription1: "Mentoria com um especialista sobre a operação das vendas nos marketplaces e apresentação de soluções para o momento do seu negócio",
         packagePrice1: "1.999",
         packageNews1: "999",
         packageParcel1: "101,24",
@@ -46,7 +46,7 @@ function Consultorias() {
     };
     const packageData3 = {
         packageTitle3: "Consultoria de Dropshipping",
-        packageDescription3: "Mentoria com um especialista para discussão de todas as consultorias relacionados a dropshipping e apresentação de soluções para o momento do seu negócio.",
+        packageDescription3: "Mentoria com um especialista sobre a operação de dropshipping e a apresentação de soluções para o momento do seu negócio.",
         packagePrice3: "1.999",
         packageNews3: "999",
         packageParcel3: "101,24",

@@ -57,7 +57,6 @@ const RoutesGoodds = () => {
                 <Route path="/dropshipping" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingTradicional /></motion.div>}></Route>
                 <Route path="/website-institucional" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><WebsiteInstitucional /></motion.div>}></Route>
                 <Route path="/landing-page" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><LandingPage /></motion.div>}></Route>
-                <Route path="/blog" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><Blog /></motion.div>}></Route>
                 <Route path="/marketing-loja-virtual" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><MarketingLojaVirtual /></motion.div>}></Route>
                 <Route path="/pacote-lancamento-loja" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><PacoteLancamentoLoja /></motion.div>}></Route>
                 <Route path="/mineracao-produtos-dropshipping" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><MineracaoProdutosDropshipping /></motion.div>}></Route>
