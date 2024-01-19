@@ -112,7 +112,7 @@ function TwoSectionsScrollAnimate() {
                         }}
                     >
                         <div className={styles.inner}>
-                            <h4 className={styles.name}>Curso e Mentoria +300 Vídeos</h4>
+                            <h4 className={styles.name}>Curso e Mentoria com Centenas de Vídeos</h4>
                             <p className={styles.descr}>Aulas semanais, módulos recorrentes e uma comunidade com interação diária para que a sua jornada conosco seja junto a pessoas incríveis com conhecimentos reais.</p>
                         </div>
                     </motion.div>

@@ -50,7 +50,7 @@ function DropshippingTradicional() {
         vantagem2: "Mineração e Cadastro de 60 Produtos",
         vantagem3: "03 Anúncios + Assessor de Marketing",
         vantagem4: "Mentoria + Consultoria",
-        vantagem5: "Curso com Mais de 300 Aulas",
+        vantagem5: "Curso com Centenas de Aulas",
         vantagem6: "Suporte Dedicado 24h",
         vantagem7: "Garantia Vitalícia",
         iconInfo:"Mais de 9.000 clientes em 12 países",
@@ -123,7 +123,7 @@ function DropshippingTradicional() {
                                         <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Mineração e Cadastro de 60 Produtos</p>
                                         <p><span className={stylesMain.iconAdd}><RiAddFill /></span> 03 Anúncios + Assessor de Marketing</p>
                                         <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Mentoria + Consultoria</p>
-                                        <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Curso com Mais de 300 Aulas</p>
+                                        <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Curso com Centenas de Aulas</p>
                                         <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Suporte Dedicado 24h</p>
                                         <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Garantia Vitalícia</p>
                                     </div>

@@ -5,8 +5,11 @@ import RiPhoneLine from 'remixicon-react/PhoneLineIcon';
 import RiMailSendLine from 'remixicon-react/MailSendLineIcon';
 import Swal from 'sweetalert2';
 import Footer from '../../components/footer/Footer';
+import Whatsapp from '../../components/whatsapp/Whatsapp';
 
 function Contato() {
+  const whatsappMessage = "https://api.whatsapp.com/send?phone=5511943600303&text=Estou%20na%20p%C3%A1gina%20de%20contato,%20gostaria%20de%20falar%20com%20um%20especialista";
+
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [whatsapp, setWhatsapp] = useState('');
@@ -150,6 +153,7 @@ function Contato() {
                 </div>
             </div>
 
+            <Whatsapp whatsappMessage={whatsappMessage} />
             <Footer />
         </div>
     )

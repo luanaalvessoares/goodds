@@ -205,7 +205,7 @@ function Header() {
       
                           <ul className={styles.dropdownList}>
                             <li>
-                                <Link to="/dropshipping" className={styles.dropdownLink}>
+                                <Link to="venda-todos-os-dias" className={styles.dropdownLink}>
                                   <img src={ImageDropGlobal} alt="" className={styles.imageDropMenu} />
                                 </Link>
                             </li>
@@ -501,7 +501,7 @@ function Header() {
 
                       <ul className={styles.dropdownList}>
 
-                        <Link to="/dropshipping" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
+                        <Link to="/venda-todos-os-dias" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration}`}>
                           <li>
                             <img src={ImageDropGlobal} alt="" className={styles.imageDropMenu} />
                           </li>

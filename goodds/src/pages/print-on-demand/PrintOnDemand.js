@@ -48,14 +48,14 @@ function PrintOnDemand() {
     const packageData1 = {
         packageTitle1: "Start",
         packageDescription1: "Criação da Loja Virtual completa, integrada com as redes sociais, meios de pagamento e fornecedores de Print On Demand.",
-        packagePrice1: "3.999",
-        packageNews1: "1.999",
-        packageParcel1: "202,58",
+        packagePrice1: "3.997",
+        packageNews1: "1.997",
+        packageParcel1: "202,38",
         packageName1: " no Start",
         included1Package1: "Criação da Loja Virtual Completa",
         included2Package1: "Layout Personalizado",
         included3Package1: "Mentoria + Consultoria",
-        included4Package1: "Curso com Mais de 300 Aulas",
+        included4Package1: "Curso com Centenas de Aulas",
         included5Package1: "Suporte Especializado 24h",
         included6Package1: "Garantia Vitalícia",
         included7Package1: "Domínio Grátis (www.suamarca.com.br)",
@@ -68,15 +68,15 @@ function PrintOnDemand() {
     const packageData2 = {
         packageTitle2: "Super",
         packageDescription2: "Desenvolvimento da Loja Virtual completa e da Logo profissional + integração com fornecedores de Print On Demand + integração de marketing e 1 anúncio.",
-        packagePrice2: "5.999",
-        packageNews2: "2.999",
-        packageParcel2: "303,92",
+        packagePrice2: "5.997",
+        packageNews2: "2.997",
+        packageParcel2: "303,72",
         packageName2: " no Super",
         included1Package2: "Criação da Loja Virtual Completa",
         included2Package2: "Criação da Logomarca",
         included3Package2: "Layout Personalizado",
         included4Package2: "Mentoria + Consultoria",
-        included5Package2: "Curso com Mais de 300 Aulas",
+        included5Package2: "Curso com Centenas de Aulas",
         included6Package2: "Suporte Especializado 24h",
         included7Package2: "Garantia Vitalícia",
         included8Package2: "Domínio Grátis (www.suamarca.com.br)",
@@ -88,15 +88,15 @@ function PrintOnDemand() {
     const packageData3 = {
         packageTitle3: "Mega",
         packageDescription3: "A solução mais completa e mais vendida, inclui tudo do pacote Mega + assessoria de marketing dedidacada e 3 anúncios.",
-        packagePrice3: "7.999",
-        packageNews3: "3.999",
-        packageParcel3: "405,27",
+        packagePrice3: "7.997",
+        packageNews3: "3.997",
+        packageParcel3: "405,06",
         packageName3: " no Mega",
         included1Package3: "Criação da Loja Virtual Completa",
         included2Package3: "Criação da Logomarca",
         included3Package3: "Layout Personalizado",
         included4Package3: "Mentoria + Consultoria",
-        included5Package3: "Curso com Mais de 300 Aulas",
+        included5Package3: "Curso com Centenas de Aulas",
         included6Package3: "Suporte Especializado 24h",
         included7Package3: "Garantia Vitalícia",
         included8Package3: "Domínio Grátis (www.suamarca.com.br)",
@@ -160,7 +160,7 @@ function PrintOnDemand() {
                                         <p><span className={style.iconAdd}><RiAddFill /></span> Criação e Cadastro de Produtos</p>
                                         <p><span className={style.iconAdd}><RiAddFill /></span> 03 Anúncios + Assessor de Marketing</p>
                                         <p><span className={style.iconAdd}><RiAddFill /></span> Mentoria + Consultoria</p>
-                                        <p><span className={style.iconAdd}><RiAddFill /></span> Curso com Mais de 300 Aulas</p>
+                                        <p><span className={style.iconAdd}><RiAddFill /></span> Curso com Centenas de Aulas</p>
                                         <p><span className={style.iconAdd}><RiAddFill /></span> Suporte Dedicado 24h</p>
                                         <p><span className={style.iconAdd}><RiAddFill /></span> Garantia Vitalícia</p>
                                     </div>

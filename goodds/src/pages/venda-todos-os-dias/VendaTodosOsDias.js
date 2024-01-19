@@ -158,7 +158,7 @@ function VendaTodosOsDias() {
                                     </p>
                                     <p>
                                         <span><RiAddFill /> </span>
-                                        Curso com Mais de 300 Aulas
+                                        Curso com Centenas de Aulas
                                     </p>
                                     <p>
                                         <span><RiAddFill /> </span>
@@ -180,11 +180,11 @@ function VendaTodosOsDias() {
                                             <h3> 12x de </h3>
                                         </span>
                                         <span>
-                                            <h3>R$506,61</h3>
+                                            <h3>R$506,40</h3>
                                         </span>
                                     </a>
                                     <p>
-                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                                     </p>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@ function VendaTodosOsDias() {
                                 </div>
                                 <div className={styles.stickyInfoCard}>
                                     <span>06</span>
-                                    <h4>Curso e Mentoria +300 Vídeos</h4>
+                                    <h4>Curso e Mentoria com Centenas de Vídeos</h4>
                                     <p>Aulas semanais, módulos recorrentes e uma comunidade com interação diária para que a sua jornada conosco seja junto a pessoas incríveis com conhecimentos reais.</p>
                                 </div>
                             </div>
@@ -363,11 +363,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$506,61</h3>
+                                    <h3>R$506,40</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                             </p>
                         </div>
                         
@@ -404,11 +404,11 @@ function VendaTodosOsDias() {
                                             <h3> 12x </h3>
                                         </span>
                                         <span>
-                                            <h3>R$506,61</h3>
+                                            <h3>R$506,40</h3>
                                         </span>
                                     </a>
                                     <p>
-                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                                        <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                                     </p>
                                 </div>
                             </div>
@@ -482,11 +482,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$506,61</h3>
+                                    <h3>R$506,40</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                             </p>
                         </div>
                                         
@@ -572,11 +572,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$506,61</h3>
+                                    <h3>R$506,40</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                             </p>
                         </div>
                                 
@@ -642,11 +642,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$506,61</h3>
+                                    <h3>R$506,40</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                             </p>
                         </div>
         
@@ -776,11 +776,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$506,61</h3>
+                                    <h3>R$506,40</h3>
                                 </span>
                             </a>
                             <p>
-                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                                <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                             </p>
                         </div>
         
@@ -849,7 +849,7 @@ function VendaTodosOsDias() {
                                 <p>
                                     <span className={styles.destaqueText}><RiCheckFill /></span>
                                     01 Loja no Exterior em Dólar - 
-                                    <span className={styles.destaqueText}> R$4.999</span>
+                                    <span className={styles.destaqueText}> R$4.997</span>
                                 </p>
                                 <p>
                                     <span className={styles.destaqueText}><RiCheckFill /></span>
@@ -868,7 +868,7 @@ function VendaTodosOsDias() {
                                 </p>
                                 <p>
                                     <span className={styles.destaqueText}><RiCheckFill /></span>
-                                    Curso com Mais de 300 Aulas - 
+                                    Curso com Centenas de Aulas - 
                                     <span className={styles.destaqueText}> R$1.299</span>
                                 </p>
                                 <p>
@@ -905,13 +905,13 @@ function VendaTodosOsDias() {
                                         <span className={`${styles.ctaDestaque} ${styles.destaqueText}`}>
                                             <span>12x de </span>
                                             <span>
-                                                <h3>R$506,61</h3>
+                                                <h3>R$506,40</h3>
                                             </span>
                                         </span>
                                     </p>
                                     <p>
                                         ou
-                                        <span className={styles.underlineText}> R$4.999 </span>
+                                        <span className={styles.underlineText}> R$4.997 </span>
                                         à vista com desconto
                                     </p>
                                 </div>
@@ -991,11 +991,11 @@ function VendaTodosOsDias() {
                                     <h3> 12x </h3>
                                 </span>
                                 <span>
-                                    <h3>R$506,61</h3>
+                                    <h3>R$506,40</h3>
                                 </span>
                             </a>
                             <p>
-                            <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.999</span></span>
+                            <span><RiArrowDropRightFill /> ou à vista com desconto <span className={styles.priceBold}>R$4.997</span></span>
                             </p>
                         </div>
                     </div>
