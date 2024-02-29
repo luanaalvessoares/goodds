@@ -4,7 +4,7 @@
     padding-inline: 1em;
 }
 
-.contactPage h2 {
+.contactPage h1 {
     text-align: center;
     margin-block: 0 1em;
     color: #5f5f5f;
@@ -84,7 +84,7 @@ button:disabled {
 }
 
 @media (min-width: 768px) {
-    .contactPage h2 {
+    .contactPage h1 {
         font-size: 3em;
     }
 }

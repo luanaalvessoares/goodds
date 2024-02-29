@@ -1181,7 +1181,7 @@ p span.destaqueText {
 /* Media Queries */
 @media (min-width: 768px) {
     .container h1, .container h2 {
-        max-width: 700px!important;
+        max-width: 750px!important;
     }
     .container h3, .container h4, .container h5, .container h6 {
         max-width: 700px!important;

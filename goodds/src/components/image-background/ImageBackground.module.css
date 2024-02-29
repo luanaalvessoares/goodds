@@ -34,7 +34,7 @@
 }
 
 .titleHeader p,
-.titleHeader h2 {
+.titleHeader h1 {
     color: #FFFFFF!important;
     word-wrap: break-word;
     font-weight: bold!important;
@@ -45,14 +45,14 @@
     margin-right: 8px;
 }
 
-.titleHeader h2 {
+.titleHeader h1 {
     font-size: 2.5rem;
     word-wrap: normal;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.titleHeader h2 span {
+.titleHeader h1 span {
     font-weight: 700!important;
 }
 
@@ -126,34 +126,34 @@
         text-wrap: nowrap;
     }
 
-    .titleHeader h2 {
+    .titleHeader h1 {
         font-size: 2.3rem;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .titleHeader h2 {
+    .titleHeader h1 {
         font-size: 5rem!important;
         line-height: 1.2;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    .titleHeader h2 {
+    .titleHeader h1 {
         font-size: 4rem!important;
         line-height: 1.2;
     }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
-    .titleHeader h2 {
+    .titleHeader h1 {
         font-size: 5rem!important;
         line-height: 1.3;
     }
 }
 
 @media screen and (max-width: 768px) and (min-width: 576px) {
-    .titleHeader h2 {
+    .titleHeader h1 {
         font-size: 4rem;
         line-height: 1.3!important;
     }
@@ -169,7 +169,7 @@
     .titleHeader {
         height: 35%;
     }
-    .titleHeader h2 {
+    .titleHeader h1 {
         font-size: 2rem!important;
         margin-bottom: 10px;
     }
@@ -190,12 +190,12 @@
     text-align: center!important;
 }
 
-.titleHeader.home h2 span:first-child {
+.titleHeader.home h1 span:first-child {
     color: #39d6be!important;
 }
 
 @media (max-width: 768px) {
-    .titleHeader.home h2 {
+    .titleHeader.home h1 {
         font-size: 2.25em!important;
     }
 }

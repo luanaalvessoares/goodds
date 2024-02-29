@@ -1,0 +1,622 @@
+:root {
+    --title-color-PL: #080808;
+    --text-color-PL: #2d2d2d;
+    --title-size-desktop1: 7em;
+    --title-size-desktop2: 5em;
+    --title-size-desktop3: 3em;
+    --title-size-tablet: 14vw;
+    --title-size-mobile1: 15vw;
+    --title-size-mobile2: 12vw;
+    --title-size-mobile3: 2.5em;
+    --title-size-mobile4: 1.5em;
+    --title-size-mobile5: 2em;
+    --text-size-destaque: 22px;
+    --text-size-desktop: 16px;
+}
+
+#pacoteLancamentoLoja {
+    overflow-x: hidden;
+}
+.section {
+    padding-top: 7em;
+    padding-inline: 2em;
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 100%;
+}
+
+/* Section1 */
+.section1 {
+    background-image: url('../../../assets/images/bg1-pacote-lancamento.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section1 .gridTwoColumns {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    justify-items: center;
+    align-items: center;
+    padding-block: 1em 2em;
+}
+
+.section1 .gridTwoColumns > div:first-child h1 {
+    font-size: var(--title-size-desktop1);
+    margin: 0;
+    color: var(--title-color-PL)!important;
+    line-height: 1;
+}
+
+.section1 .gridTwoColumns > div:first-child img {
+    max-width: 300px;
+}
+
+.section1 .gridTwoColumns > div:first-child p {
+    font-size: 22px;
+    margin-block: 2em;
+    width: 80%;
+    color: var(--text-color-PL)!important;
+}
+
+@media (max-width: 1100px) {
+    .section1 .gridTwoColumns {
+        display: grid;
+        grid-template-columns: 1fr!important;
+    }
+    .section1 .gridTwoColumns > div:first-child h1 {
+        font-size: var(--title-size-tablet);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .section1 .gridTwoColumns > div:first-child h1 {
+        font-size: var(--title-size-mobile1)!important;
+        text-align: center;
+    }
+    .section1 .gridTwoColumns > div:first-child p {
+        width: 100%!important;
+        margin-block: 1em;
+        text-align: center;
+    }
+    .section1 .gridTwoColumns > div:first-child {
+        text-align: center;
+    }
+    .section1 .gridTwoColumns > div:first-child img {
+        max-width: 100px;
+        margin-bottom: 2em;
+    }
+}
+
+/* Section2 */
+.section2 .gridTwoColumns {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 2em;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid #080808;
+    border-radius: 30px;
+    padding: 2em;
+}
+
+
+.section2 .gridTwoColumns > div:first-child h2 {
+    font-size: var(--title-size-desktop2);
+    color: var(--title-color-PL)!important;
+    line-height: 1;
+}
+
+.section2 .gridTwoColumns > div:last-child img {
+    max-height: 400px;
+}
+
+@media (max-width: 992px) {
+    .section2 .gridTwoColumns {
+        display: grid;
+        grid-template-columns: 1fr!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .section2 .gridTwoColumns {
+        padding: 2em 1em;
+    }
+    .section2 .gridTwoColumns > div:last-child img {
+        max-height: 200px;
+    }
+    .section2 .gridTwoColumns > div:first-child h2 {
+        font-size: var(--title-size-mobile2);
+        text-align: center;
+    }
+}
+
+/* Section3 */
+.section3 {
+    background-color: #080808;
+    margin-top: 4em;
+}
+
+.section3 > div {
+    max-width: 1300px;
+    padding-block: 0 2em;
+}
+
+.section3 .section3Title p {
+    text-align: center;
+    text-transform: uppercase;
+    color: white!important;
+    font-size: var(--title-size-desktop3);
+    margin-bottom: 1em;
+}
+
+.section3 .gridBenefitsLine1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    margin-block: 2.5em;
+}
+
+.section3 .gridBenefitsLine2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    margin-block: 2.5em;
+}
+
+.section3 .gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.section3 .gridItem img {
+    max-width: 100px;
+}
+
+.section3 .gridItem p {
+    text-align: center;
+    max-width: 75%;
+    color: white!important;
+    font-weight: bold!important;
+    font-size: var(--text-size-destaque);
+}
+
+@media (max-width: 768px) {
+    .section3 .section3Title p {
+        text-align: center;
+        text-transform: uppercase;
+        color: white!important;
+        font-size: var(--title-size-mobile3);
+        margin-bottom: 1em;
+    }
+    .section3 .gridItem p {
+        max-width: 100%!important;
+        font-size: var(--text-size-desktop)!important;
+    }
+    .section3 .gridItem img {
+        max-width: 80px;
+    }
+}
+
+/* Section4 */
+.section4 {
+    padding-bottom: 4em;
+}
+.section4 .gridTwoColumns {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-items: center;
+}
+
+.section4 .gridTwoColumns > div:first-child img {
+    max-height: 400px;
+}
+
+.section4 .gridTwoColumns > div:first-child p {
+    font-size: var(--title-size-desktop3);
+    color: var(--title-color-PL)!important;
+    margin-bottom: 1em;
+    width: 300px;
+}
+
+.section4 .gridTwoColumns > div:last-child h3 {
+    font-size: var(--title-size-mobile3);
+    color: var(--text-color-PL);
+    padding-block: 0.3em;
+}
+
+.section4 .gridTwoColumns > div:last-child p {
+    font-size: var(--text-size-destaque);
+    color: var(--text-color-PL)!important;
+}
+
+.section4 .gridTwoColumns > div:last-child .separator {
+    background-color: #080808;
+    width: 60%;
+    height: 1px;
+    margin-block: 2em 1em;
+}
+
+@media (max-width: 1100px) {
+    .section4 .gridTwoColumns {
+        display: grid;
+        grid-template-columns: 1fr!important;
+    }
+    .section4 .gridTwoColumns > div:first-child img {
+        height: 300px;
+    }
+    .section4 .gridTwoColumns > div:first-child p {
+        text-align: center;
+    }
+    .section4 .gridTwoColumns > div:last-child h3 {
+        text-align: center;
+    }
+    .section4 .gridTwoColumns > div:last-child p {
+        text-align: center;
+    }
+    .section4 .gridTwoColumns > div:last-child .separator {
+        background-color: #080808;
+        width: 60%;
+        height: 1px;
+        margin: 2em auto 1em;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 576px) {
+    .section4 .gridTwoColumns > div:first-child p {
+        width: 576px!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .section4 .gridTwoColumns > div:first-child p {
+        font-size: var(--title-size-mobile3);
+        line-height: 1;
+    }
+    .section4 .gridTwoColumns > div:last-child h3 {
+        font-size: var(--title-size-mobile4);
+    }
+    .section4 .gridTwoColumns > div:last-child p {
+        font-size: var(--text-size-desktop);
+    }
+}
+
+/* Section5 */
+.section5 {
+    background-color: #080808;
+    padding-bottom: 4em;
+}
+
+.section5 > div > div:first-child h2 {
+    color: white;
+    font-size: var(--title-size-desktop3);
+}
+
+.section5 .gridSection5 {
+    max-width: 1300px;
+    max-height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 0;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+.section5 .gridInstagram {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5 .gridInstagram img {
+    max-width: 250px;
+}
+
+.section5 .gridSection5 .mockupPhone {
+    position: absolute;
+    max-width: 280px;
+    z-index: 1;
+}
+
+.section5 .gridLikeInstagram {
+    position: relative;
+}
+
+.section5 .gridLikeInstagram .likeInstagram {
+    position: absolute;
+    top: -170px;
+    right: -50px;
+    max-width: 200px;
+}
+
+@media (min-width: 1400px) {
+    .section5 .gridInstagram img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .section5 .gridSection5 {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1100px) {
+    .section5 .gridInstagram img {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 992px) {
+    .section5 .gridInstagram img {
+        width: 200px;
+    }
+    .section5 .gridSection5 {
+        height: 400px;
+    }
+    .section5 .gridSection5 .mockupPhone {
+        position: absolute;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+    .section5 .gridInstagram img {
+        width: 200px;
+    }
+    .section5 .gridLikeInstagram .likeInstagram {
+        position: absolute;
+        top: -120px;
+        right: -50px;
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 662px) and (min-width: 400px) {
+    .section5 .gridSection5 .mockupPhone {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 576px) and (min-width: 400px) {
+    .section5 .gridInstagram img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section5 > div > div:first-child h2 {
+        margin-bottom: 2.5em;
+        font-size: var(--title-size-mobile5);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section5 .gridLikeInstagram .likeInstagram {
+        position: absolute;
+        top: -80px;
+        right: -10px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section5 .gridSection5 .mockupPhone {
+        width: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section5 .gridInstagram {
+        display: flex;
+        flex-wrap: wrap!important;
+        gap: 10px;
+    }
+}
+
+/* Section6 */
+.section6 {
+    background-image: url('../../../assets/images/bg2-pacote-lancamento.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section6 .gridTwoColumns {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding-bottom: 4em;
+
+}
+
+.section6 .gridTwoColumns div:first-child img {
+    max-width: 150px;
+    display: block;
+}
+
+.section6 .gridTwoColumns .abstractImage:first-child {
+    margin-left: auto;
+}
+
+.section6 .gridTwoColumns div:first-child img:not(.abstractImage) {
+    padding-bottom: 2em;
+}
+
+.section6 .gridTwoColumns div:first-child > * {
+    margin-block: 1em;
+}
+
+.section6 .gridTwoColumns div:first-child h3 {
+    font-size: var(--title-size-mobile3);
+    color: var(--title-color-PL);
+    text-shadow:
+    -1px -1px 0 #FFF,  
+     1px -1px 0 #FFF,
+    -1px  1px 0 #FFF,
+     1px  1px 0 #FFF;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .section6 .gridTwoColumns {
+        display: grid;
+        grid-template-columns: 1fr!important;
+    }
+    .section6 .gridTwoColumns div:first-child {
+        text-align: center;
+    }
+    .section6 .gridTwoColumns div:first-child img:not(.abstractImage) {
+        margin: auto;
+    }
+    .section6 .gridTwoColumns div:first-child img.abstractImage {
+        max-width: 100px;
+    }
+
+    .section6 .gridTwoColumns div:first-child img.abstractImage:last-child {
+        display: none;
+    }
+    .section6 .gridTwoColumns div:first-child h3 {
+        font-size: var(--title-size-mobile4)!important;
+    }
+}
+
+/* Section7 */
+.section7 {
+
+}
+
+
+/* Section8 */
+.section8 {
+    background-image: url('../../../assets/images/bg3-pacote-lancamento.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.section8 .gridTwoColumns {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding-bottom: 4em;
+}
+
+.section8 .gridTwoColumns div:first-child div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    margin-top: 3em;
+}
+
+.section8 .gridTwoColumns div:first-child h3 {
+    font-size: var(--title-size-mobile3);
+    color: var(--title-color-PL);
+    text-align: center;
+    max-width: 550px;
+    padding: 0.8em;
+    margin: auto;
+    border-radius: 100px;
+    border: 2px solid #080808;
+}
+
+.section8 .gridTwoColumns div:first-child img {
+    max-width: 250px;
+}
+
+@media (max-width: 992px) {
+    .section8 .gridTwoColumns {
+        display: grid;
+        grid-template-columns: 1fr!important;
+    }
+    .section8 .gridTwoColumns div:first-child div {
+        display: flex;
+        flex-direction: row!important;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section8 .gridTwoColumns div:first-child h3 {
+        font-size: var(--title-size-mobile4)!important;
+    }
+    .section8 .gridTwoColumns div:first-child img {
+        max-width: 180px!important;
+    }
+    .section8 .gridTwoColumns div:first-child img:last-child {
+        margin-right: 2em;
+    }
+}
+
+/* Section9 */
+.section9 {
+    padding-block: 6em;
+    background-color: #080808;
+    background-image: url('../../../assets/images/bg4-pacote-lancamento.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.section9 > div {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.section9 > div > div:first-child {
+    width: 130px;
+}
+
+.section9 > div > div:nth-child(2) h3 {
+    font-size: var(--title-size-mobile3);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    .section9 > div > div:nth-child(2) h3 {
+        font-size: var(--title-size-mobile4)!important;
+    }
+    .section9 {
+        padding-block: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 4em;
+        padding-inline: 1em;
+    }
+}
