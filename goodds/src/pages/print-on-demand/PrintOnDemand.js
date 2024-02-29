@@ -87,7 +87,7 @@ function PrintOnDemand() {
     };
     const packageData3 = {
         packageTitle3: "Mega",
-        packageDescription3: "A solução mais completa e mais vendida, inclui tudo do pacote Mega + assessoria de marketing dedidacada e 3 anúncios.",
+        packageDescription3: "A solução mais completa e mais vendida, inclui tudo do pacote Super + assessoria de marketing dedidacada e 3 anúncios.",
         packagePrice3: "7.997",
         packageNews3: "3.997",
         packageParcel3: "405,06",
@@ -212,6 +212,8 @@ function PrintOnDemand() {
             </section>
 
             <VantagensLoja image={ImageVantagens} vantagemData={vantagemData} />
+
+            <GoogleReviews />
 
             <section className={style.containerChild}>
                 <div className={`${style.child5} ${style.child}`}>

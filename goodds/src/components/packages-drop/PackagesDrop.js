@@ -230,9 +230,9 @@ function PackagesDrop() {
     const dropDuplo1 = {
         packageTitle1: "Duas Lojas de Dropshipping",
         packageDescription1: "Desenvolvimento de 02 Lojas de Dropshipping completas. Tenha uma Loja no Brasil para vender em real e outra no exterior para vender em dólar.",
-        packagePrice1: "9.997",
-        packageNews1: "4.997",
-        packageParcel1: "506,40",
+        packagePrice1: "11.997",
+        packageNews1: "5.997",
+        packageParcel1: "607,75",
         packageName1: " no Pacote",
         included1Package1: "Duas Lojas de Dropshipping Completas",
         included2Package1: "Criação da Logomarca",

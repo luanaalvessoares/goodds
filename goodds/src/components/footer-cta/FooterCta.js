@@ -5,6 +5,22 @@ import { Link } from 'react-router-dom';
 
 function FooterCta({linkCtaWhatsapp}) {
 
+    const handleClick = (e) => {
+        e.preventDefault(); // Prevenir o comportamento padrão do link
+
+        // Chamar a função de rastreamento de conversão
+        if (window.gtag_report_conversion) {
+        window.gtag_report_conversion(linkCtaWhatsapp);
+        } else {
+        console.warn("gtag_report_conversion não está definido.");
+        }
+
+        // Redirecionar após um curto delay para garantir que o evento de conversão foi enviado
+        setTimeout(() => {
+        window.open(linkCtaWhatsapp, '_blank');
+        }, 200); // Ajuste este delay conforme necessário
+    };
+
     return (
         <section className={styles.footerCtaContainer}>
             <div className={styles.footerCtaContent}>
@@ -26,6 +42,7 @@ function FooterCta({linkCtaWhatsapp}) {
                     transition={{ duration: 3, repeat: Infinity }}
                     target="_blank"
                     className={styles.ctaButtonMobile}
+                    onClick={handleClick}
                 >
                     <span>Falar com um especialista</span>
                 </motion.a>

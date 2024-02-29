@@ -149,6 +149,7 @@ function LojaVirtual() {
             <SimpleTwoColumns title="Especialistas em" destaqueTitle="E-commerce" descriptionOne="Somos uma" descriptionDestaque=" Agência Full E-commerce." description=" Desenvolvemos a loja personalizada e prestamos todos os serviços exclusivos para que sua loja venda todos os dias." image={ImageHomeMarketplaces} />
             <DropHome title="Nacional e Internacional" subtitle="Agência especializada em " descriptionDestaque="venda online dentro e fora do Brasil." image={ImagePrimeiraAgencia} />
             <VantagensLoja image={ImageVantagens} vantagemData={vantagemData} lastInfo={false} />
+            <GoogleReviews />
             <GridCall />
             <PackagesSection packageData1={packageData1} segundoPacote={true} packageData2={packageData2} terceiroPacote={true} packageData3={packageData3} sectionPackageTitle="Tenha uma Loja Completa" />
             <DropdownTableLoja />

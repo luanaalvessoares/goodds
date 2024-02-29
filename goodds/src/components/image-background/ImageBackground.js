@@ -24,7 +24,7 @@ function ImageBackground(props) {
                 <div className={styles.headerOverlay}>
                     <div className={styles.contentHeader}>
                         <div id={location.pathname === '/' ? '' : 'titleImageBG'} className={`${styles.titleHeader} ${location.pathname === '/' ? `${styles.home}` : ''}`}>
-                            <h2><span>{props.title}</span> <span>{props.title2}</span></h2>
+                            <h1><span>{props.title}</span> <span>{props.title2}</span></h1>
                             <p>
                                 <span><RiFireFill /></span>
                                 {props.description}

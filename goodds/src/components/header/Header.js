@@ -105,13 +105,13 @@ function Header() {
                                     <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
                               </li> */}
-                              <li>
+                              {/* <li>
                                   <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Landing Page
                                     <span className={styles.menuSubtitle}>Páginas Personalizadas</span>
                                     <span className={`${styles.emBreve} ${styles.emBreveBlog}`}>EM BREVE</span>
                                   </Link>
-                              </li>
+                              </li> */}
                               {/* <li>
                                   <Link to="/blog" className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                     Criação de Blog
@@ -131,7 +131,7 @@ function Header() {
                           <ul className={styles.dropdownList}>
                               <li>
                                   <Link to="/marketing-loja-virtual" className={styles.dropdownLink}>
-                                    Marketing Loja Virtual
+                                    Marketing
                                     <span className={styles.menuSubtitle}>Anúncios Patrocinados</span>
                                   </Link>
                               </li>
@@ -153,13 +153,13 @@ function Header() {
                                       <span className={styles.menuSubtitle}>Engaje nas Redes</span>
                                   </Link>
                               </li>
-                              <li>
+                              {/* <li>
                                   <Link to="/pacote-lancamento-loja"  className={`${styles.dropdownLink} ${styles.itemEmBreve}`}>
                                       Pacote Lançamento de Loja
                                       <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
                                     <span className={styles.emBreve}>EM BREVE</span>
                                   </Link>
-                              </li>
+                              </li> */}
                           </ul>
                       </div>
                       
@@ -298,7 +298,7 @@ function Header() {
                         </Link> */}
 
 
-                        <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
+                        {/* <Link to="/landing-page" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
                             <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
                               Landing Page
@@ -306,7 +306,7 @@ function Header() {
                             </span>
                             <span className={styles.menuSubtitle}>Páginas Personalizadas</span>
                           </li>
-                        </Link>
+                        </Link> */}
 
                         {/* <Link to="/blog" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
@@ -367,7 +367,7 @@ function Header() {
                           </li>
                         </Link>
 
-                        <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
+                        {/* <Link to="/pacote-lancamento-loja" className={`${styles.dropdownLink} ${styles.dropdownLinkDecoration} ${styles.linkEmBreve}`}>
                           <li>
                             <span className={`${styles.itemEmBreve} ${styles.itemEmBreveMobile}`}>
                               Pacote Lançamento de Loja
@@ -375,7 +375,7 @@ function Header() {
                             </span>
                             <span className={styles.menuSubtitle}>Sua Loja no Ar</span>
                           </li>
-                        </Link>
+                        </Link> */}
                       </ul>
                     </div>
                   </div>

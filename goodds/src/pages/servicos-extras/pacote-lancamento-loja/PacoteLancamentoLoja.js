@@ -1,60 +1,73 @@
 import React from "react";
-import './PacoteLancamentoLoja.css';
-import styles from '../../plataformas/Plataformas.module.css';
+import styles from './PacoteLancamentoLoja.module.css';
 import Whatsapp from "../../../components/whatsapp/Whatsapp";
 import Footer from "../../../components/footer/Footer";
 import CardsInfoTitle from '../../../components/cards-infos-titulo/CardsInfoTitle';
 import PackagesSection from "../../../components/packages-section/PackagesSection";
 import GoogleReviews from "../../../components/google-reviews/GoogleReviews";
-import RiCheckDoubleLine from "remixicon-react/CheckDoubleLineIcon";
-import PlataformaShopify from '../../../assets/images/plataforma-shopify.webp';
-import PlataformaWoocommerce from '../../../assets/images/plataforma-woocommerce.webp';
-import PlataformaYampi from '../../../assets/images/plataforma-yampi.webp';
-import PlataformaCartPanda from '../../../assets/images/plataforma-cartpanda.webp';
-import PlataformaLojaIntegrada from '../../../assets/images/plataforma-lojaintegrada.webp';
-import PlataformaNuvemShop from '../../../assets/images/plataforma-nuvemshop.webp';
-import PlayStore from '../../../assets/images/playstore.svg';
-import AppStore from '../../../assets/images/appstore.svg';
-import CellPlataformas from '../../../assets/images/cell-plataformas.webp';
-import RiShoppingCartLine from 'remixicon-react/ShoppingCartLineIcon';
-import RiPlugLine from 'remixicon-react/PlugLineIcon';
-import RiDashboard3Line from 'remixicon-react/Dashboard3LineIcon';
-import RiFundsBoxLine from 'remixicon-react/FundsBoxLineIcon';
-import RiLayout5Fill from 'remixicon-react/Layout5FillIcon';
-import RiSmartphoneLine from 'remixicon-react/SmartphoneLineIcon';
-import TitleDescription from '../../../components/title-description/TitleDescription';
-import ImageBackground from "../../../components/image-background/ImageBackground";
-import Loading from '../../../assets/images/loading-gif.gif';
+import ElementSection1 from '../../../assets/images/elementsection1-pacote-lancamento.svg';
+import ImageSection1 from '../../../assets/images/imagesection1-pacote-lancamento.svg';
+import ImageSection2 from '../../../assets/images/imagesection2-pacote-lancamento.svg';
+import Section3Icon1 from '../../../assets/images/section3icon1-pacote-lancamento.svg';
+import Section3Icon2 from '../../../assets/images/section3icon2-pacote-lancamento.svg';
+import Section3Icon3 from '../../../assets/images/section3icon3-pacote-lancamento.svg';
+import Section3Icon4 from '../../../assets/images/section3icon4-pacote-lancamento.svg';
+import Section3Icon5 from '../../../assets/images/section3icon5-pacote-lancamento.svg';
+import ImageSection4 from '../../../assets/images/imagesection4-pacote-lancamento.svg';
+import Section5Grid1 from '../../../assets/images/section5grid1-pacote-lancamento.svg';
+import Section5Grid2 from '../../../assets/images/section5grid2-pacote-lancamento.svg';
+import Section5Grid3 from '../../../assets/images/section5grid3-pacote-lancamento.svg';
+import Section5Grid4 from '../../../assets/images/section5grid4-pacote-lancamento.svg';
+import Section5Grid5 from '../../../assets/images/section5grid5-pacote-lancamento.svg';
+import Section5Grid6 from '../../../assets/images/section5grid6-pacote-lancamento.svg';
+import Section6Element1 from '../../../assets/images/section6element1-pacote-lancamento.svg';
+import Section6Element2 from '../../../assets/images/section6element2-pacote-lancamento.svg';
+import Section6Element3 from '../../../assets/images/section6element3-pacote-lancamento.svg';
+import Section8Element1 from '../../../assets/images/section8element1-pacote-lancamento.svg';
+import Section8Element2 from '../../../assets/images/section8element2-pacote-lancamento.svg';
+import Section8Element3 from '../../../assets/images/section8element3-pacote-lancamento.svg';
+import ImageSection9 from '../../../assets/images/imagesection9-pacote-lancamento.svg';
 
 function PacoteLancamentoLoja() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20lançamento%20de%20loja";
 
-    const packageData1 = {
-        packageTitle1: "Start",
-        packageDescription1: "Desenvolvimento de Loja Virtual profissional com ferramentas que potencializam suas vendas, com cadastro de 30 produtos e integrada com fornecedores.",
-        packagePrice1: "4.999",
-        packageNews1: "2.999",
-        packageParcel1: "312,42",
-        packageName1: " no Start",
-        included1Package1: "Criação da Loja Virtual",
-        included2Package1: "Criação da Logomarca",
-        included3Package1: "Mineração e cadastro de 30 produtos",
-        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-start/p"
+    const pacote1 = {
+        packageTitle1: "Lançamento de Loja",
+        packageDescription1: "Um pacote com serviços que facilita o lançamento do seu site, ampliando sua presença online e te ajudando nos primeiros passos para o sucesso.",
+        packagePrice1: "1.997",
+        packageNews1: "997",
+        packageParcel1: "101,04",
+        packageName1: " no Pacote",
+        included1Package1: "9 artes profissionais para o grid do seu Instagram",
+        included2Package1: "Criação e configuração Google Meu Negócio",
+        included3Package1: "Script de atendimento inicial para Whatsapp",
+        included4Package1: "Criação do linktree para a bio do seu Instagram",
+        included5Package1: "3 capas para os destaques do seu perfil",
+        packageLink1: "https://dropshipping-goodds.catalog.yampi.io/pacote-de-lancamento-de-loja/p",
+        bandeiras1: false,
+        btnName1: "comprar",
+        botaoDegrade: false,
     };
-    const packageData2 = {
-        packageTitle2: "Mega",
-        packageDescription2: "A solução mais interessante, considerada a melhor e mais completa da Goodds inclui acessoria de marketing e anúncios.",
-        packagePrice2: "7.999",
-        packageNews2: "4.999",
-        packageParcel2: "520,75",
-        packageName2: " no Mega",
-        included1Package2: "Criação da Loja Virtual",
-        included2Package2: "Criação da Logomarca",
-        included3Package2: "Mineração e cadastro de 30 produtos",
-        included4Package2: "30 dias de acessoria de Marketing",
-        packageLink2: "https://dropshipping-goodds.catalog.yampi.io/desenvolvimento-de-loja-dropshipping-global-mega/p"
+    const pacote2 = {
+        packageTitle2: "",
+        packageDescription2: "",
+        packagePrice2: "",
+        packageNews2: "",
+        packageParcel2: "",
+        packageName2: "",
+        included1Package2: "",
+        included2Package2: "",
+        included3Package2: "",
+        included4Package2: "",
+        included5Package2: "",
+        included6Package2: "",
+        included7Package2: "",
+        included8Package2: "",
+        included9Package2: "",
+        included11Package2: "",
+        packageLink2: ""
     };
-    const packageData3 = {
+    const pacote3 = {
         packageTitle3: "",
         packageDescription3: "",
         packagePrice3: "",
@@ -65,225 +78,190 @@ function PacoteLancamentoLoja() {
         included2Package3: "",
         included3Package3: "",
         included4Package3: "",
+        included5Package3: "",
+        included6Package3: "",
+        included7Package3: "",
+        included8Package3: "",
+        included9Package3: "",
+        included10Package3: "",
         packageLink3: ""
     };
 
     return (
-        <div className="pagesArtes" id="pacoteLancamentoLoja">
-
-
-            <h1> EM CONSTRUÇÃO </h1>
-            
-            <img src={Loading} alt="Carregando" />
-
-            {/* <ImageBackground isVideo="true" videoOption="2" cta={false} title="Tenha um e-commerce profissional" title2=" e venda todos os dias" description="Mais de 9.000 clientes em 12 países"/>
-
-            <section className={styles.plataformasContainer}>
-
-                <div className={`${styles.plataformaShopify} ${styles.plataformaSection}`}>
-                    <div className={styles.gridPlataformas}>
-                        <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
-                            <div className={styles.title}>
-                                <h2>Shopify</h2>
-                                <span>Sua loja rumo ao sucesso começa aqui</span>
-                            </div>
-
-                            <p>Uma plataforma de e-commerce completa para gerenciar e expandir o seu negócio, escolhida por milhares de lojas no mundo todo.</p>
-
-                            <div className={styles.checkVantagens}>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 1
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 2
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 3
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={styles.gridPlataformasChild}>
-                            <img src={PlataformaShopify} alt="" />
+        <div id="pacoteLancamentoLoja">
+            <section className={`${styles.section} ${styles.section1}`}>
+                <div className={styles.gridTwoColumns}>
+                    <div>
+                        <h1>Pacote Para Lançamento <br/> de Loja</h1>
+                        <p>Criamos um pacote com serviços para facilitar o lançamento do seu site!</p>
+                        <div>
+                            <img src={ElementSection1} alt=""/>
                         </div>
                     </div>
-                </div>
-
-
-                <div className={`${styles.plataformaWoocommerce} ${styles.plataformaSection}`}>
-                    <div className={styles.gridPlataformas}>
-                        <div className={styles.gridPlataformasChild}>
-                            <img src={PlataformaWoocommerce} alt="" />
-                        </div>
-                        
-                        <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
-                            <div className={styles.title}>
-                                <h2>Woocommerce</h2>
-                                <span>Alta conversão e fácil de usar</span>
-                            </div>
-
-                            <p>Uma plataforma completa com milhares de integrações para escalar suas vendas.</p>
-
-                            <div className={styles.checkVantagens}>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 1
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 2
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 3
-                                </p>
-                            </div>
-                        </div>
+                    <div>
+                        <img src={ImageSection1} alt=""/>
                     </div>
                 </div>
+            </section>
 
-
-                <div className={`${styles.plataformaYampi} ${styles.plataformaSection}`}>
-                    <div className={styles.gridPlataformas}>
-                        <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
-                            <div className={styles.title}>
-                                <h2>Yampi</h2>
-                                <span>Checkout Transparente + Agilidade</span>
-                            </div>
-
-                            <p>Feito para simplificar o fluxo de pagamento, reduzindo o número de passos.</p>
-
-                            <div className={styles.checkVantagens}>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 1
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 2
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 3
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={styles.gridPlataformasChild}>
-                            <img src={PlataformaYampi} alt="" />
-                        </div>
+            <section className={`${styles.section} ${styles.section2}`}>
+                <div className={styles.gridTwoColumns}>
+                    <div>
+                        <h2>Comece com o pé direito! Dê o start para o sucesso da sua marca.</h2>
+                    </div>
+                    <div>
+                        <img src={ImageSection2} alt=""/>
                     </div>
                 </div>
+            </section>
 
+            <section className={`${styles.section} ${styles.section3}`}>
+                <div>
+                    <div className={styles.section3Title}>
+                        <p>O que nosso pacote inclui:</p>
+                    </div>
 
-                <div className={`${styles.plataformaCartPanda} ${styles.plataformaSection}`}>
-                    <div className={styles.gridPlataformas}>
-                        <div className={styles.gridPlataformasChild}>
-                            <img src={PlataformaCartPanda} alt="" />
+                    <div className={styles.gridBenefitsLine1}>
+                        <div className={styles.gridItem}>
+                            <img src={Section3Icon1} alt=""/>
+                            <p>9 artes profissionais para o grid do seu Instagram</p>
                         </div>
-
-                        <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
-                            <div className={styles.title}>
-                                <h2>CartPanda</h2>
-                                <span>Checkout Transparente + Agilidade</span>
-                            </div>
-
-                            <p>Uma plataforma de e-commerce completa para gerenciar e expandir o seu negócio, escolhida por milhares de lojas no mundo todo.</p>
-
-                            <div className={styles.checkVantagens}>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 1
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 2
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 3
-                                </p>
-                            </div>
+                        <div className={styles.gridItem}>
+                            <img src={Section3Icon2} alt=""/>
+                            <p>Criação e configuração Google Meu Negócio</p>
+                        </div>
+                        <div className={styles.gridItem}>
+                            <img src={Section3Icon3} alt=""/>
+                            <p>Script de atendimento inicial para Whatsapp</p>
                         </div>
                     </div>
-                </div>
 
-
-                <div className={`${styles.plataformaLojaIntegrada} ${styles.plataformaSection}`}>
-                    <div className={styles.gridPlataformas}>
-                        <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
-                            <div className={styles.title}>
-                                <h2>Loja Integrada</h2>
-                                <span>Checkout Transparente + Agilidade</span>
-                            </div>
-
-                            <p>Uma plataforma de e-commerce completa para gerenciar e expandir o seu negócio, escolhida por milhares de lojas no mundo todo.</p>
-
-                            <div className={styles.checkVantagens}>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 1
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 2
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 3
-                                </p>
-                            </div>
+                    <div className={styles.gridBenefitsLine2}>
+                        <div className={styles.gridItem}>
+                            <img src={Section3Icon4} alt=""/>
+                            <p>Criação do linktree para a bio do seu Instagram</p>
                         </div>
-
-                        <div className={styles.gridPlataformasChild}>
-                            <img src={PlataformaLojaIntegrada} alt="" />
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className={`${styles.plataformaNuvemShop} ${styles.plataformaSection}`}>
-                    <div className={styles.gridPlataformas}>
-                        <div className={styles.gridPlataformasChild}>
-                            <img src={PlataformaNuvemShop} alt="" />
-                        </div>
-
-                        <div className={`${styles.gridPlataformasChild} ${styles.plataformaContent}`}>
-                            <div className={styles.title}>
-                                <h2>NuvemShop</h2>
-                                <span>Checkout Transparente + Agilidade</span>
-                            </div>
-
-                            <p>Uma plataforma de e-commerce completa para gerenciar e expandir o seu negócio, escolhida por milhares de lojas no mundo todo.</p>
-
-                            <div className={styles.checkVantagens}>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 1
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 2
-                                </p>
-                                <p>
-                                    <span className={styles.iconStyle}><RiCheckDoubleLine /> </span>
-                                    Vantagem 3
-                                </p>
-                            </div>
+                        <div className={styles.gridItem}>
+                            <img src={Section3Icon5} alt=""/>
+                            <p>3 capas para os destaques do seu perfil</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <CardsInfoTitle title="Mostre ao mundo sua marca e ofereça a melhor experiência de compra" />
-            <PackagesSection packageData1={packageData1} packageData2={packageData2} terceiroPacote={false} packageData3={packageData3} sectionPackageTitle="Tenha uma Loja Completa" />
-            <GoogleReviews />
+            <section className={`${styles.section} ${styles.section4}`}>
+                <div className={styles.gridTwoColumns}>
+                    <div>
+                        <p>Vá além do básico!</p>
+                        <img src={ImageSection4} alt=""/>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Amplie sua presença online</h3>
+                            <p>Estruturamos o seu Instagram para passar mais credibilidade aos clientes que irão acessar o seu perfil.</p>
+                        </div>
+                        <div className={styles.separator}></div>
+                        <div>
+                            <h3>Primeiros passos para o sucesso</h3>
+                            <p>Configuramos duas ferramentas que irão ajudar ao acesso em sua loja, além de um script de atendimento personalizado para a sua marca.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={true} />
-            <Whatsapp whatsappMessage={whatsapp} /> */}
+            <section className={`${styles.section} ${styles.section5}`}>
+                <div>
+                    <div>
+                        <h2>09 artes para o Grid<br/>do seu Intagram</h2>
+                    </div>
+                    <div className={styles.gridSection5}>
+                        <div className={styles.gridInstagram}>
+                            <img src={Section5Grid2} alt=""/>
+                            <img src={Section5Grid3} alt=""/>
+                        </div>
+                        <div></div>
+                        <div className={styles.mockupPhone}>
+                            <img src={Section5Grid1} alt=""/>
+                        </div>
+                        <div className={styles.gridInstagram}>
+                            <div className={styles.gridLikeInstagram}>
+                                <img src={Section5Grid4} alt=""/>
+                                <img src={Section5Grid6} className={styles.likeInstagram} alt=""/>
+                            </div>
+                            <img src={Section5Grid5} alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={`${styles.section} ${styles.section6}`}>
+                <div className={styles.gridTwoColumns}>
+                    <div>
+                        <img className={styles.abstractImage} src={Section6Element1} alt=""/>
+                        <h3>Criação e configuração<br/>Google meu negócio</h3>
+                        <img src={Section6Element2} alt=""/>
+                        <img className={styles.abstractImage} src={Section6Element1} alt=""/>
+                    </div>
+                    <div>
+                        <img src={Section6Element3} alt=""/>
+                    </div>
+                </div>
+            </section>
+
+            {/* <section className={`${styles.section} ${styles.section6}`}>
+                <div className={styles.gridTwoColumns}>
+                    <div>
+                        <img className={styles.abstractImage} src={Section6Element1} alt=""/>
+                        <h3>Criação e configuração<br/>Google meu negócio</h3>
+                        <img src={Section6Element2} alt=""/>
+                        <img className={styles.abstractImage} src={Section6Element1} alt=""/>
+                    </div>
+                    <div>
+                        <img src={Section6Element3} alt=""/>
+                    </div>
+                </div>
+            </section> */}
+
+            <section className={`${styles.section} ${styles.section8}`}>
+                <div className={styles.gridTwoColumns}>
+                    <div>
+                        <h3>Criação do Linktree para<br/>a bio do seu Instagram</h3>
+                        <div>
+                            <img src={Section8Element1} alt=""/>
+                            <img src={Section8Element2} alt=""/>                            
+                        </div>
+                    </div>
+                    <div>
+                        <img src={Section8Element3} alt=""/>
+                    </div>
+                </div>
+            </section>
+
+            <section className={`${styles.section} ${styles.section9}`}>
+                <div>
+                    <div>
+                        <img src={Section3Icon1} alt=""/>
+                    </div>
+                    <div>
+                        <h3>3 capas para os<br/>destaques do seu perfil</h3>
+                    </div>
+                    <div>
+                        <img src={ImageSection9} alt=""/>
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles.section}>
+                <GoogleReviews />
+            </section>
+
+            <section>
+                <PackagesSection packageData1={pacote1} segundoPacote={false} packageData2={pacote2} terceiroPacote={false} packageData3={pacote3}  sectionPackageTitle="Pacote Lançamento de Loja" />
+            </section>
+
+            <Footer linkCtaWhatsapp={whatsapp} mostrarSecao={false} />
+            <Whatsapp whatsappMessage={whatsapp} />
+
         </div>
     )
 }

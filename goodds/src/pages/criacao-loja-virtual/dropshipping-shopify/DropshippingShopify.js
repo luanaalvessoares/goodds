@@ -1,5 +1,5 @@
 import React from "react";
-import './DropshippingTradicional.css'
+import './DropshippingShopify.css'
 import styles from '../../venda-todos-os-dias/VendaTodosOsDias.module.css';
 import stylesMain from '../../../components/main-cta/MainCta.module.css';
 import Footer from "../../../components/footer/Footer";
@@ -12,7 +12,7 @@ import Whatsapp from "../../../components/whatsapp/Whatsapp";
 import MainCta from '../../../components/main-cta/MainCta';
 import ImageMainCta from '../../../assets/images/drop-global-menu.webp';
 import ImagePrimeiraAgencia from '../../../assets/images/home-primeira-agencia.webp';
-
+import PlataformaShopify from '../../../assets/images/plataforma-shopify.webp';
 import ImageParceiroPrintful from '../../../assets/images/parceiro-printful.webp';
 import ImageCall1 from '../../../assets/images/call-start.svg';
 import ImageCall2 from '../../../assets/images/call-aprovacao.svg';
@@ -38,13 +38,13 @@ import Faq from 'react-faq-component';
 import ImageMainCta2 from '../../../assets/images/imagenew.png';
 import PackagesDrop from "../../../components/packages-drop/PackagesDrop";
 
-function DropshippingTradicional() {
+function DropshippingShopify() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20dropshipping";
 
     const contentHeaderSection = {
         destaqueTitleText1: "Criamos sua ",
         titleText: "Loja de Dropshipping ",
-        destaqueTitleText2: "Personalizada com Fornecedores",
+        destaqueTitleText2: "na Shopify",
         description: "Tenha acesso ao Curso mais completo para vender seu produto ou serviço na internet. Aprenda como atrair mais clientes para o seu negócio, investindo pouco e ganhando muito.",
         vantagem1: "Criação da Marca e do Logo",
         vantagem2: "Mineração e Cadastro de 60 Produtos",
@@ -114,9 +114,8 @@ function DropshippingTradicional() {
                             <div className={stylesMain.gridTwoColumns}>
                                 <div className={`${stylesMain.gridTwoColumnInfo} ${stylesMain.gridTwoColumnsChild}`}>
                                     <h1 className={stylesMain.gridTwoColumnInfoTitle}>
-                                        <span>Criamos sua </span>
-                                        <span className={stylesMain.primaryDestaqueText}>Loja de Dropshipping </span>
-                                        <span>Personalizada com Fornecedores</span>
+                                        Criamos sua Loja de Dropshipping
+                                        <br/>Na <span className={stylesMain.primaryDestaqueText}>Shopify</span>
                                     </h1>
                                     <div className={stylesMain.vantagens}>
                                         <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Criação da Marca e do Logo</p>
@@ -157,7 +156,7 @@ function DropshippingTradicional() {
                 </section>
             </div>
             
-            <SimpleTwoColumns title="Especialistas em Dropshipping" descriptionOne="" descriptionDestaque="Somos a Primeira Agência de Dropshipping Nacional e Internacional do Brasil." description=" Desenvolvemos a loja personalizada e prestamos todos os serviços exclusivos para que sua loja venda todos os dias." image={ImagePrimeiraAgencia} />
+            <SimpleTwoColumns title="Especialistas Shopify" descriptionOne="" descriptionDestaque="Somos Representantes Oficiais da Shopify no Brasil." description=" Desenvolvemos a loja personalizada e prestamos todos os serviços exclusivos para que sua loja venda todos os dias." image={PlataformaShopify} />
 
             <VantagensLoja image={ImageVantagens} vantagemData="" />
 
@@ -598,4 +597,4 @@ function DropshippingTradicional() {
     )
 }
 
-export default DropshippingTradicional;
+export default DropshippingShopify;

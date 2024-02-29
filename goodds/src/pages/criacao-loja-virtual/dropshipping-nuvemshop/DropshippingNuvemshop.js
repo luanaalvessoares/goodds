@@ -1,5 +1,5 @@
 import React from "react";
-import './DropshippingTradicional.css'
+import './DropshippingNuvemshop.css'
 import styles from '../../venda-todos-os-dias/VendaTodosOsDias.module.css';
 import stylesMain from '../../../components/main-cta/MainCta.module.css';
 import Footer from "../../../components/footer/Footer";
@@ -12,7 +12,7 @@ import Whatsapp from "../../../components/whatsapp/Whatsapp";
 import MainCta from '../../../components/main-cta/MainCta';
 import ImageMainCta from '../../../assets/images/drop-global-menu.webp';
 import ImagePrimeiraAgencia from '../../../assets/images/home-primeira-agencia.webp';
-
+import PlataformaNuvemShop from '../../../assets/images/plataforma-nuvemshop.webp';
 import ImageParceiroPrintful from '../../../assets/images/parceiro-printful.webp';
 import ImageCall1 from '../../../assets/images/call-start.svg';
 import ImageCall2 from '../../../assets/images/call-aprovacao.svg';
@@ -31,14 +31,14 @@ import RiReplyAllFill from 'remixicon-react/ReplyAllFillIcon';
 import RiCheckDoubleFill from 'remixicon-react/CheckDoubleFillIcon';
 import RiFireFill from 'remixicon-react/FireFillIcon';
 import RiAddFill from 'remixicon-react/AddFillIcon';
-import Separator from '../../../assets/images/separator-lp.svg';
+import Separator from '../../../assets/images/separator-gradient-azul.svg';
 import SeparatorGradient from '../../../assets/images/separator-gradient.svg';
 import ImageGarantia from '../../../assets/images/garantia-drop.webp';
 import Faq from 'react-faq-component';
 import ImageMainCta2 from '../../../assets/images/imagenew.png';
 import PackagesDrop from "../../../components/packages-drop/PackagesDrop";
 
-function DropshippingTradicional() {
+function DropshippingNuvemshop() {
     const whatsapp = "https://api.whatsapp.com/send?phone=5511943600303&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20dropshipping";
 
     const contentHeaderSection = {
@@ -107,16 +107,15 @@ function DropshippingTradicional() {
     return (
         <div id="pageLoja">
             {/* <MainCta setTop={false} mainCtaImage={ImageMainCta} data={contentHeaderSection} /> */}
-            <div className={stylesMain.containerMainCta}>
+            <div className={stylesMain.containerMainCta} id="topo-nuvemshop">
                 <section className={stylesMain.containerChild}>
                     <div className={`${stylesMain.child1} ${styles.child}`}>
                         <div>
                             <div className={stylesMain.gridTwoColumns}>
                                 <div className={`${stylesMain.gridTwoColumnInfo} ${stylesMain.gridTwoColumnsChild}`}>
                                     <h1 className={stylesMain.gridTwoColumnInfoTitle}>
-                                        <span>Criamos sua </span>
-                                        <span className={stylesMain.primaryDestaqueText}>Loja de Dropshipping </span>
-                                        <span>Personalizada com Fornecedores</span>
+                                        Criamos sua Loja de Dropshipping
+                                        <br/>Na <span id="topo-destaque-nuvemshop">Nuvemshop</span>
                                     </h1>
                                     <div className={stylesMain.vantagens}>
                                         <p><span className={stylesMain.iconAdd}><RiAddFill /></span> Criação da Marca e do Logo</p>
@@ -150,14 +149,14 @@ function DropshippingTradicional() {
                         </div>
 
                         <span className={stylesMain.sectionSeparatorGreen}>
-                            <img src={SeparatorGradient} alt=""/>
+                            <img src={Separator} alt=""/>
                         </span>
 
                     </div>
                 </section>
             </div>
             
-            <SimpleTwoColumns title="Especialistas em Dropshipping" descriptionOne="" descriptionDestaque="Somos a Primeira Agência de Dropshipping Nacional e Internacional do Brasil." description=" Desenvolvemos a loja personalizada e prestamos todos os serviços exclusivos para que sua loja venda todos os dias." image={ImagePrimeiraAgencia} />
+            <SimpleTwoColumns title="Especialistas Nuvemshop" descriptionOne="" descriptionDestaque="Somos a Primeira Agência de Dropshipping Nacional e Internacional do Brasil." description=" Desenvolvemos a loja personalizada e prestamos todos os serviços exclusivos para que sua loja venda todos os dias." image={PlataformaNuvemShop} />
 
             <VantagensLoja image={ImageVantagens} vantagemData="" />
 
@@ -598,4 +597,4 @@ function DropshippingTradicional() {
     )
 }
 
-export default DropshippingTradicional;
+export default DropshippingNuvemshop;

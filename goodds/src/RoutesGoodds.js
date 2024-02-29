@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Home from './pages/home/Home';
 import LojaVirtual from './pages/criacao-loja-virtual/loja-virtual/LojaVirtual';
 import DropshippingTradicional from './pages/criacao-loja-virtual/dropshipping-tradicional/DropshippingTradicional';
+import DropshippingShopify from './pages/criacao-loja-virtual/dropshipping-shopify/DropshippingShopify';
+import DropshippingNuvemshop from './pages/criacao-loja-virtual/dropshipping-nuvemshop/DropshippingNuvemshop';
 import WebsiteInstitucional from './pages/criacao-site/website-institucional/WebsiteInstitucional';
 import LandingPage from './pages/criacao-site/landing-page/LandingPage';
 import Blog from './pages/criacao-site/blog/Blog';
@@ -55,6 +57,8 @@ const RoutesGoodds = () => {
                 <Route exact path="/" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}><Home /></motion.div>}></Route>
                 <Route path="/loja-virtual" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><LojaVirtual /></motion.div>}></Route>
                 <Route path="/dropshipping" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingTradicional /></motion.div>}></Route>
+                <Route path="/dropshipping-shopify" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingShopify /></motion.div>}></Route>
+                <Route path="/dropshipping-nuvemshop" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><DropshippingNuvemshop /></motion.div>}></Route>
                 <Route path="/website-institucional" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><WebsiteInstitucional /></motion.div>}></Route>
                 <Route path="/landing-page" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><LandingPage /></motion.div>}></Route>
                 <Route path="/marketing-loja-virtual" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><MarketingLojaVirtual /></motion.div>}></Route>
@@ -71,6 +75,7 @@ const RoutesGoodds = () => {
                 <Route path="/gratuito" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><FreeContent /></motion.div>}></Route>
                 <Route path="/print-on-demand" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><PrintOnDemand /></motion.div>}></Route>
                 <Route path="/contato" element={<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}><Contato /></motion.div>}></Route>
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </AnimatePresence>
 
